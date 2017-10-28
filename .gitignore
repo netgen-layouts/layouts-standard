@@ -1,0 +1,12 @@
+.idea/
+.tmp/
+coverage/
+node_modules/
+/vendor/
+/**/Resources/public/dev/
+composer.phar
+composer.lock
+grunt.lock
+phpunit.phar
+studio.json
+.php_cs.cache
