@@ -1,0 +1,10 @@
+block.notice.no_video: 'This block is not configured yet. Please set the video ID.'
+block.notice.empty_twig_block: 'This block is not configured yet. Please define the Twig template block name which will be used to render the block.'
+block.notice.no_google_maps_api_key: 'API key for Google Maps is not configured. Set it in configuration and reload the app to display this block.'
+
+block.info.twig_block: 'Twig block "%block%" will be rendered here.'
+block.info.full_view: 'Full view will be rendered here.'
+
+block.placeholder.title: 'Click to write'
+block.placeholder.button: 'Click to write'
+block.placeholder.rich_text: 'Click here to write'
