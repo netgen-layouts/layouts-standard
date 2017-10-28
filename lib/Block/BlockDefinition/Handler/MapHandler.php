@@ -6,7 +6,7 @@ use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
 
-class MapHandler extends BlockDefinitionHandler
+final class MapHandler extends BlockDefinitionHandler
 {
     /**
      * @var int

@@ -12,7 +12,7 @@ use Netgen\BlockManager\Parameters\ParameterType;
  * Block used to render a Twig template block with a name provided
  * through the block parameter.
  */
-class TwigBlockHandler extends BlockDefinitionHandler implements TwigBlockDefinitionHandlerInterface
+final class TwigBlockHandler extends BlockDefinitionHandler implements TwigBlockDefinitionHandlerInterface
 {
     public function buildParameters(ParameterBuilderInterface $builder)
     {

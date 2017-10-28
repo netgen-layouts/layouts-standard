@@ -6,7 +6,7 @@ use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
 
-class TextHandler extends BlockDefinitionHandler
+final class TextHandler extends BlockDefinitionHandler
 {
     public function buildParameters(ParameterBuilderInterface $builder)
     {

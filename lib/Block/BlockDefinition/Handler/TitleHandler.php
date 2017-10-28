@@ -6,7 +6,7 @@ use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
 
-class TitleHandler extends BlockDefinitionHandler
+final class TitleHandler extends BlockDefinitionHandler
 {
     /**
      * @var array

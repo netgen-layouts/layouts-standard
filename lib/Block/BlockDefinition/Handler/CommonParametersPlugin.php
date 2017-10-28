@@ -10,7 +10,7 @@ use Netgen\BlockManager\Parameters\ParameterType;
  * Block plugin which adds 3 parameters (css_class, css_id and set_container)
  * to every defined block.
  */
-class CommonParametersPlugin extends Plugin
+final class CommonParametersPlugin extends Plugin
 {
     /**
      * @var array

@@ -8,7 +8,7 @@ use Netgen\BlockManager\Parameters\ParameterType;
 /**
  * Block plugin which adds options to control AJAX paging of block collections.
  */
-class PagedCollectionsPlugin extends Plugin
+final class PagedCollectionsPlugin extends Plugin
 {
     /**
      * The list of pager types available in the plugin.

@@ -11,7 +11,7 @@ use Netgen\BlockManager\Block\BlockDefinition\TwigBlockDefinitionHandlerInterfac
  *
  * The default block name to use & render is provided by the constructor.
  */
-class FullViewHandler extends BlockDefinitionHandler implements TwigBlockDefinitionHandlerInterface
+final class FullViewHandler extends BlockDefinitionHandler implements TwigBlockDefinitionHandlerInterface
 {
     /**
      * @var string

@@ -9,7 +9,7 @@ use Netgen\BlockManager\Block\DynamicParameters;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
 
-class MarkdownHandler extends BlockDefinitionHandler
+final class MarkdownHandler extends BlockDefinitionHandler
 {
     /**
      * @var \Michelf\MarkdownInterface

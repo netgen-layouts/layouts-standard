@@ -6,7 +6,7 @@ use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
 
-class GalleryHandler extends BlockDefinitionHandler
+final class GalleryHandler extends BlockDefinitionHandler
 {
     /**
      * @var int
