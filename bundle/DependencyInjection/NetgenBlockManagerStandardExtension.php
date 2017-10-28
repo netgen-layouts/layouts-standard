@@ -41,7 +41,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
         }
 
         // Register templates from this bundle under @NetgenBlockManager namespace
-        // to keep external references to templates keep working after they were
+        // to keep external references to templates working after they were
         // separated from the core repo
         $container->prependExtensionConfig(
             'twig', array(
