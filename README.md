@@ -1,8 +1,7 @@
 Netgen Block Manager standard blocks & layouts
 ==============================================
 
-This bundle provides standard blocks and layouts used by Netgen to build sites
-with eZ Publish CMS.
+This bundle provides standard blocks and layouts used by Netgen to build websites.
 
 ## Installation instructions
 
