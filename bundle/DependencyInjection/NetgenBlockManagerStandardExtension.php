@@ -45,7 +45,8 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
         // to keep external references to templates working after they were
         // separated from the core repo
         $container->prependExtensionConfig(
-            'twig', array(
+            'twig',
+            array(
                 'paths' => array(
                     __DIR__ . '/../Resources/views' => 'NetgenBlockManager',
                 ),
