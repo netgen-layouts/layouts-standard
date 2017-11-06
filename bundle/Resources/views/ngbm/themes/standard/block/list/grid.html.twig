@@ -1,9 +1,9 @@
-{% extends '@NetgenBlockManager/block/block.html.twig' %}
+{% extends '@ngbm/block/block.html.twig' %}
 
 {% set collection_identifier = 'default' %}
 {% set number_of_columns = block.parameter('number_of_columns').value|default(2) %}
 
-{% set template_name = '@NetgenBlockManager/block/list/grid/' ~ number_of_columns ~ '_columns.html.twig' %}
+{% set template_name = '@ngbm/block/list/grid/' ~ number_of_columns ~ '_columns.html.twig' %}
 {% if column_templates is defined and column_templates[number_of_columns] is defined %}
     {% set template_name = column_templates[number_of_columns] %}
 {% endif %}

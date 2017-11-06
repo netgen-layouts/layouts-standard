@@ -48,6 +48,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
             'twig',
             array(
                 'paths' => array(
+                    __DIR__ . '/../Resources/views/ngbm/themes/standard' => 'NetgenBlockManager',
                     __DIR__ . '/../Resources/views' => 'NetgenBlockManager',
                 ),
             )

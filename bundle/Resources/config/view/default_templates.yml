@@ -1,3 +1,3 @@
 default_view_templates:
     block_view:
-        default: '@NetgenBlockManager/block/block.html.twig'
+        default: '@ngbm/block/block.html.twig'
