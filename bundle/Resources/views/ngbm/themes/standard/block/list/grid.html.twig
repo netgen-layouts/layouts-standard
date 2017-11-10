@@ -8,9 +8,18 @@
     {% set template_name = column_templates[number_of_columns] %}
 {% endif %}
 
+{% set ajax_template_name = '@ngbm/block/list/grid_ajax/' ~ number_of_columns ~ '_columns.html.twig' %}
+{% if ajax_column_templates is defined and ajax_column_templates[number_of_columns] is defined %}
+    {% set ajax_template_name = ajax_column_templates[number_of_columns] %}
+{% endif %}
+
 {% set collection_html %}
     {% for result in collections[collection_identifier] %}
-        {% include template_name %}
+        {% if block.parameter('paged_collections:enabled').value %}
+            {% include ajax_template_name %}
+        {% else %}
+            {% include template_name %}
+        {% endif %}
     {% endfor %}
 {% endset %}
 
