@@ -96,6 +96,16 @@ view:
                 match:
                     block\definition: two_columns
                     block\view_type: two_columns_66_33
+            three_columns:
+                template: "@ngbm/block/three_columns.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns
+            four_columns:
+                template: "@ngbm/block/four_columns.html.twig"
+                match:
+                    block\definition: four_columns
+                    block\view_type: four_columns
         ajax:
             list\list:
                 template: "@ngbm/block/list/list_ajax.html.twig"
@@ -197,4 +207,16 @@ view:
                 match:
                     block\definition: two_columns
                     block\view_type: two_columns_66_33
+                    api_version: 1
+            three_columns:
+                template: "@NetgenBlockManagerStandard/api/block/three_columns.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns
+                    api_version: 1
+            four_columns:
+                template: "@NetgenBlockManagerStandard/api/block/four_columns.html.twig"
+                match:
+                    block\definition: four_columns
+                    block\view_type: four_columns
                     api_version: 1

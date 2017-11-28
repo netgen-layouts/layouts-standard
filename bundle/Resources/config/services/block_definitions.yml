@@ -185,3 +185,15 @@ services:
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: two_columns }
+
+    netgen_block_manager.block.block_definition.handler.three_columns:
+        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Container\ThreeColumnsHandler
+        public: false
+        tags:
+            - { name: netgen_block_manager.block.block_definition_handler, identifier: three_columns }
+
+    netgen_block_manager.block.block_definition.handler.four_columns:
+        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Container\FourColumnsHandler
+        public: false
+        tags:
+            - { name: netgen_block_manager.block.block_definition_handler, identifier: four_columns }

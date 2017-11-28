@@ -154,3 +154,17 @@ block_definitions:
                 name: '33:66'
             two_columns_66_33:
                 name: '66:33'
+
+    three_columns:
+        name: 'Three columns'
+        translatable: true
+        view_types:
+            three_columns:
+                name: '33:33:33'
+
+    four_columns:
+        name: 'Four columns'
+        translatable: true
+        view_types:
+            four_columns:
+                name: '25:25:25:25'

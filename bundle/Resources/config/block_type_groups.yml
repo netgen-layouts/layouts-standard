@@ -10,7 +10,7 @@ block_type_groups:
         block_types: [slider, thumb_gallery, grid_gallery, sushi_bar]
     containers:
         name: 'Containers'
-        block_types: [column, two_columns]
+        block_types: [column, two_columns, three_columns, four_columns]
     placeholders:
         name: 'Placeholders'
         block_types: [twig_block, full_view]
