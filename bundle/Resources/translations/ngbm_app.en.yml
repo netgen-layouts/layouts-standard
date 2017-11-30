@@ -7,4 +7,4 @@ block.info.full_view: 'Full view will be rendered here.'
 
 block.placeholder.title: 'Click to write'
 block.placeholder.button: 'Click to write'
-block.placeholder.rich_text: 'Click here to write'
+block.placeholder.rich_text: 'Click to write'
