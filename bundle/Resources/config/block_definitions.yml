@@ -159,8 +159,14 @@ block_definitions:
         name: 'Three columns'
         translatable: true
         view_types:
-            three_columns:
+            three_columns_33_33_33:
                 name: '33:33:33'
+            three_columns_50_25_25:
+                name: '50:25:25'
+            three_columns_25_50_25:
+                name: '25:50:25'
+            three_columns_25_25_50:
+                name: '25:25:50'
 
     four_columns:
         name: 'Four columns'

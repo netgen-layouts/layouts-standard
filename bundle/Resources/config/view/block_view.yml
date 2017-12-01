@@ -96,11 +96,26 @@ view:
                 match:
                     block\definition: two_columns
                     block\view_type: two_columns_66_33
-            three_columns:
-                template: "@ngbm/block/three_columns.html.twig"
+            three_columns_33_33_33:
+                template: "@ngbm/block/three_columns/three_columns_33_33_33.html.twig"
                 match:
                     block\definition: three_columns
-                    block\view_type: three_columns
+                    block\view_type: three_columns_33_33_33
+            three_columns_50_25_25:
+                template: "@ngbm/block/three_columns/three_columns_50_25_25.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns_50_25_25
+            three_columns_25_50_25:
+                template: "@ngbm/block/three_columns/three_columns_25_50_25.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns_25_50_25
+            three_columns_25_25_50:
+                template: "@ngbm/block/three_columns/three_columns_25_25_50.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns_25_25_50
             four_columns:
                 template: "@ngbm/block/four_columns.html.twig"
                 match:
@@ -208,11 +223,29 @@ view:
                     block\definition: two_columns
                     block\view_type: two_columns_66_33
                     api_version: 1
-            three_columns:
-                template: "@NetgenBlockManagerStandard/api/block/three_columns.html.twig"
+            three_columns_33_33_33:
+                template: "@NetgenBlockManagerStandard/api/block/three_columns/three_columns_33_33_33.html.twig"
                 match:
                     block\definition: three_columns
-                    block\view_type: three_columns
+                    block\view_type: three_columns_33_33_33
+                    api_version: 1
+            three_columns_50_25_25:
+                template: "@NetgenBlockManagerStandard/api/block/three_columns/three_columns_50_25_25.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns_50_25_25
+                    api_version: 1
+            three_columns_25_50_25:
+                template: "@NetgenBlockManagerStandard/api/block/three_columns/three_columns_25_50_25.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns_25_50_25
+                    api_version: 1
+            three_columns_25_25_50:
+                template: "@NetgenBlockManagerStandard/api/block/three_columns/three_columns_25_25_50.html.twig"
+                match:
+                    block\definition: three_columns
+                    block\view_type: three_columns_25_25_50
                     api_version: 1
             four_columns:
                 template: "@NetgenBlockManagerStandard/api/block/four_columns.html.twig"
