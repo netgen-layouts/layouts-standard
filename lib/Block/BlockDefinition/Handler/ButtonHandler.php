@@ -49,6 +49,7 @@ final class ButtonHandler extends BlockDefinitionHandler
             ParameterType\LinkType::class,
             array(
                 'value_types' => $this->valueTypes,
+                'allow_invalid_internal' => true,
             )
         );
     }

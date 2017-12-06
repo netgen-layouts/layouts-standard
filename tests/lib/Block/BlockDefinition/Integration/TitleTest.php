@@ -158,17 +158,6 @@ abstract class TitleTest extends BlockTest
                 ),
                 array('use_link', 'link'),
             ),
-            array(
-                array(
-                    'link' => new LinkValue(
-                        array(
-                            'linkType' => LinkValue::LINK_TYPE_INTERNAL,
-                            'link' => 'unknown://42',
-                        )
-                    ),
-                ),
-                array('use_link', 'link'),
-            ),
         );
     }
 }

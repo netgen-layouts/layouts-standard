@@ -137,16 +137,6 @@ abstract class ButtonTest extends BlockTest
                     'style' => 42,
                 ),
             ),
-            array(
-                array(
-                    'link' => new LinkValue(
-                        array(
-                            'linkType' => LinkValue::LINK_TYPE_INTERNAL,
-                            'link' => 'unknown://42',
-                        )
-                    ),
-                ),
-            ),
         );
     }
 }

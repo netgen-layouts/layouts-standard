@@ -54,6 +54,7 @@ final class TitleHandler extends BlockDefinitionHandler
             ParameterType\LinkType::class,
             array(
                 'value_types' => $this->linkValueTypes,
+                'allow_invalid_internal' => true,
             )
         );
     }
