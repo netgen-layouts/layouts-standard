@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "netgen/block-manager": "~0.10.0"
+        "netgen/block-manager": "~0.11.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.7|^6.5",
@@ -41,7 +41,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-master": "0.10.x-dev"
+            "dev-master": "0.11.x-dev"
         }
     }
 }
