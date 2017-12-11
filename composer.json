@@ -24,13 +24,14 @@
     ],
     "autoload": {
         "psr-4": {
-            "Netgen\\BlockManager\\": "lib/",
+            "Netgen\\BlockManager\\Standard\\": "lib/",
             "Netgen\\Bundle\\BlockManagerStandardBundle\\": "bundle/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Netgen\\BlockManager\\Tests\\": ["tests/lib/", "vendor/netgen/block-manager/tests/lib/"]
+            "Netgen\\BlockManager\\Standard\\Tests\\": "tests/lib/",
+            "Netgen\\BlockManager\\Tests\\": "vendor/netgen/block-manager/tests/lib/"
         },
         "files": [
             "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"

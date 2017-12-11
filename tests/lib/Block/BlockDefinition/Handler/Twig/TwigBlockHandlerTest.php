@@ -1,16 +1,16 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Handler\Twig;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Twig;
 
-use Netgen\BlockManager\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
 use Netgen\BlockManager\Core\Values\Block\Block;
 use Netgen\BlockManager\Parameters\ParameterValue;
+use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
 use PHPUnit\Framework\TestCase;
 
 class TwigBlockHandlerTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
+     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
      */
     private $handler;
 
@@ -20,7 +20,7 @@ class TwigBlockHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::isContextual
+     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::isContextual
      */
     public function testIsContextual()
     {
@@ -28,7 +28,7 @@ class TwigBlockHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::getTwigBlockName
+     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::getTwigBlockName
      */
     public function testGetTwigBlockName()
     {

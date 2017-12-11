@@ -1,13 +1,13 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\GalleryTest as BaseGalleryTest;
+use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\GalleryTest as BaseGalleryTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 
 /**
- * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\GalleryHandler::__construct
- * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\GalleryHandler::buildParameters
+ * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\GalleryHandler::__construct
+ * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\GalleryHandler::buildParameters
  */
 class GalleryTest extends BaseGalleryTest
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Netgen\BlockManager\Block\BlockDefinition\Handler\Twig;
+namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig;
 
 use Netgen\BlockManager\API\Values\Block\Block;
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;

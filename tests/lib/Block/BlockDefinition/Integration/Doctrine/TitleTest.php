@@ -1,13 +1,13 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\TitleTest as BaseTitleTest;
+use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\TitleTest as BaseTitleTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 
 /**
- * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\TitleHandler::__construct
- * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\TitleHandler::buildParameters
+ * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler::__construct
+ * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler::buildParameters
  */
 class TitleTest extends BaseTitleTest
 {

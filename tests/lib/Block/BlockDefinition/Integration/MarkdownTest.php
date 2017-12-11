@@ -1,9 +1,10 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Integration;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Michelf\Markdown;
-use Netgen\BlockManager\Block\BlockDefinition\Handler\MarkdownHandler;
+use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
+use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class MarkdownTest extends BlockTest
 {

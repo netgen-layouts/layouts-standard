@@ -1,8 +1,9 @@
 <?php
 
-namespace Netgen\BlockManager\Block\BlockDefinition\Handler;
+namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler;
 
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
+use Netgen\BlockManager\Block\BlockDefinition\Handler\PagedCollectionsBlockInterface;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
 

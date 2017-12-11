@@ -1,11 +1,3 @@
-block.common_params.css_class: 'CSS class'
-block.common_params.css_id: 'CSS ID'
-block.common_params.set_container: 'Wrap in container'
-
-block.paged_collections.enabled: 'Enable paging'
-block.paged_collections.type: 'Paging type'
-block.paged_collections.ajax_first: 'Load first page via AJAX'
-
 block.title.tag: 'Heading level'
 block.title.title: 'Title'
 block.title.use_link: 'Use link'

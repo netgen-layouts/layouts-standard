@@ -1,12 +1,12 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\HtmlSnippetTest as BaseHtmlSnippetTest;
+use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\HtmlSnippetTest as BaseHtmlSnippetTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 
 /**
- * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\HtmlSnippetHandler::buildParameters
+ * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\HtmlSnippetHandler::buildParameters
  */
 class HtmlSnippetTest extends BaseHtmlSnippetTest
 {

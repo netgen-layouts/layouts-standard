@@ -1,9 +1,10 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Integration;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration;
 
-use Netgen\BlockManager\Block\BlockDefinition\Handler\TitleHandler;
 use Netgen\BlockManager\Parameters\Value\LinkValue;
+use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler;
+use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class TitleTest extends BlockTest
 {

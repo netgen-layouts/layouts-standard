@@ -1,12 +1,12 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Handler;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler;
 
 use Michelf\MarkdownInterface;
-use Netgen\BlockManager\Block\BlockDefinition\Handler\MarkdownHandler;
 use Netgen\BlockManager\Block\DynamicParameters;
 use Netgen\BlockManager\Core\Values\Block\Block;
 use Netgen\BlockManager\Parameters\ParameterValue;
+use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use PHPUnit\Framework\TestCase;
 
 class MarkdownHandlerTest extends TestCase
@@ -17,7 +17,7 @@ class MarkdownHandlerTest extends TestCase
     private $markdownMock;
 
     /**
-     * @var \Netgen\BlockManager\Block\BlockDefinition\Handler\MarkdownHandler
+     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler
      */
     private $handler;
 
@@ -29,8 +29,8 @@ class MarkdownHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\MarkdownHandler::__construct
-     * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\MarkdownHandler::getDynamicParameters
+     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::__construct
+     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::getDynamicParameters
      */
     public function testGetDynamicParameters()
     {

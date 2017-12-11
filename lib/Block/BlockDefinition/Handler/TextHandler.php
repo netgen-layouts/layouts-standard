@@ -1,6 +1,6 @@
 <?php
 
-namespace Netgen\BlockManager\Block\BlockDefinition\Handler;
+namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler;
 
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;

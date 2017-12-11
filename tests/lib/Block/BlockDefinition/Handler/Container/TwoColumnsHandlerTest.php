@@ -1,14 +1,14 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Handler\Container;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Container;
 
-use Netgen\BlockManager\Block\BlockDefinition\Handler\Container\TwoColumnsHandler;
+use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler;
 use PHPUnit\Framework\TestCase;
 
 class TwoColumnsHandlerTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
+     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
      */
     private $handler;
 
@@ -18,7 +18,7 @@ class TwoColumnsHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Block\BlockDefinition\Handler\Container\TwoColumnsHandler::getPlaceholderIdentifiers
+     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler::getPlaceholderIdentifiers
      */
     public function testGetPlaceholderIdentifiers()
     {

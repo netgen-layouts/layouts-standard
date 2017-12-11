@@ -1,6 +1,6 @@
 <?php
 
-namespace Netgen\BlockManager\Block\BlockDefinition\Handler\Container;
+namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container;
 
 use Netgen\BlockManager\Block\BlockDefinition\ContainerDefinitionHandler;
 

@@ -1,10 +1,4 @@
 parameters:
-    netgen_block_manager.block.block_definition.handler.plugin.common.groups: ['design', 'common']
-
-    netgen_block_manager.block.block_definition.handler.plugin.paged_collections.pager_types:
-        pager: 'Pager'
-        load_more: 'Load more'
-
     netgen_block_manager.block.block_definition.handler.title.tags:
         h1: 'Heading 1'
         h2: 'Heading 2'
@@ -58,24 +52,8 @@ parameters:
         '1_1': '1:1'
 
 services:
-    netgen_block_manager.block.block_definition.handler.plugin.paged_collections:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\PagedCollectionsPlugin
-        public: false
-        arguments:
-            - "%netgen_block_manager.block.block_definition.handler.plugin.paged_collections.pager_types%"
-        tags:
-            - { name: netgen_block_manager.block.block_definition_handler.plugin, priority: 10 }
-
-    netgen_block_manager.block.block_definition.handler.plugin.common:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\CommonParametersPlugin
-        public: false
-        arguments:
-            - "%netgen_block_manager.block.block_definition.handler.plugin.common.groups%"
-        tags:
-            - { name: netgen_block_manager.block.block_definition_handler.plugin, priority: 0 }
-
     netgen_block_manager.block.block_definition.handler.title:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\TitleHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.title.tags%"
@@ -84,13 +62,13 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: title }
 
     netgen_block_manager.block.block_definition.handler.text:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\TextHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TextHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: text }
 
     netgen_block_manager.block.block_definition.handler.button:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\ButtonHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ButtonHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.button.styles%"
@@ -103,7 +81,7 @@ services:
         public: false
 
     netgen_block_manager.block.block_definition.handler.markdown:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\MarkdownHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler
         public: false
         arguments:
             - "@netgen_block_manager.block.block_definition.handler.markdown.parser"
@@ -111,13 +89,13 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: markdown }
 
     netgen_block_manager.block.block_definition.handler.rich_text:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\RichTextHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\RichTextHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: rich_text }
 
     netgen_block_manager.block.block_definition.handler.external_video:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\ExternalVideoHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.external_video.services%"
@@ -125,13 +103,13 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: external_video }
 
     netgen_block_manager.block.block_definition.handler.html_snippet:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\HtmlSnippetHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\HtmlSnippetHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: html_snippet }
 
     netgen_block_manager.block.block_definition.handler.full_view:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Twig\FullViewHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.full_view.twig_block_name%"
@@ -139,13 +117,13 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: full_view }
 
     netgen_block_manager.block.block_definition.handler.twig_block:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: twig_block }
 
     netgen_block_manager.block.block_definition.handler.map:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\MapHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MapHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.map.min_zoom%"
@@ -155,7 +133,7 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: map }
 
     netgen_block_manager.block.block_definition.handler.list:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\ListHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ListHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.list.columns%"
@@ -163,7 +141,7 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: list }
 
     netgen_block_manager.block.block_definition.handler.gallery:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\GalleryHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\GalleryHandler
         public: false
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.gallery.min_autoplay_time%"
@@ -175,25 +153,25 @@ services:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: gallery }
 
     netgen_block_manager.block.block_definition.handler.column:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Container\ColumnHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: column }
 
     netgen_block_manager.block.block_definition.handler.two_columns:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: two_columns }
 
     netgen_block_manager.block.block_definition.handler.three_columns:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Container\ThreeColumnsHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ThreeColumnsHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: three_columns }
 
     netgen_block_manager.block.block_definition.handler.four_columns:
-        class: Netgen\BlockManager\Block\BlockDefinition\Handler\Container\FourColumnsHandler
+        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\FourColumnsHandler
         public: false
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: four_columns }

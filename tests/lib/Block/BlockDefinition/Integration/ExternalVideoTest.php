@@ -1,8 +1,9 @@
 <?php
 
-namespace Netgen\BlockManager\Tests\Block\BlockDefinition\Integration;
+namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration;
 
-use Netgen\BlockManager\Block\BlockDefinition\Handler\ExternalVideoHandler;
+use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler;
+use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class ExternalVideoTest extends BlockTest
 {

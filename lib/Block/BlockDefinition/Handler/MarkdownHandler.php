@@ -1,6 +1,6 @@
 <?php
 
-namespace Netgen\BlockManager\Block\BlockDefinition\Handler;
+namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler;
 
 use Michelf\MarkdownInterface;
 use Netgen\BlockManager\API\Values\Block\Block;
