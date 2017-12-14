@@ -1,3 +1,0 @@
-default_view_templates:
-    block_view:
-        default: '@ngbm/block/block.html.twig'

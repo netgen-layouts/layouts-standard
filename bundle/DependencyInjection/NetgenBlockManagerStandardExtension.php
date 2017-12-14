@@ -29,7 +29,6 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
             'block_type_groups.yml' => 'netgen_block_manager',
             'block_types.yml' => 'netgen_block_manager',
             'layout_types.yml' => 'netgen_block_manager',
-            'view/default_templates.yml' => 'netgen_block_manager',
             'view/layout_view.yml' => 'netgen_block_manager',
             'view/block_view.yml' => 'netgen_block_manager',
         );
