@@ -8,7 +8,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 /**
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::buildParameters
  */
-class FullViewTest extends BaseFullViewTest
+final class FullViewTest extends BaseFullViewTest
 {
     use TestCaseTrait;
 

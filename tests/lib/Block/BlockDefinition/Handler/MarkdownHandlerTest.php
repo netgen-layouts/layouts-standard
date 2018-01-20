@@ -9,7 +9,7 @@ use Netgen\BlockManager\Parameters\ParameterValue;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use PHPUnit\Framework\TestCase;
 
-class MarkdownHandlerTest extends TestCase
+final class MarkdownHandlerTest extends TestCase
 {
     /**
      * @var \PHPUnit\Framework\MockObject\MockObject

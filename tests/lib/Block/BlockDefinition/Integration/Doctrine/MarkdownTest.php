@@ -8,7 +8,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 /**
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::buildParameters
  */
-class MarkdownTest extends BaseMarkdownTest
+final class MarkdownTest extends BaseMarkdownTest
 {
     use TestCaseTrait;
 

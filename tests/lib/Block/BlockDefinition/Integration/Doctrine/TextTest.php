@@ -8,7 +8,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 /**
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TextHandler::buildParameters
  */
-class TextTest extends BaseTextTest
+final class TextTest extends BaseTextTest
 {
     use TestCaseTrait;
 

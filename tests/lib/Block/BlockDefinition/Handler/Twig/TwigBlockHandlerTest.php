@@ -7,7 +7,7 @@ use Netgen\BlockManager\Parameters\ParameterValue;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
 use PHPUnit\Framework\TestCase;
 
-class TwigBlockHandlerTest extends TestCase
+final class TwigBlockHandlerTest extends TestCase
 {
     /**
      * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler

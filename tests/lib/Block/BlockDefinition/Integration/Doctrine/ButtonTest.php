@@ -9,7 +9,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ButtonHandler::__construct
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ButtonHandler::buildParameters
  */
-class ButtonTest extends BaseButtonTest
+final class ButtonTest extends BaseButtonTest
 {
     use TestCaseTrait;
 

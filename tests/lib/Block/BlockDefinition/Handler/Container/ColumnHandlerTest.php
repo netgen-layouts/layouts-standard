@@ -5,7 +5,7 @@ namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Conta
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler;
 use PHPUnit\Framework\TestCase;
 
-class ColumnHandlerTest extends TestCase
+final class ColumnHandlerTest extends TestCase
 {
     /**
      * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler

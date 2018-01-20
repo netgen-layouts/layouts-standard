@@ -9,7 +9,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MapHandler::__construct
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MapHandler::buildParameters
  */
-class MapTest extends BaseMapTest
+final class MapTest extends BaseMapTest
 {
     use TestCaseTrait;
 

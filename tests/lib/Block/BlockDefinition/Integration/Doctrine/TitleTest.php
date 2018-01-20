@@ -9,7 +9,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler::__construct
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler::buildParameters
  */
-class TitleTest extends BaseTitleTest
+final class TitleTest extends BaseTitleTest
 {
     use TestCaseTrait;
 

@@ -6,7 +6,7 @@ use Netgen\BlockManager\Core\Values\Block\Block;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler;
 use PHPUnit\Framework\TestCase;
 
-class FullViewHandlerTest extends TestCase
+final class FullViewHandlerTest extends TestCase
 {
     /**
      * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler

@@ -9,7 +9,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ListHandler::__construct
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ListHandler::buildParameters
  */
-class ListTest extends BaseListTest
+final class ListTest extends BaseListTest
 {
     use TestCaseTrait;
 

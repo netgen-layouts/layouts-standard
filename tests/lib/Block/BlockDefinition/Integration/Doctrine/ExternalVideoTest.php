@@ -9,7 +9,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler::__construct
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler::buildParameters
  */
-class ExternalVideoTest extends BaseExternalVideoTest
+final class ExternalVideoTest extends BaseExternalVideoTest
 {
     use TestCaseTrait;
 

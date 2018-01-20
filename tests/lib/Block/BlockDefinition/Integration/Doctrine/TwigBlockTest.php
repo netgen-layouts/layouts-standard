@@ -8,7 +8,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 /**
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::buildParameters
  */
-class TwigBlockTest extends BaseTwigBlockTest
+final class TwigBlockTest extends BaseTwigBlockTest
 {
     use TestCaseTrait;
 

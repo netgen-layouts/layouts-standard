@@ -8,7 +8,7 @@ use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
 /**
  * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\HtmlSnippetHandler::buildParameters
  */
-class HtmlSnippetTest extends BaseHtmlSnippetTest
+final class HtmlSnippetTest extends BaseHtmlSnippetTest
 {
     use TestCaseTrait;
 
