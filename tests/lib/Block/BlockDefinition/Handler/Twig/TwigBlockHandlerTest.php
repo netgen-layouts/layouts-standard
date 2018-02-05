@@ -3,7 +3,7 @@
 namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Twig;
 
 use Netgen\BlockManager\Core\Values\Block\Block;
-use Netgen\BlockManager\Parameters\ParameterValue;
+use Netgen\BlockManager\Parameters\Parameter;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
 use PHPUnit\Framework\TestCase;
 
@@ -37,7 +37,7 @@ final class TwigBlockHandlerTest extends TestCase
                 'availableLocales' => array('en'),
                 'locale' => 'en',
                 'parameters' => array(
-                    'block_name' => new ParameterValue(
+                    'block_name' => new Parameter(
                         array(
                             'value' => 'twig_block',
                         )

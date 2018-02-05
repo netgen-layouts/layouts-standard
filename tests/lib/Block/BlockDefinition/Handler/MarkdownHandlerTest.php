@@ -5,7 +5,7 @@ namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler;
 use Michelf\MarkdownInterface;
 use Netgen\BlockManager\Block\DynamicParameters;
 use Netgen\BlockManager\Core\Values\Block\Block;
-use Netgen\BlockManager\Parameters\ParameterValue;
+use Netgen\BlockManager\Parameters\Parameter;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use PHPUnit\Framework\TestCase;
 
@@ -45,7 +45,7 @@ final class MarkdownHandlerTest extends TestCase
                 'availableLocales' => array('en'),
                 'locale' => 'en',
                 'parameters' => array(
-                    'content' => new ParameterValue(
+                    'content' => new Parameter(
                         array(
                             'value' => '# Title',
                         )
