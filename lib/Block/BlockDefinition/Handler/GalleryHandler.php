@@ -34,8 +34,6 @@ final class GalleryHandler extends BlockDefinitionHandler
     private $aspectRatios = array();
 
     /**
-     * Constructor.
-     *
      * @param int $minAutoplayTime
      * @param int $maxAutoplayTime
      * @param array $paginationTypes

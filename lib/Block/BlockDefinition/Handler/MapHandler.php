@@ -24,8 +24,6 @@ final class MapHandler extends BlockDefinitionHandler
     private $mapTypes = array();
 
     /**
-     * Constructor.
-     *
      * @param int $minZoom
      * @param int $maxZoom
      * @param array $mapTypes
