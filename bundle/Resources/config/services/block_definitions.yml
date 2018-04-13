@@ -16,6 +16,7 @@ parameters:
     netgen_block_manager.block.block_definition.handler.external_video.services:
         youtube: 'YouTube'
         vimeo: 'Vimeo'
+        dailymotion: 'Dailymotion'
 
     netgen_block_manager.block.block_definition.handler.full_view.twig_block_name: content
 
