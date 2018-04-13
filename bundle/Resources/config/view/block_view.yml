@@ -36,6 +36,11 @@ view:
                 match:
                     block\definition: external_video
                     block\view_type: external_video
+            map:
+                template: "@ngbm/block/map.html.twig"
+                match:
+                    block\definition: map
+                    block\view_type: map
             list\list:
                 template: "@ngbm/block/list/list.html.twig"
                 match:
