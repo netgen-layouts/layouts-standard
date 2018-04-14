@@ -28,7 +28,6 @@ block.list.number_of_columns: 'Number of columns'
 
 block.gallery.next_and_previous: 'Show next & previous controls'
 block.gallery.show_pagination: 'Show pagination'
-block.gallery.pagination_type: 'Pagination type'
 block.gallery.infinite_loop: 'Infinite loop'
 block.gallery.transition: 'Transition'
 block.gallery.autoplay: 'Autoplay'

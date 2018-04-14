@@ -16,10 +16,6 @@ abstract class GalleryTest extends BlockTest
             3,
             7,
             array(
-                'horizontal' => 'Horizontal',
-                'vertical' => 'Vertical',
-            ),
-            array(
                 'slide' => 'Slide',
                 'fade' => 'Fade',
             ),
@@ -64,17 +60,6 @@ abstract class GalleryTest extends BlockTest
                 ),
                 array(
                     'show_pagination' => true,
-                    'pagination_type' => 'horizontal',
-                ),
-            ),
-            array(
-                array(
-                    'show_pagination' => true,
-                    'pagination_type' => 'vertical',
-                ),
-                array(
-                    'show_pagination' => true,
-                    'pagination_type' => 'vertical',
                 ),
             ),
             array(
@@ -208,12 +193,6 @@ abstract class GalleryTest extends BlockTest
             array(
                 array(
                     'show_pagination' => 42,
-                ),
-            ),
-            array(
-                array(
-                    'show_pagination' => true,
-                    'pagination_type' => 'unknown',
                 ),
             ),
             array(

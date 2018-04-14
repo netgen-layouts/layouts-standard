@@ -97,7 +97,6 @@ block_definitions:
             slider:
                 name: 'Slider'
                 valid_parameters:
-                    - '!pagination_type'
                     - '!autoplay_time'
                     - '!number_of_thumbnails'
                     - '!show_details'
@@ -107,7 +106,6 @@ block_definitions:
                 name: 'Thumb gallery'
                 valid_parameters:
                      - '!show_pagination'
-                     - '!pagination_type'
                      - '!infinite_loop'
                      - '!transition'
                      - '!autoplay'
@@ -120,7 +118,6 @@ block_definitions:
                 valid_parameters:
                      - '!next_and_previous'
                      - '!show_pagination'
-                     - '!pagination_type'
                      - '!infinite_loop'
                      - '!transition'
                      - '!autoplay'
@@ -130,7 +127,6 @@ block_definitions:
             sushi_bar:
                 name: 'Sushi bar'
                 valid_parameters:
-                     - '!pagination_type'
                      - '!transition'
                      - '!autoplay_time'
                      - '!show_details'

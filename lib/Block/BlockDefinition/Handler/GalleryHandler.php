@@ -21,11 +21,6 @@ final class GalleryHandler extends BlockDefinitionHandler
     /**
      * @var array
      */
-    private $paginationTypes = array();
-
-    /**
-     * @var array
-     */
     private $transitions = array();
 
     /**
@@ -36,20 +31,17 @@ final class GalleryHandler extends BlockDefinitionHandler
     /**
      * @param int $minAutoplayTime
      * @param int $maxAutoplayTime
-     * @param array $paginationTypes
      * @param array $transitions
      * @param array $aspectRatios
      */
     public function __construct(
         $minAutoplayTime,
         $maxAutoplayTime,
-        array $paginationTypes = array(),
         array $transitions = array(),
         array $aspectRatios = array()
     ) {
         $this->minAutoplayTime = $minAutoplayTime;
         $this->maxAutoplayTime = $maxAutoplayTime;
-        $this->paginationTypes = array_flip($paginationTypes);
         $this->transitions = array_flip($transitions);
         $this->aspectRatios = array_flip($aspectRatios);
     }
@@ -66,18 +58,9 @@ final class GalleryHandler extends BlockDefinitionHandler
 
         $builder->add(
             'show_pagination',
-            ParameterType\Compound\BooleanType::class,
+            ParameterType\BooleanType::class,
             array(
                 'groups' => array(self::GROUP_DESIGN),
-            )
-        );
-
-        $builder->get('show_pagination')->add(
-            'pagination_type',
-            ParameterType\ChoiceType::class,
-            array(
-                'required' => true,
-                'options' => $this->paginationTypes,
             )
         );
 

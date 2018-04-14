@@ -34,11 +34,6 @@ parameters:
         4: '4 columns'
         6: '6 columns'
 
-    netgen_block_manager.block.block_definition.handler.gallery.pagination_types:
-        horizontal: 'Horizontal'
-        vertical: 'Vertical'
-        fraction: 'Fraction'
-
     netgen_block_manager.block.block_definition.handler.gallery.min_autoplay_time: 1
     netgen_block_manager.block.block_definition.handler.gallery.max_autoplay_time: 12
 
@@ -147,7 +142,6 @@ services:
         arguments:
             - "%netgen_block_manager.block.block_definition.handler.gallery.min_autoplay_time%"
             - "%netgen_block_manager.block.block_definition.handler.gallery.max_autoplay_time%"
-            - "%netgen_block_manager.block.block_definition.handler.gallery.pagination_types%"
             - "%netgen_block_manager.block.block_definition.handler.gallery.transitions%"
             - "%netgen_block_manager.block.block_definition.handler.gallery.aspect_ratios%"
         tags:
