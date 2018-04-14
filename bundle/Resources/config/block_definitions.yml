@@ -106,13 +106,8 @@ block_definitions:
                 name: 'Thumb gallery'
                 valid_parameters:
                      - '!show_pagination'
-                     - '!infinite_loop'
-                     - '!transition'
-                     - '!autoplay'
-                     - '!autoplay_time'
-                     - '!number_of_thumbnails'
-                     - '!show_details_on_hover'
                      - '!enable_lightbox'
+                     - '!number_of_thumbnails'
             grid_gallery:
                 name: 'Grid gallery'
                 valid_parameters:
