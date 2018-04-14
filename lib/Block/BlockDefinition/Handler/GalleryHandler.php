@@ -24,26 +24,18 @@ final class GalleryHandler extends BlockDefinitionHandler
     private $transitions = array();
 
     /**
-     * @var array
-     */
-    private $aspectRatios = array();
-
-    /**
      * @param int $minAutoplayTime
      * @param int $maxAutoplayTime
      * @param array $transitions
-     * @param array $aspectRatios
      */
     public function __construct(
         $minAutoplayTime,
         $maxAutoplayTime,
-        array $transitions = array(),
-        array $aspectRatios = array()
+        array $transitions = array()
     ) {
         $this->minAutoplayTime = $minAutoplayTime;
         $this->maxAutoplayTime = $maxAutoplayTime;
         $this->transitions = array_flip($transitions);
-        $this->aspectRatios = array_flip($aspectRatios);
     }
 
     public function buildParameters(ParameterBuilderInterface $builder)
@@ -97,16 +89,6 @@ final class GalleryHandler extends BlockDefinitionHandler
                 'required' => true,
                 'min' => $this->minAutoplayTime,
                 'max' => $this->maxAutoplayTime,
-            )
-        );
-
-        $builder->add(
-            'aspect_ratio',
-            ParameterType\ChoiceType::class,
-            array(
-                'required' => true,
-                'options' => $this->aspectRatios,
-                'groups' => array(self::GROUP_DESIGN),
             )
         );
 

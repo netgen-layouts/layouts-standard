@@ -112,20 +112,6 @@ abstract class GalleryTest extends BlockTest
             array(
                 array(),
                 array(
-                    'aspect_ratio' => '16_9',
-                ),
-            ),
-            array(
-                array(
-                    'aspect_ratio' => '4_3',
-                ),
-                array(
-                    'aspect_ratio' => '4_3',
-                ),
-            ),
-            array(
-                array(),
-                array(
                     'number_of_thumbnails' => 1,
                 ),
             ),
@@ -225,16 +211,6 @@ abstract class GalleryTest extends BlockTest
                 array(
                     'autoplay' => true,
                     'autoplay_time' => '15',
-                ),
-            ),
-            array(
-                array(
-                    'aspect_ratio' => null,
-                ),
-            ),
-            array(
-                array(
-                    'aspect_ratio' => 'unknown',
                 ),
             ),
             array(
