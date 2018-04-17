@@ -20,28 +20,28 @@ abstract class RichTextTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(
+        return [
+            [
+                [],
+                [
                     'content' => 'Text',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => '<b>Text</b>',
-                ),
-                array(
+                ],
+                [
                     'content' => '<b>Text</b>',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -49,22 +49,22 @@ abstract class RichTextTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(
+        return [
+            [
+                [
                     'content' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => '',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => 42,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 }

@@ -8,6 +8,6 @@ final class TwoColumnsHandler extends ContainerDefinitionHandler
 {
     public function getPlaceholderIdentifiers()
     {
-        return array('left', 'right');
+        return ['left', 'right'];
     }
 }

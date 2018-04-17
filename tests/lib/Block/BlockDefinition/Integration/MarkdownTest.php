@@ -21,44 +21,44 @@ abstract class MarkdownTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(
+        return [
+            [
+                [],
+                [
                     'content' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => null,
-                ),
-                array(
+                ],
+                [
                     'content' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => '',
-                ),
-                array(
+                ],
+                [
                     'content' => '',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => '* Text',
-                ),
-                array(
+                ],
+                [
                     'content' => '* Text',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -66,12 +66,12 @@ abstract class MarkdownTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(
+        return [
+            [
+                [
                     'content' => 42,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 }

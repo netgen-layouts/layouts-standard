@@ -20,44 +20,44 @@ abstract class TwigBlockTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(
+        return [
+            [
+                [],
+                [
                     'block_name' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'block_name' => null,
-                ),
-                array(
+                ],
+                [
                     'block_name' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'block_name' => '',
-                ),
-                array(
+                ],
+                [
                     'block_name' => '',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'block_name' => 'block',
-                ),
-                array(
+                ],
+                [
                     'block_name' => 'block',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -65,12 +65,12 @@ abstract class TwigBlockTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(
+        return [
+            [
+                [
                     'block_name' => 42,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 }

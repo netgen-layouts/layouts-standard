@@ -12,9 +12,9 @@ final class ListHandler extends BlockDefinitionHandler implements PagedCollectio
     /**
      * @var array
      */
-    private $columns = array();
+    private $columns = [];
 
-    public function __construct(array $columns = array())
+    public function __construct(array $columns = [])
     {
         $this->columns = array_flip($columns);
     }
@@ -24,11 +24,11 @@ final class ListHandler extends BlockDefinitionHandler implements PagedCollectio
         $builder->add(
             'number_of_columns',
             ParameterType\ChoiceType::class,
-            array(
+            [
                 'required' => true,
                 'options' => $this->columns,
-                'groups' => array(self::GROUP_DESIGN),
-            )
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
     }
 }

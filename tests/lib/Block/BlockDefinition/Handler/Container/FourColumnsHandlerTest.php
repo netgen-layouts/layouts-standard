@@ -22,6 +22,6 @@ final class FourColumnsHandlerTest extends TestCase
      */
     public function testGetPlaceholderIdentifiers()
     {
-        $this->assertEquals(array('left', 'center_left', 'center_right', 'right'), $this->handler->getPlaceholderIdentifiers());
+        $this->assertEquals(['left', 'center_left', 'center_right', 'right'], $this->handler->getPlaceholderIdentifiers());
     }
 }

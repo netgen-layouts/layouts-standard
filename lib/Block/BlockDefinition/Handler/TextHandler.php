@@ -13,10 +13,10 @@ final class TextHandler extends BlockDefinitionHandler
         $builder->add(
             'content',
             ParameterType\TextType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 'Text',
-            )
+            ]
         );
     }
 }

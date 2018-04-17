@@ -41,17 +41,17 @@ final class MarkdownHandlerTest extends TestCase
             ->will($this->returnValue('<h1>Title</h1>'));
 
         $block = new Block(
-            array(
-                'availableLocales' => array('en'),
+            [
+                'availableLocales' => ['en'],
                 'locale' => 'en',
-                'parameters' => array(
+                'parameters' => [
                     'content' => new Parameter(
-                        array(
+                        [
                             'value' => '# Title',
-                        )
+                        ]
                     ),
-                ),
-            )
+                ],
+            ]
         );
 
         $dynamicParameters = new DynamicParameters();

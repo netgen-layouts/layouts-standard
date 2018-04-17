@@ -22,6 +22,6 @@ final class ColumnHandlerTest extends TestCase
      */
     public function testGetPlaceholderIdentifiers()
     {
-        $this->assertEquals(array('main'), $this->handler->getPlaceholderIdentifiers());
+        $this->assertEquals(['main'], $this->handler->getPlaceholderIdentifiers());
     }
 }

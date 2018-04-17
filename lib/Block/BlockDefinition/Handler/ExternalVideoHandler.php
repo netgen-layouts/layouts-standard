@@ -11,9 +11,9 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
     /**
      * @var array
      */
-    private $services = array();
+    private $services = [];
 
-    public function __construct(array $services = array())
+    public function __construct(array $services = [])
     {
         $this->services = array_flip($services);
     }
@@ -23,10 +23,10 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
         $builder->add(
             'service',
             ParameterType\ChoiceType::class,
-            array(
+            [
                 'required' => true,
                 'options' => $this->services,
-            )
+            ]
         );
 
         $builder->add(

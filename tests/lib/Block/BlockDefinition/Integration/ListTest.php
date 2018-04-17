@@ -13,10 +13,10 @@ abstract class ListTest extends BlockTest
     public function createBlockDefinitionHandler()
     {
         return new ListHandler(
-            array(
+            [
                 2 => '2 columns',
                 3 => '3 columns',
-            )
+            ]
         );
     }
 
@@ -33,28 +33,28 @@ abstract class ListTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(
+        return [
+            [
+                [],
+                [
                     'number_of_columns' => 2,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'number_of_columns' => 3,
-                ),
-                array(
+                ],
+                [
                     'number_of_columns' => 3,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -62,17 +62,17 @@ abstract class ListTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(
+        return [
+            [
+                [
                     'number_of_columns' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'number_of_columns' => '2',
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 }

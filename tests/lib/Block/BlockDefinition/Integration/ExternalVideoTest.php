@@ -12,7 +12,7 @@ abstract class ExternalVideoTest extends BlockTest
      */
     public function createBlockDefinitionHandler()
     {
-        return new ExternalVideoHandler(array('youtube' => 'YouTube', 'vimeo' => 'Vimeo'));
+        return new ExternalVideoHandler(['youtube' => 'YouTube', 'vimeo' => 'Vimeo']);
     }
 
     /**
@@ -20,90 +20,90 @@ abstract class ExternalVideoTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(
+        return [
+            [
+                [],
+                [
                     'service' => 'youtube',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'service' => 'vimeo',
-                ),
-                array(
+                ],
+                [
                     'service' => 'vimeo',
-                ),
-            ),
-            array(
-                array(
-                ),
-                array(
+                ],
+            ],
+            [
+                [
+                ],
+                [
                     'video_id' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'video_id' => null,
-                ),
-                array(
+                ],
+                [
                     'video_id' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'video_id' => '',
-                ),
-                array(
+                ],
+                [
                     'video_id' => '',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'video_id' => '12345',
-                ),
-                array(
+                ],
+                [
                     'video_id' => '12345',
-                ),
-            ),
-            array(
-                array(
-                ),
-                array(
+                ],
+            ],
+            [
+                [
+                ],
+                [
                     'caption' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'caption' => null,
-                ),
-                array(
+                ],
+                [
                     'caption' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'caption' => '',
-                ),
-                array(
+                ],
+                [
                     'caption' => '',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'caption' => 'A caption',
-                ),
-                array(
+                ],
+                [
                     'caption' => 'A caption',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -111,27 +111,27 @@ abstract class ExternalVideoTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(
+        return [
+            [
+                [
                     'service' => 42,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'service' => 'dailymotion',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'video_id' => 42,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'caption' => 42,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 }

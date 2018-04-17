@@ -24,14 +24,14 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
 
     public function prepend(ContainerBuilder $container)
     {
-        $prependConfigs = array(
+        $prependConfigs = [
             'block_definitions.yml' => 'netgen_block_manager',
             'block_type_groups.yml' => 'netgen_block_manager',
             'block_types.yml' => 'netgen_block_manager',
             'layout_types.yml' => 'netgen_block_manager',
             'view/layout_view.yml' => 'netgen_block_manager',
             'view/block_view.yml' => 'netgen_block_manager',
-        );
+        ];
 
         foreach ($prependConfigs as $configFile => $prependConfig) {
             $configFile = __DIR__ . '/../Resources/config/' . $configFile;
@@ -45,12 +45,12 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
         // separated from the core repo
         $container->prependExtensionConfig(
             'twig',
-            array(
-                'paths' => array(
+            [
+                'paths' => [
                     __DIR__ . '/../Resources/views/ngbm/themes/standard' => 'NetgenBlockManager',
                     __DIR__ . '/../Resources/views' => 'NetgenBlockManager',
-                ),
-            )
+                ],
+            ]
         );
     }
 }

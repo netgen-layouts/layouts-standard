@@ -8,6 +8,6 @@ final class FourColumnsHandler extends ContainerDefinitionHandler
 {
     public function getPlaceholderIdentifiers()
     {
-        return array('left', 'center_left', 'center_right', 'right');
+        return ['left', 'center_left', 'center_right', 'right'];
     }
 }

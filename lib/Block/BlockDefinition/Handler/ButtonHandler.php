@@ -11,14 +11,14 @@ final class ButtonHandler extends BlockDefinitionHandler
     /**
      * @var array
      */
-    private $styles = array();
+    private $styles = [];
 
     /**
      * @var array
      */
-    private $valueTypes = array();
+    private $valueTypes = [];
 
-    public function __construct(array $styles = array(), array $valueTypes = array())
+    public function __construct(array $styles = [], array $valueTypes = [])
     {
         $this->styles = array_flip($styles);
         $this->valueTypes = $valueTypes;
@@ -29,28 +29,28 @@ final class ButtonHandler extends BlockDefinitionHandler
         $builder->add(
             'text',
             ParameterType\TextLineType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 'Text',
-            )
+            ]
         );
 
         $builder->add(
             'style',
             ParameterType\ChoiceType::class,
-            array(
+            [
                 'required' => true,
                 'options' => $this->styles,
-            )
+            ]
         );
 
         $builder->add(
             'link',
             ParameterType\LinkType::class,
-            array(
+            [
                 'value_types' => $this->valueTypes,
                 'allow_invalid_internal' => true,
-            )
+            ]
         );
     }
 }

@@ -20,18 +20,18 @@ abstract class FullViewTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(),
-            ),
-            array(
-                array(
+        return [
+            [
+                [],
+                [],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -39,10 +39,10 @@ abstract class FullViewTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-            ),
-        );
+        return [
+            [
+                [],
+            ],
+        ];
     }
 }

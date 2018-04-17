@@ -33,17 +33,17 @@ final class TwigBlockHandlerTest extends TestCase
     public function testGetTwigBlockName()
     {
         $block = new Block(
-            array(
-                'availableLocales' => array('en'),
+            [
+                'availableLocales' => ['en'],
                 'locale' => 'en',
-                'parameters' => array(
+                'parameters' => [
                     'block_name' => new Parameter(
-                        array(
+                        [
                             'value' => 'twig_block',
-                        )
+                        ]
                     ),
-                ),
-            )
+                ],
+            ]
         );
 
         $this->assertEquals('twig_block', $this->handler->getTwigBlockName($block));

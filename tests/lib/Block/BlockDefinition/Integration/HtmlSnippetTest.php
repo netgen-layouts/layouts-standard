@@ -20,44 +20,44 @@ abstract class HtmlSnippetTest extends BlockTest
      */
     public function parametersDataProvider()
     {
-        return array(
-            array(
-                array(),
-                array(
+        return [
+            [
+                [],
+                [
                     'content' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => null,
-                ),
-                array(
+                ],
+                [
                     'content' => null,
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => '',
-                ),
-                array(
+                ],
+                [
                     'content' => '',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'content' => '<b>Text</b>',
-                ),
-                array(
+                ],
+                [
                     'content' => '<b>Text</b>',
-                ),
-            ),
-            array(
-                array(
+                ],
+            ],
+            [
+                [
                     'unknown' => 'unknown',
-                ),
-                array(),
-            ),
-        );
+                ],
+                [],
+            ],
+        ];
     }
 
     /**
@@ -65,12 +65,12 @@ abstract class HtmlSnippetTest extends BlockTest
      */
     public function invalidParametersDataProvider()
     {
-        return array(
-            array(
-                array(
+        return [
+            [
+                [
                     'content' => 42,
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
     }
 }

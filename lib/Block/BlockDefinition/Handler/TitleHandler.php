@@ -11,14 +11,14 @@ final class TitleHandler extends BlockDefinitionHandler
     /**
      * @var array
      */
-    private $tags = array();
+    private $tags = [];
 
     /**
      * @var array
      */
-    private $linkValueTypes = array();
+    private $linkValueTypes = [];
 
-    public function __construct(array $tags = array(), array $linkValueTypes = array())
+    public function __construct(array $tags = [], array $linkValueTypes = [])
     {
         $this->tags = array_flip($tags);
         $this->linkValueTypes = $linkValueTypes;
@@ -29,19 +29,19 @@ final class TitleHandler extends BlockDefinitionHandler
         $builder->add(
             'tag',
             ParameterType\ChoiceType::class,
-            array(
+            [
                 'required' => true,
                 'options' => $this->tags,
-            )
+            ]
         );
 
         $builder->add(
             'title',
             ParameterType\TextLineType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 'Title',
-            )
+            ]
         );
 
         $builder->add(
@@ -52,10 +52,10 @@ final class TitleHandler extends BlockDefinitionHandler
         $builder->get('use_link')->add(
             'link',
             ParameterType\LinkType::class,
-            array(
+            [
                 'value_types' => $this->linkValueTypes,
                 'allow_invalid_internal' => true,
-            )
+            ]
         );
     }
 }

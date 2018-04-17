@@ -8,6 +8,6 @@ final class ColumnHandler extends ContainerDefinitionHandler
 {
     public function getPlaceholderIdentifiers()
     {
-        return array('main');
+        return ['main'];
     }
 }

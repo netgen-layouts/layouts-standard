@@ -13,10 +13,10 @@ final class RichTextHandler extends BlockDefinitionHandler
         $builder->add(
             'content',
             ParameterType\HtmlType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 'Text',
-            )
+            ]
         );
     }
 }

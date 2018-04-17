@@ -21,7 +21,7 @@ final class GalleryHandler extends BlockDefinitionHandler
     /**
      * @var array
      */
-    private $transitions = array();
+    private $transitions = [];
 
     /**
      * @param int $minAutoplayTime
@@ -31,7 +31,7 @@ final class GalleryHandler extends BlockDefinitionHandler
     public function __construct(
         $minAutoplayTime,
         $maxAutoplayTime,
-        array $transitions = array()
+        array $transitions = []
     ) {
         $this->minAutoplayTime = $minAutoplayTime;
         $this->maxAutoplayTime = $maxAutoplayTime;
@@ -43,71 +43,71 @@ final class GalleryHandler extends BlockDefinitionHandler
         $builder->add(
             'next_and_previous',
             ParameterType\BooleanType::class,
-            array(
-                'groups' => array(self::GROUP_DESIGN),
-            )
+            [
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->add(
             'show_pagination',
             ParameterType\BooleanType::class,
-            array(
-                'groups' => array(self::GROUP_DESIGN),
-            )
+            [
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->add(
             'infinite_loop',
             ParameterType\BooleanType::class,
-            array(
-                'groups' => array(self::GROUP_DESIGN),
-            )
+            [
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->add(
             'transition',
             ParameterType\ChoiceType::class,
-            array(
+            [
                 'required' => true,
                 'options' => $this->transitions,
-                'groups' => array(self::GROUP_DESIGN),
-            )
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->add(
             'autoplay',
             ParameterType\Compound\BooleanType::class,
-            array(
-                'groups' => array(self::GROUP_DESIGN),
-            )
+            [
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->get('autoplay')->add(
             'autoplay_time',
             ParameterType\RangeType::class,
-            array(
+            [
                 'required' => true,
                 'min' => $this->minAutoplayTime,
                 'max' => $this->maxAutoplayTime,
-            )
+            ]
         );
 
         $builder->add(
             'number_of_thumbnails',
             ParameterType\IntegerType::class,
-            array(
+            [
                 'required' => true,
                 'min' => 1,
-                'groups' => array(self::GROUP_DESIGN),
-            )
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->add(
             'show_details',
             ParameterType\Compound\BooleanType::class,
-            array(
-                'groups' => array(self::GROUP_DESIGN),
-            )
+            [
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
 
         $builder->get('show_details')->add(
@@ -118,9 +118,9 @@ final class GalleryHandler extends BlockDefinitionHandler
         $builder->add(
             'enable_lightbox',
             ParameterType\BooleanType::class,
-            array(
-                'groups' => array(self::GROUP_DESIGN),
-            )
+            [
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
     }
 }

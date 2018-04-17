@@ -8,6 +8,6 @@ final class ThreeColumnsHandler extends ContainerDefinitionHandler
 {
     public function getPlaceholderIdentifiers()
     {
-        return array('left', 'center', 'right');
+        return ['left', 'center', 'right'];
     }
 }

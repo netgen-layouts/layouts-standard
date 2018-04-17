@@ -21,14 +21,14 @@ final class MapHandler extends BlockDefinitionHandler
     /**
      * @var array
      */
-    private $mapTypes = array();
+    private $mapTypes = [];
 
     /**
      * @param int $minZoom
      * @param int $maxZoom
      * @param array $mapTypes
      */
-    public function __construct($minZoom, $maxZoom, array $mapTypes = array())
+    public function __construct($minZoom, $maxZoom, array $mapTypes = [])
     {
         $this->minZoom = $minZoom;
         $this->maxZoom = $maxZoom;
@@ -40,58 +40,58 @@ final class MapHandler extends BlockDefinitionHandler
         $builder->add(
             'latitude',
             ParameterType\NumberType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 0,
-                'groups' => array(self::GROUP_CONTENT),
+                'groups' => [self::GROUP_CONTENT],
                 'min' => -90,
                 'max' => 90,
                 'scale' => 6,
-            )
+            ]
         );
 
         $builder->add(
             'longitude',
             ParameterType\NumberType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 0,
-                'groups' => array(self::GROUP_CONTENT),
+                'groups' => [self::GROUP_CONTENT],
                 'min' => -180,
                 'max' => 180,
                 'scale' => 6,
-            )
+            ]
         );
 
         $builder->add(
             'zoom',
             ParameterType\RangeType::class,
-            array(
+            [
                 'required' => true,
                 'default_value' => 5,
-                'groups' => array(self::GROUP_DESIGN),
+                'groups' => [self::GROUP_DESIGN],
                 'min' => $this->minZoom,
                 'max' => $this->maxZoom,
-            )
+            ]
         );
 
         $builder->add(
             'map_type',
             ParameterType\ChoiceType::class,
-            array(
+            [
                 'required' => true,
-                'groups' => array(self::GROUP_DESIGN),
+                'groups' => [self::GROUP_DESIGN],
                 'options' => $this->mapTypes,
-            )
+            ]
         );
 
         $builder->add(
             'show_marker',
             ParameterType\BooleanType::class,
-            array(
+            [
                 'default_value' => true,
-                'groups' => array(self::GROUP_DESIGN),
-            )
+                'groups' => [self::GROUP_DESIGN],
+            ]
         );
     }
 }
