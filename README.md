@@ -19,11 +19,11 @@ Add the following to the list of activated bundles just after
 `NetgenBlockManagerBundle`:
 
 ```php
-$bundles = array(
+$bundles = [
 ...
 
 new Netgen\Bundle\BlockManagerStandardBundle\NetgenBlockManagerStandardBundle(),
 
 ...
-);
+];
 ```
