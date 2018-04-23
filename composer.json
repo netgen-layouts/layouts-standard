@@ -1,6 +1,7 @@
 {
     "name": "netgen/block-manager-standard",
     "description": "Netgen Block Manager standard blocks & layouts",
+    "license": "proprietary",
     "authors": [
         {
             "name": "Netgen",
