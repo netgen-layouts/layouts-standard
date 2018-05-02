@@ -1,4 +1,5 @@
 block.notice.no_video: 'This block is not configured yet. Please set the video ID.'
+block.notice.no_link: 'This block is not configured yet. Please set the link.'
 block.notice.empty_twig_block: 'This block is not configured yet. Please define the Twig template block name which will be used to render the block.'
 block.notice.no_google_maps_api_key: 'API key for Google Maps is not configured. Set it in configuration and reload the app to display this block.'
 

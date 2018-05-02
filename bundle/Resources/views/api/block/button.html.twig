@@ -1,11 +1,19 @@
 {% extends '@NetgenBlockManager/api/block/block.html.twig' %}
 
+{% import '@NetgenBlockManager/api/parts/macros.html.twig' as macros %}
+
 {% trans_default_domain 'ngbm_app' %}
 
 {% block content %}
-    <p data-inline>
-        <span contenteditable="true" data-attr="text" data-hint="{{ 'block.placeholder.button'|trans }}" data-inline-child>
-            {{ block.parameter('text').value }}
-        </span>
-    </p>
+    {% if not block.parameter('link').empty %}
+        <p data-inline>
+            <span contenteditable="true" data-attr="text" data-hint="{{ 'block.placeholder.button'|trans }}" data-inline-child>
+                {{ block.parameter('text').value }}
+            </span>
+        </p>
+    {% else %}
+        <div class="attr-hide" data-attr="text">
+            {{ macros.notice('block.notice.no_link'|trans) }}
+        </div>
+    {% endif %}
 {% endblock %}
