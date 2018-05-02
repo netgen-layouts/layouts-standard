@@ -18,10 +18,6 @@ abstract class GalleryTest extends BlockTest
             [
                 'slide' => 'Slide',
                 'fade' => 'Fade',
-            ],
-            [
-                '16_9' => '16:9',
-                '4_3' => '4:3',
             ]
         );
     }
