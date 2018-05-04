@@ -1,6 +1,26 @@
+import 'magnific-popup';
 import Swiper from 'swiper';
 
 window.addEventListener('load', () => {
+  $(document).ready(() => {
+    $('.ngbm-as-flex').each(function () {
+      if (!$(this).find('> *').length) $(this).remove();
+    });
+
+    $('.bm-vt-grid_gallery .js-lightbox-enabled').each(function () {
+      $(this).magnificPopup({
+        delegate: '.js-mfp-item', // child items selector, by clicking on it popup will open
+        type: 'image',
+        zoom: {
+          enabled: true,
+        },
+        gallery: {
+          enabled: true,
+        },
+      });
+    });
+  });
+
   // Sushi swiper
   Array.from(document.getElementsByClassName('sushi-swiper')).forEach((swiper, i) => {
     const swiperId = `sushiSwiper-${i + 1}`;
