@@ -56,6 +56,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     '<%= config.dev_dir %>/js/app.js': ['<%= config.resources_dir %>/es6/app.js'],
+                    '<%= config.dev_dir %>/js/app-full.js': ['<%= config.resources_dir %>/es6/app-full.js'],
                 },
             },
         },
@@ -118,6 +119,7 @@ module.exports = function (grunt) {
             my_target: {
                 files: {
                     '<%= config.public_dir %>/js/app.js': ['<%= config.dev_dir %>/js/app.js'],
+                    '<%= config.public_dir %>/js/app-full.js': ['<%= config.dev_dir %>/js/app-full.js'],
                 },
             },
         },

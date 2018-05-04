@@ -1,6 +1,3 @@
-import 'magnific-popup';
-import Swiper from 'swiper';
-
 window.addEventListener('load', () => {
   $(document).ready(() => {
     $('.ngbm-as-flex').each(function () {
