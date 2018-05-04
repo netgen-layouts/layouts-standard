@@ -6,6 +6,7 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Config\Resource\FileResource;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Yaml\Yaml;
@@ -24,6 +25,13 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
 
     public function prepend(ContainerBuilder $container)
     {
+        $loader = new XmlFileLoader(
+            $container,
+            new FileLocator(__DIR__ . '/../Resources/config')
+        );
+
+        $loader->load('framework/assets.xml');
+
         $prependConfigs = [
             'block_definitions.yml' => 'netgen_block_manager',
             'block_type_groups.yml' => 'netgen_block_manager',
@@ -31,6 +39,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
             'layout_types.yml' => 'netgen_block_manager',
             'view/layout_view.yml' => 'netgen_block_manager',
             'view/block_view.yml' => 'netgen_block_manager',
+            'framework/assets.yml' => 'framework',
         ];
 
         foreach ($prependConfigs as $configFile => $prependConfig) {
