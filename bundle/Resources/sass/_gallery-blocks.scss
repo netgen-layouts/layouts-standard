@@ -1,3 +1,13 @@
+.swiper-container {
+    &.sushi-swiper {
+        visibility: hidden;
+        cursor: grab;
+        &.swiper-container-horizontal {
+            visibility: visible;
+        }
+    }
+}
+
 .thumb-swiper {
     position: relative;
     .gallery-thumbs {
