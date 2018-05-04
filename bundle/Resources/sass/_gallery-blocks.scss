@@ -1,0 +1,15 @@
+.thumb-swiper {
+    position: relative;
+    .gallery-thumbs {
+        padding: 10px 0;
+        clear: both;
+        .swiper-slide {
+            width: 25%;
+            float: left;
+            opacity: .4;
+        }
+        .swiper-slide-active {
+            opacity: 1;
+        }
+    }
+}
