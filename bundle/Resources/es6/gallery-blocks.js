@@ -16,10 +16,11 @@ window.addEventListener('load', () => {
         clickable: true,
       },
       loop: data.loop,
+      loopFillGroupWithBlank: true,
       effect: data.effect,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
-      slidesPerView: data.slidesPerView,
-      slidesPerGroup: data.slidesPerView,
+      slidesPerView: parseInt(data.slidesPerView, 10),
+      slidesPerGroup: parseInt(data.slidesPerView, 10),
       spaceBetween: 30,
       breakpoints: {
         991: {
@@ -60,6 +61,12 @@ window.addEventListener('load', () => {
       keyboard: {
         enabled: true,
       },
+      autoHeight: true,
+      on: {
+        lazyImageReady: function () {
+          this.updateAutoHeight();
+        },
+      },
     });
   });
 
@@ -84,8 +91,11 @@ window.addEventListener('load', () => {
         loadOnTransitionStart: true,
       },
       loopedSlides: data.loop ? data.length : null,
-      onLazyImageReady: (swp) => {
-        swp.updateAutoHeight();
+      autoHeight: true,
+      on: {
+        lazyImageReady: function () {
+          this.updateAutoHeight();
+        },
       },
     });
     const galleryThumbs = new Swiper(thumbs, {
