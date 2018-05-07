@@ -125,7 +125,6 @@ module.exports = function (grunt) {
         },
     });
 
-
     grunt.registerTask('serve', 'Start the server and preview your app', function () {
         grunt.task.run([
             'lockfile',
@@ -140,7 +139,7 @@ module.exports = function (grunt) {
         'serve',
     ]);
 
-    grunt.registerTask('build', 'Build production js', function () {
+    grunt.registerTask('build', 'Build production assets', function () {
         grunt.task.run([
             'browserify',
             'sass:dist',
