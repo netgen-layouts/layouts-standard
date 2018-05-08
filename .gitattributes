@@ -1,0 +1,5 @@
+**/css/style.css binary -merge
+**/css/style-full.css binary -merge
+**/css/*.css.map binary -merge
+**/js/app.js binary -merge
+**/js/app-full.js binary -merge
