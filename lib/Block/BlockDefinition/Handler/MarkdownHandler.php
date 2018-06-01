@@ -23,10 +23,7 @@ final class MarkdownHandler extends BlockDefinitionHandler
 
     public function buildParameters(ParameterBuilderInterface $builder)
     {
-        $builder->add(
-            'content',
-            ParameterType\TextType::class
-        );
+        $builder->add('content', ParameterType\TextType::class);
     }
 
     public function getDynamicParameters(DynamicParameters $params, Block $block)
