@@ -15,7 +15,7 @@ final class FullViewHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->handler = new FullViewHandler('content');
     }
@@ -23,7 +23,7 @@ final class FullViewHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::isContextual
      */
-    public function testIsContextual()
+    public function testIsContextual(): void
     {
         $this->assertTrue($this->handler->isContextual(new Block()));
     }
@@ -32,7 +32,7 @@ final class FullViewHandlerTest extends TestCase
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::__construct
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::getTwigBlockName
      */
-    public function testGetTwigBlockName()
+    public function testGetTwigBlockName(): void
     {
         $this->assertEquals('content', $this->handler->getTwigBlockName(new Block()));
     }

@@ -15,7 +15,7 @@ use Symfony\Component\Yaml\Yaml;
 
 final class NetgenBlockManagerStandardExtension extends Extension implements PrependExtensionInterface
 {
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new YamlFileLoader(
             $container,
@@ -25,7 +25,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
         $loader->load('services/block_definitions.yml');
     }
 
-    public function prepend(ContainerBuilder $container)
+    public function prepend(ContainerBuilder $container): void
     {
         $container->setParameter(
             'ngbm_standard.asset.version',

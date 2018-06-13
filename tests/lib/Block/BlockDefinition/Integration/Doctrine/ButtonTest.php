@@ -15,7 +15,7 @@ final class ButtonTest extends BaseButtonTest
 {
     use TestCaseTrait;
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->closeDatabase();
     }
@@ -23,7 +23,7 @@ final class ButtonTest extends BaseButtonTest
     /**
      * Prepares the persistence handler used in tests.
      */
-    public function preparePersistence()
+    public function preparePersistence(): void
     {
         $this->persistenceHandler = $this->createPersistenceHandler();
     }

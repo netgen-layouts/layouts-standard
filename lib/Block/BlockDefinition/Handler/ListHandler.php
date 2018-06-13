@@ -21,7 +21,7 @@ final class ListHandler extends BlockDefinitionHandler implements PagedCollectio
         $this->columns = array_flip($columns);
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'number_of_columns',

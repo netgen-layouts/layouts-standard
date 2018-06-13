@@ -25,19 +25,14 @@ final class MapHandler extends BlockDefinitionHandler
      */
     private $mapTypes = [];
 
-    /**
-     * @param int $minZoom
-     * @param int $maxZoom
-     * @param array $mapTypes
-     */
-    public function __construct($minZoom, $maxZoom, array $mapTypes = [])
+    public function __construct(int $minZoom, int $maxZoom, array $mapTypes = [])
     {
         $this->minZoom = $minZoom;
         $this->maxZoom = $maxZoom;
         $this->mapTypes = array_flip($mapTypes);
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'latitude',

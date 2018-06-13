@@ -15,7 +15,7 @@ final class TitleTest extends BaseTitleTest
 {
     use TestCaseTrait;
 
-    public function tearDown()
+    public function tearDown(): void
     {
         $this->closeDatabase();
     }
@@ -23,7 +23,7 @@ final class TitleTest extends BaseTitleTest
     /**
      * Prepares the persistence handler used in tests.
      */
-    public function preparePersistence()
+    public function preparePersistence(): void
     {
         $this->persistenceHandler = $this->createPersistenceHandler();
     }

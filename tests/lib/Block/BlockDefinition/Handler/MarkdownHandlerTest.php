@@ -23,7 +23,7 @@ final class MarkdownHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->markdownMock = $this->createMock(MarkdownInterface::class);
 
@@ -34,7 +34,7 @@ final class MarkdownHandlerTest extends TestCase
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::__construct
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::getDynamicParameters
      */
-    public function testGetDynamicParameters()
+    public function testGetDynamicParameters(): void
     {
         $this->markdownMock
             ->expects($this->once())

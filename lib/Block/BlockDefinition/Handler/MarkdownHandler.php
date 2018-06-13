@@ -23,12 +23,12 @@ final class MarkdownHandler extends BlockDefinitionHandler
         $this->markdownParser = $markdownParser;
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add('content', ParameterType\TextType::class);
     }
 
-    public function getDynamicParameters(DynamicParameters $params, Block $block)
+    public function getDynamicParameters(DynamicParameters $params, Block $block): void
     {
         $params['html'] = function () use ($block) {
             return $this->markdownParser->transform(

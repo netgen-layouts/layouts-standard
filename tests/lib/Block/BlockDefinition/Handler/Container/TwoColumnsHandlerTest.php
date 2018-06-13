@@ -14,7 +14,7 @@ final class TwoColumnsHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->handler = new TwoColumnsHandler();
     }
@@ -22,7 +22,7 @@ final class TwoColumnsHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler::getPlaceholderIdentifiers
      */
-    public function testGetPlaceholderIdentifiers()
+    public function testGetPlaceholderIdentifiers(): void
     {
         $this->assertEquals(['left', 'right'], $this->handler->getPlaceholderIdentifiers());
     }

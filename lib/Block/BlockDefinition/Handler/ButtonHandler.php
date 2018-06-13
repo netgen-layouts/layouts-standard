@@ -26,7 +26,7 @@ final class ButtonHandler extends BlockDefinitionHandler
         $this->valueTypes = $valueTypes;
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'text',

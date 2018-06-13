@@ -8,7 +8,7 @@ use Netgen\BlockManager\Block\BlockDefinition\ContainerDefinitionHandler;
 
 final class ThreeColumnsHandler extends ContainerDefinitionHandler
 {
-    public function getPlaceholderIdentifiers()
+    public function getPlaceholderIdentifiers(): array
     {
         return ['left', 'center', 'right'];
     }

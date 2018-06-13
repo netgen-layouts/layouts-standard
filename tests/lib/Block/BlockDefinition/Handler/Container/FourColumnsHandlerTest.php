@@ -14,7 +14,7 @@ final class FourColumnsHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->handler = new FourColumnsHandler();
     }
@@ -22,7 +22,7 @@ final class FourColumnsHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\FourColumnsHandler::getPlaceholderIdentifiers
      */
-    public function testGetPlaceholderIdentifiers()
+    public function testGetPlaceholderIdentifiers(): void
     {
         $this->assertEquals(['left', 'center_left', 'center_right', 'right'], $this->handler->getPlaceholderIdentifiers());
     }

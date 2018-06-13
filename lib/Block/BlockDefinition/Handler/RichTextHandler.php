@@ -10,7 +10,7 @@ use Netgen\BlockManager\Parameters\ParameterType;
 
 final class RichTextHandler extends BlockDefinitionHandler
 {
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'content',

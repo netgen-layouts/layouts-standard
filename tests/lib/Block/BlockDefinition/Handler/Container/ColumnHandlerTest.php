@@ -14,7 +14,7 @@ final class ColumnHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->handler = new ColumnHandler();
     }

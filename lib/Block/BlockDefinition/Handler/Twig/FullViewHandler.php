@@ -20,20 +20,17 @@ final class FullViewHandler extends BlockDefinitionHandler implements TwigBlockD
      */
     private $twigBlockName;
 
-    /**
-     * @param string $twigBlockName
-     */
-    public function __construct($twigBlockName)
+    public function __construct(string $twigBlockName)
     {
         $this->twigBlockName = $twigBlockName;
     }
 
-    public function isContextual(Block $block)
+    public function isContextual(Block $block): bool
     {
         return true;
     }
 
-    public function getTwigBlockName(Block $block)
+    public function getTwigBlockName(Block $block): string
     {
         return $this->twigBlockName;
     }

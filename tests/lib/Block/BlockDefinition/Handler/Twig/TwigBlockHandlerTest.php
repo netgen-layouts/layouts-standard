@@ -16,7 +16,7 @@ final class TwigBlockHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->handler = new TwigBlockHandler();
     }
@@ -24,7 +24,7 @@ final class TwigBlockHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::isContextual
      */
-    public function testIsContextual()
+    public function testIsContextual(): void
     {
         $this->assertTrue($this->handler->isContextual(new Block()));
     }
@@ -32,7 +32,7 @@ final class TwigBlockHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::getTwigBlockName
      */
-    public function testGetTwigBlockName()
+    public function testGetTwigBlockName(): void
     {
         $block = new Block(
             [

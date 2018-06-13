@@ -20,7 +20,7 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
         $this->services = array_flip($services);
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'service',

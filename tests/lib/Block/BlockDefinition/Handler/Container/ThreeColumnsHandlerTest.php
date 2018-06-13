@@ -14,7 +14,7 @@ final class ThreeColumnsHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->handler = new ThreeColumnsHandler();
     }
@@ -22,7 +22,7 @@ final class ThreeColumnsHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ThreeColumnsHandler::getPlaceholderIdentifiers
      */
-    public function testGetPlaceholderIdentifiers()
+    public function testGetPlaceholderIdentifiers(): void
     {
         $this->assertEquals(['left', 'center', 'right'], $this->handler->getPlaceholderIdentifiers());
     }

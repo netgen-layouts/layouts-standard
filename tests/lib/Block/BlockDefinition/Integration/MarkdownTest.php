@@ -5,23 +5,18 @@ declare(strict_types=1);
 namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Michelf\Markdown;
+use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class MarkdownTest extends BlockTest
 {
-    /**
-     * @return \Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandlerInterface
-     */
-    public function createBlockDefinitionHandler()
+    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
         return new MarkdownHandler(new Markdown());
     }
 
-    /**
-     * @return array
-     */
-    public function parametersDataProvider()
+    public function parametersDataProvider(): array
     {
         return [
             [
@@ -63,10 +58,7 @@ abstract class MarkdownTest extends BlockTest
         ];
     }
 
-    /**
-     * @return array
-     */
-    public function invalidParametersDataProvider()
+    public function invalidParametersDataProvider(): array
     {
         return [
             [

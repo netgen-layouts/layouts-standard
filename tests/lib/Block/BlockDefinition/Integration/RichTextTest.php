@@ -4,23 +4,18 @@ declare(strict_types=1);
 
 namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration;
 
+use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\RichTextHandler;
 use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class RichTextTest extends BlockTest
 {
-    /**
-     * @return \Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandlerInterface
-     */
-    public function createBlockDefinitionHandler()
+    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
         return new RichTextHandler();
     }
 
-    /**
-     * @return array
-     */
-    public function parametersDataProvider()
+    public function parametersDataProvider(): array
     {
         return [
             [
@@ -46,10 +41,7 @@ abstract class RichTextTest extends BlockTest
         ];
     }
 
-    /**
-     * @return array
-     */
-    public function invalidParametersDataProvider()
+    public function invalidParametersDataProvider(): array
     {
         return [
             [

@@ -16,7 +16,7 @@ use Netgen\BlockManager\Parameters\ParameterType;
  */
 final class TwigBlockHandler extends BlockDefinitionHandler implements TwigBlockDefinitionHandlerInterface
 {
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'block_name',
@@ -24,12 +24,12 @@ final class TwigBlockHandler extends BlockDefinitionHandler implements TwigBlock
         );
     }
 
-    public function isContextual(Block $block)
+    public function isContextual(Block $block): bool
     {
         return true;
     }
 
-    public function getTwigBlockName(Block $block)
+    public function getTwigBlockName(Block $block): string
     {
         return $block->getParameter('block_name')->getValue();
     }

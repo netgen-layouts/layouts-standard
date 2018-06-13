@@ -26,7 +26,7 @@ final class TitleHandler extends BlockDefinitionHandler
         $this->linkValueTypes = $linkValueTypes;
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'tag',

@@ -25,14 +25,9 @@ final class GalleryHandler extends BlockDefinitionHandler
      */
     private $transitions = [];
 
-    /**
-     * @param int $minAutoplayTime
-     * @param int $maxAutoplayTime
-     * @param array $transitions
-     */
     public function __construct(
-        $minAutoplayTime,
-        $maxAutoplayTime,
+        int $minAutoplayTime,
+        int $maxAutoplayTime,
         array $transitions = []
     ) {
         $this->minAutoplayTime = $minAutoplayTime;
@@ -40,7 +35,7 @@ final class GalleryHandler extends BlockDefinitionHandler
         $this->transitions = array_flip($transitions);
     }
 
-    public function buildParameters(ParameterBuilderInterface $builder)
+    public function buildParameters(ParameterBuilderInterface $builder): void
     {
         $builder->add(
             'next_and_previous',
