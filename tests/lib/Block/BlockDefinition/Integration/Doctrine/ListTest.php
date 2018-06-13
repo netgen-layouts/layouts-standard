@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
 use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\ListTest as BaseListTest;
