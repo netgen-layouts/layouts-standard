@@ -22,7 +22,7 @@ final class ColumnHandlerTest extends TestCase
     /**
      * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler::getPlaceholderIdentifiers
      */
-    public function testGetPlaceholderIdentifiers()
+    public function testGetPlaceholderIdentifiers(): void
     {
         $this->assertEquals(['main'], $this->handler->getPlaceholderIdentifiers());
     }
