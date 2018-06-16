@@ -3,35 +3,25 @@
 {% block layout %}
 <div class="zone-layout-layout2">
 
-    {% if ngbm.layout.zone('header') is not empty %}
-        <section class="zone zone-header">
-            {% ngbm_render_zone ngbm.layout.zone('header') %}
-        </section>
-    {% endif %}
+    <section class="zone zone-header">
+        {% ngbm_render_zone ngbm.layout.zone('header') %}
+    </section>
 
-    {% if ngbm.layout.zone('post_header') is not empty %}
-        <section class="zone zone-post_header">
-            {% ngbm_render_zone ngbm.layout.zone('post_header') %}
-        </section>
-    {% endif %}
+    <section class="zone zone-post_header">
+        {% ngbm_render_zone ngbm.layout.zone('post_header') %}
+    </section>
 
-    {% if ngbm.layout.zone('main') is not empty %}
-        <section class="zone zone-main">
-            {% ngbm_render_zone ngbm.layout.zone('main') %}
-        </section>
-    {% endif %}
+    <section class="zone zone-main">
+        {% ngbm_render_zone ngbm.layout.zone('main') %}
+    </section>
 
-    {% if ngbm.layout.zone('pre_footer') is not empty %}
-        <section class="zone zone-pre_footer">
-            {% ngbm_render_zone ngbm.layout.zone('pre_footer') %}
-        </section>
-    {% endif %}
+    <section class="zone zone-pre_footer">
+        {% ngbm_render_zone ngbm.layout.zone('pre_footer') %}
+    </section>
 
-    {% if ngbm.layout.zone('footer') is not empty %}
-        <section class="zone zone-footer">
-            {% ngbm_render_zone ngbm.layout.zone('footer') %}
-        </section>
-    {% endif %}
+    <section class="zone zone-footer">
+        {% ngbm_render_zone ngbm.layout.zone('footer') %}
+    </section>
 
 </div>
 {% endblock %}
