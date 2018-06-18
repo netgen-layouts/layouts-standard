@@ -24,6 +24,6 @@ final class TwoColumnsHandlerTest extends TestCase
      */
     public function testGetPlaceholderIdentifiers(): void
     {
-        $this->assertEquals(['left', 'right'], $this->handler->getPlaceholderIdentifiers());
+        $this->assertSame(['left', 'right'], $this->handler->getPlaceholderIdentifiers());
     }
 }

@@ -24,6 +24,6 @@ final class ThreeColumnsHandlerTest extends TestCase
      */
     public function testGetPlaceholderIdentifiers(): void
     {
-        $this->assertEquals(['left', 'center', 'right'], $this->handler->getPlaceholderIdentifiers());
+        $this->assertSame(['left', 'center', 'right'], $this->handler->getPlaceholderIdentifiers());
     }
 }

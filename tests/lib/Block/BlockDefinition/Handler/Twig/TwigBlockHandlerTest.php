@@ -48,6 +48,6 @@ final class TwigBlockHandlerTest extends TestCase
             ]
         );
 
-        $this->assertEquals('twig_block', $this->handler->getTwigBlockName($block));
+        $this->assertSame('twig_block', $this->handler->getTwigBlockName($block));
     }
 }

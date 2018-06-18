@@ -34,6 +34,6 @@ final class FullViewHandlerTest extends TestCase
      */
     public function testGetTwigBlockName(): void
     {
-        $this->assertEquals('content', $this->handler->getTwigBlockName(new Block()));
+        $this->assertSame('content', $this->handler->getTwigBlockName(new Block()));
     }
 }
