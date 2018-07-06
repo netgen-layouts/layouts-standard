@@ -39,7 +39,7 @@ final class MarkdownHandlerTest extends TestCase
         $this->markdownMock
             ->expects($this->once())
             ->method('transform')
-            ->with($this->equalTo('# Title'))
+            ->with($this->identicalTo('# Title'))
             ->will($this->returnValue('<h1>Title</h1>'));
 
         $block = new Block(
