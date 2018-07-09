@@ -22,7 +22,6 @@ block_definitions:
 
     markdown:
         name: 'Markdown'
-        enabled: false
         translatable: true
         view_types:
             markdown:
