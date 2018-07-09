@@ -12,9 +12,6 @@ final class HtmlSnippetHandler extends BlockDefinitionHandler
 {
     public function buildParameters(ParameterBuilderInterface $builder): void
     {
-        $builder->add(
-            'content',
-            ParameterType\TextType::class
-        );
+        $builder->add('content', ParameterType\TextType::class);
     }
 }

@@ -18,10 +18,7 @@ final class TwigBlockHandler extends BlockDefinitionHandler implements TwigBlock
 {
     public function buildParameters(ParameterBuilderInterface $builder): void
     {
-        $builder->add(
-            'block_name',
-            ParameterType\IdentifierType::class
-        );
+        $builder->add('block_name', ParameterType\IdentifierType::class);
     }
 
     public function isContextual(Block $block): bool

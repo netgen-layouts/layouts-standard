@@ -31,14 +31,7 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
             ]
         );
 
-        $builder->add(
-            'video_id',
-            ParameterType\TextLineType::class
-        );
-
-        $builder->add(
-            'caption',
-            ParameterType\TextLineType::class
-        );
+        $builder->add('video_id', ParameterType\TextLineType::class);
+        $builder->add('caption', ParameterType\TextLineType::class);
     }
 }
