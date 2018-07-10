@@ -11,13 +11,16 @@ use Netgen\BlockManager\Parameters\ParameterType;
 final class ExternalVideoHandler extends BlockDefinitionHandler
 {
     /**
+     * The list of video services available. Keys should be identifiers, while values
+     * should be human readable names of the services.
+     *
      * @var array
      */
     private $services = [];
 
-    public function __construct(array $services = [])
+    public function __construct(array $services)
     {
-        $this->services = array_flip($services);
+        $this->services = $services;
     }
 
     public function buildParameters(ParameterBuilderInterface $builder): void
@@ -27,7 +30,7 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
             ParameterType\ChoiceType::class,
             [
                 'required' => true,
-                'options' => $this->services,
+                'options' => array_flip($this->services),
             ]
         );
 

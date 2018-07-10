@@ -11,18 +11,23 @@ use Netgen\BlockManager\Parameters\ParameterType;
 final class ButtonHandler extends BlockDefinitionHandler
 {
     /**
+     * The list of styles for the button. Keys should be identifiers, while values
+     * should be human readable names of the styles.
+     *
      * @var array
      */
     private $styles = [];
 
     /**
+     * List of value types allowed to be used in the link parameter.
+     *
      * @var array
      */
     private $valueTypes = [];
 
-    public function __construct(array $styles = [], array $valueTypes = [])
+    public function __construct(array $styles, array $valueTypes = [])
     {
-        $this->styles = array_flip($styles);
+        $this->styles = $styles;
         $this->valueTypes = $valueTypes;
     }
 
@@ -42,7 +47,7 @@ final class ButtonHandler extends BlockDefinitionHandler
             ParameterType\ChoiceType::class,
             [
                 'required' => true,
-                'options' => $this->styles,
+                'options' => array_flip($this->styles),
             ]
         );
 

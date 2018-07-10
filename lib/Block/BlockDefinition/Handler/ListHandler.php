@@ -12,13 +12,16 @@ use Netgen\BlockManager\Parameters\ParameterType;
 final class ListHandler extends BlockDefinitionHandler implements PagedCollectionsBlockInterface
 {
     /**
+     * The list of columns available. Keys should be identifiers, while values
+     * should be human readable names of the columns.
+     *
      * @var array
      */
     private $columns = [];
 
-    public function __construct(array $columns = [])
+    public function __construct(array $columns)
     {
-        $this->columns = array_flip($columns);
+        $this->columns = $columns;
     }
 
     public function buildParameters(ParameterBuilderInterface $builder): void
@@ -28,7 +31,7 @@ final class ListHandler extends BlockDefinitionHandler implements PagedCollectio
             ParameterType\ChoiceType::class,
             [
                 'required' => true,
-                'options' => $this->columns,
+                'options' => array_flip($this->columns),
                 'groups' => [self::GROUP_DESIGN],
             ]
         );

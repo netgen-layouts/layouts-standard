@@ -21,6 +21,9 @@ final class GalleryHandler extends BlockDefinitionHandler
     private $maxAutoplayTime;
 
     /**
+     * The list of gallery transitions. Keys should be identifiers, while values
+     * should be human readable names of the transitions.
+     *
      * @var array
      */
     private $transitions = [];
@@ -28,11 +31,11 @@ final class GalleryHandler extends BlockDefinitionHandler
     public function __construct(
         int $minAutoplayTime,
         int $maxAutoplayTime,
-        array $transitions = []
+        array $transitions
     ) {
         $this->minAutoplayTime = $minAutoplayTime;
         $this->maxAutoplayTime = $maxAutoplayTime;
-        $this->transitions = array_flip($transitions);
+        $this->transitions = $transitions;
     }
 
     public function buildParameters(ParameterBuilderInterface $builder): void
@@ -66,7 +69,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\ChoiceType::class,
             [
                 'required' => true,
-                'options' => $this->transitions,
+                'options' => array_flip($this->transitions),
                 'groups' => [self::GROUP_DESIGN],
             ]
         );

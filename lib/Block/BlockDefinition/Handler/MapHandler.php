@@ -21,15 +21,18 @@ final class MapHandler extends BlockDefinitionHandler
     private $maxZoom;
 
     /**
+     * The list of map types available. Keys should be identifiers, while values
+     * should be human readable names of the map types.
+     *
      * @var array
      */
     private $mapTypes = [];
 
-    public function __construct(int $minZoom, int $maxZoom, array $mapTypes = [])
+    public function __construct(int $minZoom, int $maxZoom, array $mapTypes)
     {
         $this->minZoom = $minZoom;
         $this->maxZoom = $maxZoom;
-        $this->mapTypes = array_flip($mapTypes);
+        $this->mapTypes = $mapTypes;
     }
 
     public function buildParameters(ParameterBuilderInterface $builder): void
@@ -78,7 +81,7 @@ final class MapHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'groups' => [self::GROUP_DESIGN],
-                'options' => $this->mapTypes,
+                'options' => array_flip($this->mapTypes),
             ]
         );
 

@@ -11,18 +11,23 @@ use Netgen\BlockManager\Parameters\ParameterType;
 final class TitleHandler extends BlockDefinitionHandler
 {
     /**
+     * The list of HTML tags available for the link. Keys should be identifiers, while values
+     * should be human readable names of the HTML tags.
+     *
      * @var array
      */
     private $tags = [];
 
     /**
+     * List of value types allowed to be used in the link parameter.
+     *
      * @var array
      */
     private $linkValueTypes = [];
 
-    public function __construct(array $tags = [], array $linkValueTypes = [])
+    public function __construct(array $tags, array $linkValueTypes = [])
     {
-        $this->tags = array_flip($tags);
+        $this->tags = $tags;
         $this->linkValueTypes = $linkValueTypes;
     }
 
@@ -33,7 +38,7 @@ final class TitleHandler extends BlockDefinitionHandler
             ParameterType\ChoiceType::class,
             [
                 'required' => true,
-                'options' => $this->tags,
+                'options' => array_flip($this->tags),
             ]
         );
 
