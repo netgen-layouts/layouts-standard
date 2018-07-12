@@ -23,6 +23,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
         );
 
         $loader->load('services/block_definitions.yml');
+        $loader->load('services/utils.yml');
     }
 
     public function prepend(ContainerBuilder $container): void

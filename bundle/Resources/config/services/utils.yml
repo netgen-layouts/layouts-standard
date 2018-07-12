@@ -1,0 +1,6 @@
+services:
+    netgen_block_manager.standard.utils.markdown:
+        class: Netgen\BlockManager\Standard\Utils\Markdown
+        public: false
+        arguments:
+            - "@netgen_block_manager.utils.html_purifier"

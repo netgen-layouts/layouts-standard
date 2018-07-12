@@ -66,15 +66,11 @@ services:
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: button }
 
-    netgen_block_manager.block.block_definition.handler.markdown.parser:
-        class: Michelf\MarkdownExtra
-        public: false
-
     netgen_block_manager.block.block_definition.handler.markdown:
         class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler
         public: false
         arguments:
-            - "@netgen_block_manager.block.block_definition.handler.markdown.parser"
+            - "@netgen_block_manager.standard.utils.markdown"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: markdown }
 
