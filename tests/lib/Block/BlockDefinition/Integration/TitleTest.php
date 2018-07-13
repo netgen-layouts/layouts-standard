@@ -63,12 +63,10 @@ abstract class TitleTest extends BlockTest
             [
                 [
                     'use_link' => true,
-                    'link' => new LinkValue(
-                        [
-                            'linkType' => LinkValue::LINK_TYPE_URL,
-                            'link' => 'http://www.netgenlabs.com',
-                        ]
-                    ),
+                    'link' => [
+                        'link_type' => LinkValue::LINK_TYPE_URL,
+                        'link' => 'http://www.netgenlabs.com',
+                    ],
                 ],
                 [
                     'use_link' => true,
@@ -83,12 +81,10 @@ abstract class TitleTest extends BlockTest
             [
                 [
                     'use_link' => true,
-                    'link' => new LinkValue(
-                        [
-                            'linkType' => LinkValue::LINK_TYPE_INTERNAL,
-                            'link' => 'value://42',
-                        ]
-                    ),
+                    'link' => [
+                        'link_type' => LinkValue::LINK_TYPE_INTERNAL,
+                        'link' => 'value://42',
+                    ],
                 ],
                 [
                     'use_link' => true,
@@ -98,6 +94,16 @@ abstract class TitleTest extends BlockTest
                             'link' => 'value://42',
                         ]
                     ),
+                ],
+            ],
+            [
+                [
+                    'use_link' => true,
+                    'link' => 42,
+                ],
+                [
+                    'use_link' => true,
+                    'link' => new LinkValue(),
                 ],
             ],
             [
@@ -146,12 +152,6 @@ abstract class TitleTest extends BlockTest
                 [
                     'use_link' => 42,
                 ],
-            ],
-            [
-                [
-                    'link' => 42,
-                ],
-                ['use_link', 'link'],
             ],
         ];
     }

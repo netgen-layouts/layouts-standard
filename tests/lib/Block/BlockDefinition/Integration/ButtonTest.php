@@ -61,12 +61,10 @@ abstract class ButtonTest extends BlockTest
             ],
             [
                 [
-                    'link' => new LinkValue(
-                        [
-                            'linkType' => LinkValue::LINK_TYPE_URL,
-                            'link' => 'http://www.netgenlabs.com',
-                        ]
-                    ),
+                    'link' => [
+                        'link_type' => LinkValue::LINK_TYPE_URL,
+                        'link' => 'http://www.netgenlabs.com',
+                    ],
                 ],
                 [
                     'link' => new LinkValue(
@@ -79,12 +77,10 @@ abstract class ButtonTest extends BlockTest
             ],
             [
                 [
-                    'link' => new LinkValue(
-                        [
-                            'linkType' => LinkValue::LINK_TYPE_INTERNAL,
-                            'link' => 'value://42',
-                        ]
-                    ),
+                    'link' => [
+                        'link_type' => LinkValue::LINK_TYPE_INTERNAL,
+                        'link' => 'value://42',
+                    ],
                 ],
                 [
                     'link' => new LinkValue(
