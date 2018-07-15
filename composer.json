@@ -1,6 +1,6 @@
 {
     "name": "netgen/block-manager-standard",
-    "description": "Netgen Layouts standard blocks & layouts",
+    "description": "This package provides a set of most used blocks and layouts for Netgen Layouts for building rich content websites",
     "license": "proprietary",
     "authors": [
         {

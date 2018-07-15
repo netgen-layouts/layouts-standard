@@ -1,7 +1,8 @@
 Netgen Layouts standard blocks & layouts
 ========================================
 
-This bundle provides standard blocks and layouts used by Netgen to build websites.
+This package provides a set of most used blocks and layouts for Netgen Layouts
+for building rich content websites.
 
 ## Installation instructions
 
