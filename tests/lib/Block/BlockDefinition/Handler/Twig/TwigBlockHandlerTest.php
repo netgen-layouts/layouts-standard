@@ -34,12 +34,12 @@ final class TwigBlockHandlerTest extends TestCase
      */
     public function testGetTwigBlockName(): void
     {
-        $block = new Block(
+        $block = Block::fromArray(
             [
                 'availableLocales' => ['en'],
                 'locale' => 'en',
                 'parameters' => [
-                    'block_name' => new Parameter(
+                    'block_name' => Parameter::fromArray(
                         [
                             'value' => 'twig_block',
                         ]

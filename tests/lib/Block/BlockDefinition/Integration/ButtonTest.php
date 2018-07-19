@@ -67,7 +67,7 @@ abstract class ButtonTest extends BlockTest
                     ],
                 ],
                 [
-                    'link' => new LinkValue(
+                    'link' => LinkValue::fromArray(
                         [
                             'linkType' => LinkValue::LINK_TYPE_URL,
                             'link' => 'http://www.netgenlabs.com',
@@ -83,7 +83,7 @@ abstract class ButtonTest extends BlockTest
                     ],
                 ],
                 [
-                    'link' => new LinkValue(
+                    'link' => LinkValue::fromArray(
                         [
                             'linkType' => LinkValue::LINK_TYPE_INTERNAL,
                             'link' => 'value://42',

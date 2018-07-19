@@ -30,12 +30,12 @@ final class MarkdownHandlerTest extends TestCase
      */
     public function testGetDynamicParameters(): void
     {
-        $block = new Block(
+        $block = Block::fromArray(
             [
                 'availableLocales' => ['en'],
                 'locale' => 'en',
                 'parameters' => [
-                    'content' => new Parameter(
+                    'content' => Parameter::fromArray(
                         [
                             'value' => '# Title',
                         ]
