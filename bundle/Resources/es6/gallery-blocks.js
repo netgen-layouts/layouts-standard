@@ -38,16 +38,14 @@ window.addEventListener('load', () => {
       watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       slidesPerView: parseInt(data.slidesPerView, 10),
-      slidesPerGroup: parseInt(data.slidesPerView, 10),
+      slidesPerGroup: data.slidesPerGroup ? parseInt(data.slidesPerGroup, 10) : parseInt(data.slidesPerView, 10),
       spaceBetween: 30,
       breakpoints: {
         991: {
           slidesPerView: 2,
-          slidesPerGroup: 2,
         },
         480: {
           slidesPerView: 1,
-          slidesPerGroup: 1,
         },
       },
     });

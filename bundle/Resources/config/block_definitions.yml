@@ -98,6 +98,7 @@ block_definitions:
                 valid_parameters:
                     - '!autoplay_time'
                     - '!number_of_thumbnails'
+                    - '!thumbnails_to_move'
                     - '!show_details'
                     - '!show_details_on_hover'
                     - '!enable_lightbox'
@@ -107,6 +108,7 @@ block_definitions:
                      - '!show_pagination'
                      - '!enable_lightbox'
                      - '!number_of_thumbnails'
+                     - '!thumbnails_to_move'
             grid_gallery:
                 name: 'Grid gallery'
                 valid_parameters:
@@ -118,6 +120,7 @@ block_definitions:
                      - '!autoplay_time'
                      - '!show_details'
                      - '!show_details_on_hover'
+                     - '!thumbnails_to_move'
             sushi_bar:
                 name: 'Sushi bar'
                 valid_parameters:

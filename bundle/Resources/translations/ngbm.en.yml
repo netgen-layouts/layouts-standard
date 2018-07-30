@@ -35,6 +35,7 @@ block.gallery.autoplay_time: 'Time (in seconds)'
 block.gallery.show_details: 'Show title and description'
 block.gallery.show_details_on_hover: 'Show only on hover'
 block.gallery.number_of_thumbnails: 'Thumbnails per row/slide'
+block.gallery.thumbnails_to_move: 'Thumbnails to move'
 block.gallery.enable_lightbox: 'Enable lightbox'
 
 block.twig_block.block_name: 'Twig block name'
