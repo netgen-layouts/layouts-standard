@@ -70,6 +70,7 @@ window.addEventListener('load', () => {
       preloadImages: false,
       loop: data.loop,
       effect: data.effect,
+      watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       lazy: {
         loadPrevNext: true,
@@ -102,6 +103,7 @@ window.addEventListener('load', () => {
       preloadImages: false,
       loop: data.loop,
       effect: data.effect,
+      watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       lazy: {
         loadPrevNext: true,
