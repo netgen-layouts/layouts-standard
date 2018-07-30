@@ -35,6 +35,7 @@ window.addEventListener('load', () => {
       loop: data.loop,
       loopFillGroupWithBlank: true,
       effect: data.effect,
+      watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       slidesPerView: parseInt(data.slidesPerView, 10),
       slidesPerGroup: parseInt(data.slidesPerView, 10),
@@ -69,6 +70,7 @@ window.addEventListener('load', () => {
       preloadImages: false,
       loop: data.loop,
       effect: data.effect,
+      watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       lazy: {
         loadPrevNext: true,
@@ -101,6 +103,7 @@ window.addEventListener('load', () => {
       preloadImages: false,
       loop: data.loop,
       effect: data.effect,
+      watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       lazy: {
         loadPrevNext: true,
