@@ -103,6 +103,15 @@ final class GalleryHandler extends BlockDefinitionHandler
         );
 
         $builder->add(
+            'thumbnails_to_move',
+            ParameterType\IntegerType::class,
+            [
+                'min' => 1,
+                'groups' => [self::GROUP_DESIGN],
+            ]
+        );
+
+        $builder->add(
             'show_details',
             ParameterType\Compound\BooleanType::class,
             [
