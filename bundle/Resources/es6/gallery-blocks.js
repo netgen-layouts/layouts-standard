@@ -35,6 +35,7 @@ window.addEventListener('load', () => {
       loop: data.loop,
       loopFillGroupWithBlank: true,
       effect: data.effect,
+      watchSlidesVisibility: true,
       autoplay: data.autoplay ? { delay: data.autoplay * 1000 } : false,
       slidesPerView: parseInt(data.slidesPerView, 10),
       slidesPerGroup: parseInt(data.slidesPerView, 10),
