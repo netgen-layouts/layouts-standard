@@ -3,10 +3,18 @@ block.title.title: 'Title'
 block.title.use_link: 'Use link'
 block.title.link: 'Link'
 
+block.title.tag.h1: 'Heading 1'
+block.title.tag.h2: 'Heading 2'
+block.title.tag.h3: 'Heading 3'
+
 block.text.content: 'Content'
 
 block.button.text: 'Text'
 block.button.style: 'Style'
+
+block.button.style.default_button: 'Default button'
+block.button.style.highlighted_button: 'Highlighted button'
+block.button.style.link: 'Link'
 
 block.markdown.content: 'Content'
 
@@ -18,13 +26,27 @@ block.map.zoom: 'Zoom'
 block.map.map_type: 'Map type'
 block.map.show_marker: 'Show marker'
 
+block.map.map_type.roadmap: 'Roadmap'
+block.map.map_type.satellite: 'Satellite'
+block.map.map_type.hybrid: 'Hybrid'
+block.map.map_type.terrain: 'Terrain'
+
 block.external_video.service: 'Video service'
 block.external_video.video_id: 'Video ID'
 block.external_video.caption: 'Caption'
 
+block.external_video.service.youtube: 'YouTube'
+block.external_video.service.vimeo: 'Vimeo'
+block.external_video.service.dailymotion: 'Dailymotion'
+
 block.html_snippet.content: 'Content'
 
 block.list.number_of_columns: 'Number of columns'
+
+block.list.number_of_columns.2_columns: '2 columns'
+block.list.number_of_columns.3_columns: '3 columns'
+block.list.number_of_columns.4_columns: '4 columns'
+block.list.number_of_columns.6_columns: '6 columns'
 
 block.gallery.next_and_previous: 'Show next & previous controls'
 block.gallery.show_pagination: 'Show pagination'
@@ -37,5 +59,8 @@ block.gallery.show_details_on_hover: 'Show only on hover'
 block.gallery.number_of_thumbnails: 'Thumbnails per row/slide'
 block.gallery.thumbnails_to_move: 'Thumbnails to move'
 block.gallery.enable_lightbox: 'Enable lightbox'
+
+block.gallery.transition.slide: 'Slide'
+block.gallery.transition.fade: 'Fade'
 
 block.twig_block.block_name: 'Twig block name'

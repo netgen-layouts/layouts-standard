@@ -1,45 +1,45 @@
 parameters:
     netgen_block_manager.block.block_definition.handler.title.tags:
-        h1: 'Heading 1'
-        h2: 'Heading 2'
-        h3: 'Heading 3'
+        h1: block.title.tag.h1
+        h2: block.title.tag.h2
+        h3: block.title.tag.h3
 
     netgen_block_manager.block.block_definition.handler.title.value_types: []
 
     netgen_block_manager.block.block_definition.handler.button.styles:
-        'default_button': 'Default button'
-        'highlighted_button': 'Highlighted button'
-        'link': 'Link'
+        'default_button': block.button.style.default_button
+        'highlighted_button': block.button.style.highlighted_button
+        'link': block.button.style.link
 
     netgen_block_manager.block.block_definition.handler.button.value_types: []
 
     netgen_block_manager.block.block_definition.handler.external_video.services:
-        youtube: 'YouTube'
-        vimeo: 'Vimeo'
-        dailymotion: 'Dailymotion'
+        youtube: block.external_video.service.youtube
+        vimeo: block.external_video.service.vimeo
+        dailymotion: block.external_video.service.dailymotion
 
     netgen_block_manager.block.block_definition.handler.full_view.twig_block_name: content
 
     netgen_block_manager.block.block_definition.handler.map.min_zoom: 0
     netgen_block_manager.block.block_definition.handler.map.max_zoom: 20
     netgen_block_manager.block.block_definition.handler.map.map_types:
-        ROADMAP: 'Roadmap'
-        SATELLITE: 'Satellite'
-        HYBRID: 'Hybrid'
-        TERRAIN: 'Terrain'
+        ROADMAP: block.map.map_type.roadmap
+        SATELLITE: block.map.map_type.satellite
+        HYBRID: block.map.map_type.hybrid
+        TERRAIN: block.map.map_type.terrain
 
     netgen_block_manager.block.block_definition.handler.list.columns:
-        2: '2 columns'
-        3: '3 columns'
-        4: '4 columns'
-        6: '6 columns'
+        2: block.list.number_of_columns.2_columns
+        3: block.list.number_of_columns.3_columns
+        4: block.list.number_of_columns.4_columns
+        6: block.list.number_of_columns.6_columns
 
     netgen_block_manager.block.block_definition.handler.gallery.min_autoplay_time: 1
     netgen_block_manager.block.block_definition.handler.gallery.max_autoplay_time: 12
 
     netgen_block_manager.block.block_definition.handler.gallery.transitions:
-        slide: 'Slide'
-        fade: 'Fade'
+        slide: block.gallery.transition.slide
+        fade: block.gallery.transition.fade
 
 services:
     netgen_block_manager.block.block_definition.handler.title:
