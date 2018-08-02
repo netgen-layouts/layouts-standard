@@ -60,11 +60,6 @@ block_definitions:
 
     map:
         name: 'Map'
-        forms:
-            full:
-                enabled: false
-            content: ~
-            design: ~
         view_types:
             map:
                 name: 'Map'
