@@ -25,7 +25,7 @@ final class TitleHandler extends BlockDefinitionHandler
      */
     private $linkValueTypes = [];
 
-    public function __construct(array $tags, array $linkValueTypes = [])
+    public function __construct(array $tags, array $linkValueTypes)
     {
         $this->tags = $tags;
         $this->linkValueTypes = $linkValueTypes;

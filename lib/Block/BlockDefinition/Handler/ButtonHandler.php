@@ -25,7 +25,7 @@ final class ButtonHandler extends BlockDefinitionHandler
      */
     private $valueTypes = [];
 
-    public function __construct(array $styles, array $valueTypes = [])
+    public function __construct(array $styles, array $valueTypes)
     {
         $this->styles = $styles;
         $this->valueTypes = $valueTypes;
