@@ -49,18 +49,5 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
             $container->prependExtensionConfig($prependConfig, $config);
             $container->addResource(new FileResource($configFile));
         }
-
-        // Register templates from this bundle under @NetgenBlockManager namespace
-        // to keep external references to templates working after they were
-        // separated from the core repo
-        $container->prependExtensionConfig(
-            'twig',
-            [
-                'paths' => [
-                    __DIR__ . '/../Resources/views/ngbm/themes/standard' => 'NetgenBlockManager',
-                    __DIR__ . '/../Resources/views' => 'NetgenBlockManager',
-                ],
-            ]
-        );
     }
 }
