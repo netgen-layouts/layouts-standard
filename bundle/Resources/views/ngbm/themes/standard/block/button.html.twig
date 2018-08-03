@@ -1,5 +1,7 @@
 {% extends '@ngbm/block/block.html.twig' %}
 
+{% import '@NetgenBlockManager/parts/macros.html.twig' as macros %}
+
 {% set style = block.parameter('style').value %}
 {% set text = block.parameter('text') %}
 {% set link = block.parameter('link') %}
@@ -20,7 +22,7 @@
                 attr: {
                     class: class
                 },
-                content: text.value
+                content: macros.inline_template(text.value, _context)
             }
         ) }}
     {% endif %}
