@@ -16,14 +16,14 @@ final class ButtonHandler extends BlockDefinitionHandler
      *
      * @var array
      */
-    private $styles = [];
+    private $styles;
 
     /**
      * List of value types allowed to be used in the link parameter.
      *
      * @var array
      */
-    private $valueTypes = [];
+    private $valueTypes;
 
     public function __construct(array $styles, array $valueTypes)
     {

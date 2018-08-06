@@ -26,7 +26,7 @@ final class GalleryHandler extends BlockDefinitionHandler
      *
      * @var array
      */
-    private $transitions = [];
+    private $transitions;
 
     public function __construct(
         int $minAutoplayTime,

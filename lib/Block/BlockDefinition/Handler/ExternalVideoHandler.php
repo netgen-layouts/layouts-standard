@@ -16,7 +16,7 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
      *
      * @var array
      */
-    private $services = [];
+    private $services;
 
     public function __construct(array $services)
     {

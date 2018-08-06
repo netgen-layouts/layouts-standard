@@ -16,14 +16,14 @@ final class TitleHandler extends BlockDefinitionHandler
      *
      * @var array
      */
-    private $tags = [];
+    private $tags;
 
     /**
      * List of value types allowed to be used in the link parameter.
      *
      * @var array
      */
-    private $linkValueTypes = [];
+    private $linkValueTypes;
 
     public function __construct(array $tags, array $linkValueTypes)
     {
