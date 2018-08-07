@@ -26,7 +26,7 @@ final class TwigBlockHandlerTest extends TestCase
      */
     public function testIsContextual(): void
     {
-        $this->assertTrue($this->handler->isContextual(new Block()));
+        self::assertTrue($this->handler->isContextual(new Block()));
     }
 
     /**
@@ -48,6 +48,6 @@ final class TwigBlockHandlerTest extends TestCase
             ]
         );
 
-        $this->assertSame('twig_block', $this->handler->getTwigBlockName($block));
+        self::assertSame('twig_block', $this->handler->getTwigBlockName($block));
     }
 }

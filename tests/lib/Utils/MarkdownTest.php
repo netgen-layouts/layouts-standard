@@ -27,6 +27,6 @@ final class MarkdownTest extends TestCase
     public function testParse(): void
     {
         $html = $this->markdown->parse('# Title');
-        $this->assertSame('<h1>Title</h1>', $html);
+        self::assertSame('<h1>Title</h1>', $html);
     }
 }

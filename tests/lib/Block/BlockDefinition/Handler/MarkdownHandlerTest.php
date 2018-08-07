@@ -48,7 +48,7 @@ final class MarkdownHandlerTest extends TestCase
 
         $this->handler->getDynamicParameters($dynamicParameters, $block);
 
-        $this->assertArrayHasKey('html', $dynamicParameters);
-        $this->assertSame('<h1>Title</h1>', $dynamicParameters['html']);
+        self::assertArrayHasKey('html', $dynamicParameters);
+        self::assertSame('<h1>Title</h1>', $dynamicParameters['html']);
     }
 }

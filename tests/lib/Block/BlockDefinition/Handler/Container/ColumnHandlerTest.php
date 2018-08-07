@@ -24,6 +24,6 @@ final class ColumnHandlerTest extends TestCase
      */
     public function testGetPlaceholderIdentifiers(): void
     {
-        $this->assertSame(['main'], $this->handler->getPlaceholderIdentifiers());
+        self::assertSame(['main'], $this->handler->getPlaceholderIdentifiers());
     }
 }

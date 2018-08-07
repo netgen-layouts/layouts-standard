@@ -25,7 +25,7 @@ final class FullViewHandlerTest extends TestCase
      */
     public function testIsContextual(): void
     {
-        $this->assertTrue($this->handler->isContextual(new Block()));
+        self::assertTrue($this->handler->isContextual(new Block()));
     }
 
     /**
@@ -34,6 +34,6 @@ final class FullViewHandlerTest extends TestCase
      */
     public function testGetTwigBlockName(): void
     {
-        $this->assertSame('content', $this->handler->getTwigBlockName(new Block()));
+        self::assertSame('content', $this->handler->getTwigBlockName(new Block()));
     }
 }
