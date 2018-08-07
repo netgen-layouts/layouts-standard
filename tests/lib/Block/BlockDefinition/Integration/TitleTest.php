@@ -11,17 +11,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class TitleTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new TitleHandler(
-            [
-                'h1' => 'Heading 1',
-                'h2' => 'Heading 2',
-            ],
-            ['value']
-        );
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -154,5 +143,16 @@ abstract class TitleTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new TitleHandler(
+            [
+                'h1' => 'Heading 1',
+                'h2' => 'Heading 2',
+            ],
+            ['value']
+        );
     }
 }

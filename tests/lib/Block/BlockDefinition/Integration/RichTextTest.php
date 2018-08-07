@@ -10,11 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class RichTextTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new RichTextHandler();
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -60,5 +55,10 @@ abstract class RichTextTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new RichTextHandler();
     }
 }

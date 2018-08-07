@@ -10,11 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class FullViewTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new FullViewHandler('content');
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -38,5 +33,10 @@ abstract class FullViewTest extends BlockTest
                 [],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new FullViewHandler('content');
     }
 }

@@ -10,11 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class HtmlSnippetTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new HtmlSnippetHandler();
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -66,5 +61,10 @@ abstract class HtmlSnippetTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new HtmlSnippetHandler();
     }
 }

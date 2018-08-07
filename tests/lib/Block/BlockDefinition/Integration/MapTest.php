@@ -10,11 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class MapTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new MapHandler(3, 7, ['ROADMAP' => 'Roadmap', 'TERRAIN' => 'Terrain']);
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -174,5 +169,10 @@ abstract class MapTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new MapHandler(3, 7, ['ROADMAP' => 'Roadmap', 'TERRAIN' => 'Terrain']);
     }
 }

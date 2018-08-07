@@ -10,11 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class TwigBlockTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new TwigBlockHandler();
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -66,5 +61,10 @@ abstract class TwigBlockTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new TwigBlockHandler();
     }
 }

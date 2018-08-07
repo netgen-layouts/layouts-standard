@@ -10,11 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class ExternalVideoTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new ExternalVideoHandler(['youtube' => 'YouTube', 'vimeo' => 'Vimeo']);
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -127,5 +122,10 @@ abstract class ExternalVideoTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new ExternalVideoHandler(['youtube' => 'YouTube', 'vimeo' => 'Vimeo']);
     }
 }

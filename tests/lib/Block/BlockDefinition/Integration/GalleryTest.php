@@ -10,18 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class GalleryTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new GalleryHandler(
-            3,
-            7,
-            [
-                'slide' => 'Slide',
-                'fade' => 'Fade',
-            ]
-        );
-    }
-
     public function hasCollection(): bool
     {
         return true;
@@ -232,5 +220,17 @@ abstract class GalleryTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new GalleryHandler(
+            3,
+            7,
+            [
+                'slide' => 'Slide',
+                'fade' => 'Fade',
+            ]
+        );
     }
 }

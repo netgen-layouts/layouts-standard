@@ -10,16 +10,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class ListTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new ListHandler(
-            [
-                2 => '2 columns',
-                3 => '3 columns',
-            ]
-        );
-    }
-
     public function hasCollection(): bool
     {
         return true;
@@ -65,5 +55,15 @@ abstract class ListTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new ListHandler(
+            [
+                2 => '2 columns',
+                3 => '3 columns',
+            ]
+        );
     }
 }

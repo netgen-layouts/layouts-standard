@@ -11,17 +11,6 @@ use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class ButtonTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new ButtonHandler(
-            [
-                'default_button' => 'Default button',
-                'highlighted_button' => 'Highlighted button',
-            ],
-            ['value']
-        );
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -129,5 +118,16 @@ abstract class ButtonTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new ButtonHandler(
+            [
+                'default_button' => 'Default button',
+                'highlighted_button' => 'Highlighted button',
+            ],
+            ['value']
+        );
     }
 }

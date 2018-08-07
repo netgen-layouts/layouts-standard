@@ -12,11 +12,6 @@ use Netgen\BlockManager\Utils\HtmlPurifier;
 
 abstract class MarkdownTest extends BlockTest
 {
-    public function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
-    {
-        return new MarkdownHandler(new Markdown(new HtmlPurifier()));
-    }
-
     public function parametersDataProvider(): array
     {
         return [
@@ -68,5 +63,10 @@ abstract class MarkdownTest extends BlockTest
                 ],
             ],
         ];
+    }
+
+    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    {
+        return new MarkdownHandler(new Markdown(new HtmlPurifier()));
     }
 }
