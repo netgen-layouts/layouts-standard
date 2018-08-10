@@ -30,7 +30,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
     {
         $container->setParameter(
             'ngbm_standard.asset.version',
-            PrettyVersions::getVersion('netgen/block-manager-standard')->getShortCommitHash()
+            PrettyVersions::getVersion('netgen/layouts-standard')->getShortCommitHash()
         );
 
         $prependConfigs = [

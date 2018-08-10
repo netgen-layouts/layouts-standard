@@ -11,7 +11,7 @@ for building rich content websites.
 Run the following from your installation root to install the package:
 
 ```bash
-$ composer require netgen/block-manager-standard:^1.0
+$ composer require netgen/layouts-standard
 ```
 
 ### Activate the bundle in your app kernel
