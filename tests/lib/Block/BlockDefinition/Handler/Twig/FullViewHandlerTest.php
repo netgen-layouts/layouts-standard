@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Twig;
 
-use Netgen\BlockManager\Core\Values\Block\Block;
+use Netgen\BlockManager\API\Values\Block\Block;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler;
 use PHPUnit\Framework\TestCase;
 

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler;
 
+use Netgen\BlockManager\API\Values\Block\Block;
 use Netgen\BlockManager\Block\DynamicParameters;
-use Netgen\BlockManager\Core\Values\Block\Block;
 use Netgen\BlockManager\Parameters\Parameter;
 use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use Netgen\BlockManager\Standard\Utils\Markdown;
