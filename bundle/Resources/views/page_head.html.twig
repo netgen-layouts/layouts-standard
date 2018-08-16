@@ -1,8 +1,4 @@
 {% set full = full ?? false %}
 
-{% if full %}
-    {% include '@NetgenBlockManager/google_maps.html.twig' %}
-{% endif %}
-
-<script type="text/javascript" src="{{ asset('app' ~ (full ? '-full' : '') ~ '.js', 'ngbm_standard_js') }}"></script>
-<link rel="stylesheet" type="text/css" href="{{ asset('style' ~ (full ? '-full' : '') ~ '.css', 'ngbm_standard_css') }}"/>
+{% include '@NetgenBlockManagerStandard/stylesheets.html.twig' with {full: full} %}
+{% include '@NetgenBlockManagerStandard/javascripts.html.twig' with {full: full} %}
