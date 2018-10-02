@@ -37,7 +37,7 @@
             "Netgen\\BlockManager\\Tests\\": "vendor/netgen/layouts-core/tests/lib/"
         },
         "files": [
-            "vendor/symfony/symfony/src/Symfony/Component/VarDumper/Resources/functions/dump.php"
+            "vendor/symfony/var-dumper/Resources/functions/dump.php"
         ]
     },
     "minimum-stability": "dev",
