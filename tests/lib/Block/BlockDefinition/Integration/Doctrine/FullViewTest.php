@@ -18,12 +18,4 @@ final class FullViewTest extends BaseFullViewTest
     {
         $this->closeDatabase();
     }
-
-    /**
-     * Prepares the persistence handler used in tests.
-     */
-    public function preparePersistence(): void
-    {
-        $this->persistenceHandler = $this->createPersistenceHandler();
-    }
 }

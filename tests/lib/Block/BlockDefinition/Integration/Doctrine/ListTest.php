@@ -19,12 +19,4 @@ final class ListTest extends BaseListTest
     {
         $this->closeDatabase();
     }
-
-    /**
-     * Prepares the persistence handler used in tests.
-     */
-    public function preparePersistence(): void
-    {
-        $this->persistenceHandler = $this->createPersistenceHandler();
-    }
 }
