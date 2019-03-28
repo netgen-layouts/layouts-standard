@@ -18,13 +18,14 @@
         "symfony/phpunit-bridge": "^4.2",
         "symfony/var-dumper": "^2.8 || ^3.4 || ^4.2",
         "phpstan/phpstan": "^0.11",
+        "phpstan/phpstan-strict-rules": "^0.11",
         "phpstan/phpstan-phpunit": "^0.11",
         "franzl/studio": "*"
     },
     "scripts": {
         "test": "@php vendor/bin/phpunit --colors=always",
         "coverage": "@php -dzend_extension=xdebug.so vendor/bin/phpunit --coverage-html=coverage --colors=always",
-        "phpstan": "@php vendor/bin/phpstan analyse --level=7 --ansi lib bundle",
+        "phpstan": "@php vendor/bin/phpstan analyse -c phpstan.neon --level=7 --ansi lib bundle",
         "phpstan-tests": "@php vendor/bin/phpstan analyse -c phpstan.tests.neon --level=7 --ansi tests"
     },
     "autoload": {
