@@ -52,7 +52,7 @@ before_script:
   - if [ "$SYMFONY_VERSION" != "" ] ; then composer config extra.symfony.require $SYMFONY_VERSION ; fi
 
   # PHPStan cannot be installed on Symfony 2.8
-  - if [ "$SYMFONY_VERSION" = "~2.8.0" ] ; then composer remove --dev --no-update phpstan/phpstan phpstan/phpstan-phpunit ; fi
+  - if [ "$SYMFONY_VERSION" = "~2.8.0" ] ; then composer remove --dev --no-update phpstan/phpstan phpstan/phpstan-strict-rules phpstan/phpstan-phpunit ; fi
 
   - composer update --no-suggest --prefer-dist
 
