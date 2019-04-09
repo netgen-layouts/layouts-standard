@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Container;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler\Container;
 
-use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler;
 use PHPUnit\Framework\TestCase;
 
 final class TwoColumnsHandlerTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
+     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
      */
     private $handler;
 
@@ -20,7 +20,7 @@ final class TwoColumnsHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler::getPlaceholderIdentifiers
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler::getPlaceholderIdentifiers
      */
     public function testGetPlaceholderIdentifiers(): void
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig;
+namespace Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig;
 
 use Netgen\BlockManager\API\Values\Block\Block;
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;

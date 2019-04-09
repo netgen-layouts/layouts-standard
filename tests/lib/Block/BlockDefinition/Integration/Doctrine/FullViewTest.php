@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\FullViewTest as BaseFullViewTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
+use Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\FullViewTest as BaseFullViewTest;
 
 /**
- * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::buildParameters
+ * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::buildParameters
  */
 final class FullViewTest extends BaseFullViewTest
 {

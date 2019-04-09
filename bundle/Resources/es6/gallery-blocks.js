@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
   $(document).ready(() => {
-    $('.ngbm-as-flex').each(function () {
+    $('.nglayouts-as-flex').each(function () {
       if (!$(this).find('> *').length) $(this).remove();
     });
 

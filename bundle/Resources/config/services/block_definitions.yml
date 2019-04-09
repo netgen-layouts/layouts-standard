@@ -1,145 +1,145 @@
 parameters:
-    netgen_block_manager.block.block_definition.handler.title.tags:
+    netgen_layouts.standard.block.block_definition_handler.title.tags:
         h1: block.title.tag.h1
         h2: block.title.tag.h2
         h3: block.title.tag.h3
 
-    netgen_block_manager.block.block_definition.handler.title.value_types: []
+    netgen_layouts.standard.block.block_definition_handler.title.value_types: []
 
-    netgen_block_manager.block.block_definition.handler.button.styles:
+    netgen_layouts.standard.block.block_definition_handler.button.styles:
         'default_button': block.button.style.default_button
         'highlighted_button': block.button.style.highlighted_button
         'link': block.button.style.link
 
-    netgen_block_manager.block.block_definition.handler.button.value_types: []
+    netgen_layouts.standard.block.block_definition_handler.button.value_types: []
 
-    netgen_block_manager.block.block_definition.handler.external_video.services:
+    netgen_layouts.standard.block.block_definition_handler.external_video.services:
         youtube: block.external_video.service.youtube
         vimeo: block.external_video.service.vimeo
         dailymotion: block.external_video.service.dailymotion
 
-    netgen_block_manager.block.block_definition.handler.full_view.twig_block_name: content
+    netgen_layouts.standard.block.block_definition_handler.full_view.twig_block_name: content
 
-    netgen_block_manager.block.block_definition.handler.map.min_zoom: 0
-    netgen_block_manager.block.block_definition.handler.map.max_zoom: 20
-    netgen_block_manager.block.block_definition.handler.map.map_types:
+    netgen_layouts.standard.block.block_definition_handler.map.min_zoom: 0
+    netgen_layouts.standard.block.block_definition_handler.map.max_zoom: 20
+    netgen_layouts.standard.block.block_definition_handler.map.map_types:
         ROADMAP: block.map.map_type.roadmap
         SATELLITE: block.map.map_type.satellite
         HYBRID: block.map.map_type.hybrid
         TERRAIN: block.map.map_type.terrain
 
-    netgen_block_manager.block.block_definition.handler.list.columns:
+    netgen_layouts.standard.block.block_definition_handler.list.columns:
         2: block.list.number_of_columns.2_columns
         3: block.list.number_of_columns.3_columns
         4: block.list.number_of_columns.4_columns
         6: block.list.number_of_columns.6_columns
 
-    netgen_block_manager.block.block_definition.handler.gallery.min_autoplay_time: 1
-    netgen_block_manager.block.block_definition.handler.gallery.max_autoplay_time: 12
+    netgen_layouts.standard.block.block_definition_handler.gallery.min_autoplay_time: 1
+    netgen_layouts.standard.block.block_definition_handler.gallery.max_autoplay_time: 12
 
-    netgen_block_manager.block.block_definition.handler.gallery.transitions:
+    netgen_layouts.standard.block.block_definition_handler.gallery.transitions:
         slide: block.gallery.transition.slide
         fade: block.gallery.transition.fade
 
 services:
-    netgen_block_manager.block.block_definition.handler.title:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TitleHandler
+    netgen_layouts.standard.block.block_definition_handler.title:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\TitleHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.title.tags%"
-            - "%netgen_block_manager.block.block_definition.handler.title.value_types%"
+            - "%netgen_layouts.standard.block.block_definition_handler.title.tags%"
+            - "%netgen_layouts.standard.block.block_definition_handler.title.value_types%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: title }
 
-    netgen_block_manager.block.block_definition.handler.text:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\TextHandler
+    netgen_layouts.standard.block.block_definition_handler.text:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\TextHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: text }
 
-    netgen_block_manager.block.block_definition.handler.button:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ButtonHandler
+    netgen_layouts.standard.block.block_definition_handler.button:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ButtonHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.button.styles%"
-            - "%netgen_block_manager.block.block_definition.handler.button.value_types%"
+            - "%netgen_layouts.standard.block.block_definition_handler.button.styles%"
+            - "%netgen_layouts.standard.block.block_definition_handler.button.value_types%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: button }
 
-    netgen_block_manager.block.block_definition.handler.markdown:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler
+    netgen_layouts.standard.block.block_definition_handler.markdown:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler
         arguments:
-            - "@netgen_block_manager.standard.utils.markdown"
+            - "@netgen_layouts.standard.utils.markdown"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: markdown }
 
-    netgen_block_manager.block.block_definition.handler.rich_text:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\RichTextHandler
+    netgen_layouts.standard.block.block_definition_handler.rich_text:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\RichTextHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: rich_text }
 
-    netgen_block_manager.block.block_definition.handler.external_video:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler
+    netgen_layouts.standard.block.block_definition_handler.external_video:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.external_video.services%"
+            - "%netgen_layouts.standard.block.block_definition_handler.external_video.services%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: external_video }
 
-    netgen_block_manager.block.block_definition.handler.html_snippet:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\HtmlSnippetHandler
+    netgen_layouts.standard.block.block_definition_handler.html_snippet:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\HtmlSnippetHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: html_snippet }
 
-    netgen_block_manager.block.block_definition.handler.full_view:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
+    netgen_layouts.standard.block.block_definition_handler.full_view:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.full_view.twig_block_name%"
+            - "%netgen_layouts.standard.block.block_definition_handler.full_view.twig_block_name%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: full_view }
 
-    netgen_block_manager.block.block_definition.handler.twig_block:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
+    netgen_layouts.standard.block.block_definition_handler.twig_block:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: twig_block }
 
-    netgen_block_manager.block.block_definition.handler.map:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MapHandler
+    netgen_layouts.standard.block.block_definition_handler.map:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MapHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.map.min_zoom%"
-            - "%netgen_block_manager.block.block_definition.handler.map.max_zoom%"
-            - "%netgen_block_manager.block.block_definition.handler.map.map_types%"
+            - "%netgen_layouts.standard.block.block_definition_handler.map.min_zoom%"
+            - "%netgen_layouts.standard.block.block_definition_handler.map.max_zoom%"
+            - "%netgen_layouts.standard.block.block_definition_handler.map.map_types%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: map }
 
-    netgen_block_manager.block.block_definition.handler.list:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ListHandler
+    netgen_layouts.standard.block.block_definition_handler.list:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ListHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.list.columns%"
+            - "%netgen_layouts.standard.block.block_definition_handler.list.columns%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: list }
 
-    netgen_block_manager.block.block_definition.handler.gallery:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\GalleryHandler
+    netgen_layouts.standard.block.block_definition_handler.gallery:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\GalleryHandler
         arguments:
-            - "%netgen_block_manager.block.block_definition.handler.gallery.min_autoplay_time%"
-            - "%netgen_block_manager.block.block_definition.handler.gallery.max_autoplay_time%"
-            - "%netgen_block_manager.block.block_definition.handler.gallery.transitions%"
+            - "%netgen_layouts.standard.block.block_definition_handler.gallery.min_autoplay_time%"
+            - "%netgen_layouts.standard.block.block_definition_handler.gallery.max_autoplay_time%"
+            - "%netgen_layouts.standard.block.block_definition_handler.gallery.transitions%"
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: gallery }
 
-    netgen_block_manager.block.block_definition.handler.column:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler
+    netgen_layouts.standard.block.block_definition_handler.column:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: column }
 
-    netgen_block_manager.block.block_definition.handler.two_columns:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
+    netgen_layouts.standard.block.block_definition_handler.two_columns:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\TwoColumnsHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: two_columns }
 
-    netgen_block_manager.block.block_definition.handler.three_columns:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ThreeColumnsHandler
+    netgen_layouts.standard.block.block_definition_handler.three_columns:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ThreeColumnsHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: three_columns }
 
-    netgen_block_manager.block.block_definition.handler.four_columns:
-        class: Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\FourColumnsHandler
+    netgen_layouts.standard.block.block_definition_handler.four_columns:
+        class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\FourColumnsHandler
         tags:
             - { name: netgen_block_manager.block.block_definition_handler, identifier: four_columns }

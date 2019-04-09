@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\ButtonTest as BaseButtonTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
+use Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\ButtonTest as BaseButtonTest;
 
 /**
- * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ButtonHandler::__construct
- * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ButtonHandler::buildParameters
+ * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ButtonHandler::__construct
+ * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ButtonHandler::buildParameters
  */
 final class ButtonTest extends BaseButtonTest
 {

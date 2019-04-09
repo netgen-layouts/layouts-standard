@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Container;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler\Container;
 
-use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler;
 use PHPUnit\Framework\TestCase;
 
 final class ColumnHandlerTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler
+     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler
      */
     private $handler;
 
@@ -20,7 +20,7 @@ final class ColumnHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler::getPlaceholderIdentifiers
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler::getPlaceholderIdentifiers
      */
     public function testGetPlaceholderIdentifiers(): void
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Utils;
+namespace Netgen\Layouts\Standard\Utils;
 
 use Netgen\BlockManager\Utils\HtmlPurifier;
 use Parsedown;

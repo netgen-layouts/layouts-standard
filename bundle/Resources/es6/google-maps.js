@@ -33,7 +33,7 @@ window.addEventListener('load', function() {
         return;
     }
 
-    const googleMaps = document.getElementsByClassName('ngbm-map-embed');
+    const googleMaps = document.getElementsByClassName('nglayouts-map-embed');
     [].forEach.call(googleMaps, (el) => {
         const googleMap = new GoogleMap(el);
     });

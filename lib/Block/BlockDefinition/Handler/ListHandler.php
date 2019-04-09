@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler;
+namespace Netgen\Layouts\Standard\Block\BlockDefinition\Handler;
 
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Block\BlockDefinition\Handler\PagedCollectionsBlockInterface;

@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler\Twig;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler\Twig;
 
 use Netgen\BlockManager\API\Values\Block\Block;
-use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler;
 use PHPUnit\Framework\TestCase;
 
 final class FullViewHandlerTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
+     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
      */
     private $handler;
 
@@ -21,7 +21,7 @@ final class FullViewHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::isContextual
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::isContextual
      */
     public function testIsContextual(): void
     {
@@ -29,8 +29,8 @@ final class FullViewHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::__construct
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::getTwigBlockName
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::__construct
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::getTwigBlockName
      */
     public function testGetTwigBlockName(): void
     {

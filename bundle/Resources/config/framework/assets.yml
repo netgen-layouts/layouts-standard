@@ -1,22 +1,22 @@
 assets:
     packages:
-        ngbm_standard_css:
-            base_path: '/bundles/netgenblockmanagerstandard/css'
-            version: '%ngbm_standard.asset.version%'
+        nglayouts_standard_css:
+            base_path: '/bundles/netgenlayoutsstandard/css'
+            version: '%nglayouts_standard.asset.version%'
             version_format: '%%s?%%s'
-        ngbm_standard_js:
-            base_path: '/bundles/netgenblockmanagerstandard/js'
-            version: '%ngbm_standard.asset.version%'
+        nglayouts_standard_js:
+            base_path: '/bundles/netgenlayoutsstandard/js'
+            version: '%nglayouts_standard.asset.version%'
             version_format: '%%s?%%s'
-        ngbm_standard_dev_css:
-            base_path: '/bundles/netgenblockmanagerstandard/dev/css'
-            version: '%ngbm_standard.asset.version%'
+        nglayouts_standard_dev_css:
+            base_path: '/bundles/netgenlayoutsstandard/dev/css'
+            version: '%nglayouts_standard.asset.version%'
             version_format: '%%s?%%s'
-        ngbm_standard_dev_js:
-            base_path: '/bundles/netgenblockmanagerstandard/dev/js'
-            version: '%ngbm_standard.asset.version%'
+        nglayouts_standard_dev_js:
+            base_path: '/bundles/netgenlayoutsstandard/dev/js'
+            version: '%nglayouts_standard.asset.version%'
             version_format: '%%s?%%s'
-        ngbm_standard:
-            base_path: '/bundles/netgenblockmanagerstandard'
-            version: '%ngbm_standard.asset.version%'
+        nglayouts_standard:
+            base_path: '/bundles/netgenlayoutsstandard'
+            version: '%nglayouts_standard.asset.version%'
             version_format: '%%s?%%s'

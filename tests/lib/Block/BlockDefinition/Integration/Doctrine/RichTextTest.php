@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\RichTextTest as BaseRichTextTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
+use Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\RichTextTest as BaseRichTextTest;
 
 /**
- * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\RichTextHandler::buildParameters
+ * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\RichTextHandler::buildParameters
  */
 final class RichTextTest extends BaseRichTextTest
 {

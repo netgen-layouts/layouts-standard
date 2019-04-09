@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler;
+namespace Netgen\Layouts\Standard\Block\BlockDefinition\Handler;
 
 use Netgen\BlockManager\API\Values\Block\Block;
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Block\DynamicParameters;
 use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
 use Netgen\BlockManager\Parameters\ParameterType;
-use Netgen\BlockManager\Standard\Utils\Markdown;
+use Netgen\Layouts\Standard\Utils\Markdown;
 
 final class MarkdownHandler extends BlockDefinitionHandler
 {
     /**
-     * @var \Netgen\BlockManager\Standard\Utils\Markdown
+     * @var \Netgen\Layouts\Standard\Utils\Markdown
      */
     private $markdownParser;
 

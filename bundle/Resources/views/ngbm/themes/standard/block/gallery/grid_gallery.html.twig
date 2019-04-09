@@ -6,9 +6,9 @@
     {% if collections.default is defined %}
         {% set number_of_thumbnails = block.parameter('number_of_thumbnails').value %}
 
-        <div class="row flex-row ngbm-flex-row {% if block.parameter('enable_lightbox').value %}js-lightbox-enabled{% endif %}">
+        <div class="row flex-row nglayouts-flex-row {% if block.parameter('enable_lightbox').value %}js-lightbox-enabled{% endif %}">
             {% for result in collections.default %}
-                <div class="ngbm-as-flex" style="width:{{ 100 / number_of_thumbnails }}%">{{ ngbm_render_item(result.item, block.itemViewType) }}</div>
+                <div class="nglayouts-as-flex" style="width:{{ 100 / number_of_thumbnails }}%">{{ ngbm_render_item(result.item, block.itemViewType) }}</div>
             {% endfor %}
         </div>
     {% endif %}

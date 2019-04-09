@@ -2,20 +2,20 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Handler;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler;
 
 use Netgen\BlockManager\API\Values\Block\Block;
 use Netgen\BlockManager\Block\DynamicParameters;
 use Netgen\BlockManager\Parameters\Parameter;
-use Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
-use Netgen\BlockManager\Standard\Utils\Markdown;
 use Netgen\BlockManager\Utils\HtmlPurifier;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
+use Netgen\Layouts\Standard\Utils\Markdown;
 use PHPUnit\Framework\TestCase;
 
 final class MarkdownHandlerTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler
+     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler
      */
     private $handler;
 
@@ -25,8 +25,8 @@ final class MarkdownHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::__construct
-     * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\MarkdownHandler::getDynamicParameters
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler::__construct
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler::getDynamicParameters
      */
     public function testGetDynamicParameters(): void
     {

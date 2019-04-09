@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Utils;
+namespace Netgen\Layouts\Standard\Tests\Utils;
 
-use Netgen\BlockManager\Standard\Utils\Markdown;
 use Netgen\BlockManager\Utils\HtmlPurifier;
+use Netgen\Layouts\Standard\Utils\Markdown;
 use PHPUnit\Framework\TestCase;
 
 final class MarkdownTest extends TestCase
 {
     /**
-     * @var \Netgen\BlockManager\Standard\Utils\Markdown
+     * @var \Netgen\Layouts\Standard\Utils\Markdown
      */
     private $markdown;
 
@@ -21,8 +21,8 @@ final class MarkdownTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\BlockManager\Standard\Utils\Markdown::__construct
-     * @covers \Netgen\BlockManager\Standard\Utils\Markdown::parse
+     * @covers \Netgen\Layouts\Standard\Utils\Markdown::__construct
+     * @covers \Netgen\Layouts\Standard\Utils\Markdown::parse
      */
     public function testParse(): void
     {

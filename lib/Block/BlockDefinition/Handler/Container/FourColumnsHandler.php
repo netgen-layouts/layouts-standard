@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\Container;
+namespace Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container;
 
 use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\BlockManager\Block\BlockDefinition\ContainerDefinitionHandlerInterface;

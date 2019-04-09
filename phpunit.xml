@@ -15,7 +15,7 @@
     beStrictAboutChangesToGlobalState="true"
 >
     <testsuites>
-        <testsuite name="Netgen\BlockManager">
+        <testsuite name="Netgen\Layouts\Standard">
             <directory>tests/lib</directory>
         </testsuite>
     </testsuites>

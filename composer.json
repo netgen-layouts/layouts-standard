@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Netgen\\BlockManager\\Standard\\": "lib/",
-            "Netgen\\Bundle\\BlockManagerStandardBundle\\": "bundle/"
+            "Netgen\\Layouts\\Standard\\": "lib/",
+            "Netgen\\Bundle\\LayoutsStandardBundle\\": "bundle/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Netgen\\BlockManager\\Standard\\Tests\\": "tests/lib/",
+            "Netgen\\Layouts\\Standard\\Tests\\": "tests/lib/",
             "Netgen\\BlockManager\\Tests\\": "vendor/netgen/layouts-core/tests/lib/"
         },
         "files": [

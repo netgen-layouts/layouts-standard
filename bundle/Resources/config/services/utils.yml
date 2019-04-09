@@ -1,5 +1,5 @@
 services:
-    netgen_block_manager.standard.utils.markdown:
-        class: Netgen\BlockManager\Standard\Utils\Markdown
+    netgen_layouts.standard.utils.markdown:
+        class: Netgen\Layouts\Standard\Utils\Markdown
         arguments:
             - "@netgen_block_manager.utils.html_purifier"

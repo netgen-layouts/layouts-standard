@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Netgen\Bundle\BlockManagerStandardBundle\DependencyInjection;
+namespace Netgen\Bundle\LayoutsStandardBundle\DependencyInjection;
 
 use Jean85\PrettyVersions;
 use Symfony\Component\Config\FileLocator;
@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Yaml\Yaml;
 
-final class NetgenBlockManagerStandardExtension extends Extension implements PrependExtensionInterface
+final class NetgenLayoutsStandardExtension extends Extension implements PrependExtensionInterface
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
@@ -37,7 +37,7 @@ final class NetgenBlockManagerStandardExtension extends Extension implements Pre
     public function prepend(ContainerBuilder $container): void
     {
         $container->setParameter(
-            'ngbm_standard.asset.version',
+            'nglayouts_standard.asset.version',
             PrettyVersions::getVersion('netgen/layouts-standard')->getShortCommitHash()
         );
 

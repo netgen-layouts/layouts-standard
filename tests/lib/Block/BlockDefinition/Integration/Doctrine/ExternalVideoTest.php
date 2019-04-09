@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
+namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\Doctrine;
 
-use Netgen\BlockManager\Standard\Tests\Block\BlockDefinition\Integration\ExternalVideoTest as BaseExternalVideoTest;
 use Netgen\BlockManager\Tests\Persistence\Doctrine\TestCaseTrait;
+use Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration\ExternalVideoTest as BaseExternalVideoTest;
 
 /**
- * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler::__construct
- * @covers \Netgen\BlockManager\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler::buildParameters
+ * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler::__construct
+ * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler::buildParameters
  */
 final class ExternalVideoTest extends BaseExternalVideoTest
 {
