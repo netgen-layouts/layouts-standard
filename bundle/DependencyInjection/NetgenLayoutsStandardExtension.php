@@ -42,12 +42,12 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
         );
 
         $prependConfigs = [
-            'block_definitions.yml' => 'netgen_block_manager',
-            'block_type_groups.yml' => 'netgen_block_manager',
-            'block_types.yml' => 'netgen_block_manager',
-            'layout_types.yml' => 'netgen_block_manager',
-            'view/layout_view.yml' => 'netgen_block_manager',
-            'view/block_view.yml' => 'netgen_block_manager',
+            'block_definitions.yml' => 'netgen_layouts',
+            'block_type_groups.yml' => 'netgen_layouts',
+            'block_types.yml' => 'netgen_layouts',
+            'layout_types.yml' => 'netgen_layouts',
+            'view/layout_view.yml' => 'netgen_layouts',
+            'view/block_view.yml' => 'netgen_layouts',
             'framework/assets.yml' => 'framework',
         ];
 
