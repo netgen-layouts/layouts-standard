@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
       if (!$(this).find('> *').length) $(this).remove();
     });
 
-    $('.bm-vt-grid_gallery .js-lightbox-enabled').each(function () {
+    $('.ngl-vt-grid_gallery .js-lightbox-enabled').each(function () {
       $(this).magnificPopup({
         delegate: '.js-mfp-item', // child items selector, by clicking on it popup will open
         type: 'image',
