@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
-use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandlerInterface;
-use Netgen\BlockManager\Parameters\Value\LinkValue;
-use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
+use Netgen\Layouts\Parameters\Value\LinkValue;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ButtonHandler;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class ButtonTest extends BlockTest
 {

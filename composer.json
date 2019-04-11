@@ -37,7 +37,7 @@
     "autoload-dev": {
         "psr-4": {
             "Netgen\\Layouts\\Standard\\Tests\\": "tests/lib/",
-            "Netgen\\BlockManager\\Tests\\": "vendor/netgen/layouts-core/tests/lib/"
+            "Netgen\\Layouts\\Tests\\": "vendor/netgen/layouts-core/tests/lib/"
         },
         "files": [
             "vendor/symfony/var-dumper/Resources/functions/dump.php"

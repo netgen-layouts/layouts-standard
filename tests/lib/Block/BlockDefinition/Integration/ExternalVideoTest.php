@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
-use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandlerInterface;
-use Netgen\BlockManager\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
 
 abstract class ExternalVideoTest extends BlockTest
 {

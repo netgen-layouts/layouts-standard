@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Netgen\Layouts\Standard\Tests\Utils;
 
-use Netgen\BlockManager\Utils\HtmlPurifier;
 use Netgen\Layouts\Standard\Utils\Markdown;
+use Netgen\Layouts\Utils\HtmlPurifier;
 use PHPUnit\Framework\TestCase;
 
 final class MarkdownTest extends TestCase

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Netgen\Layouts\Standard\Utils;
 
-use Netgen\BlockManager\Utils\HtmlPurifier;
+use Netgen\Layouts\Utils\HtmlPurifier;
 use Parsedown;
 
 final class Markdown
 {
     /**
-     * @var \Netgen\BlockManager\Utils\HtmlPurifier
+     * @var \Netgen\Layouts\Utils\HtmlPurifier
      */
     private $htmlPurifier;
 

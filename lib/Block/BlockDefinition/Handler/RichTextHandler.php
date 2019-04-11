@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Netgen\Layouts\Standard\Block\BlockDefinition\Handler;
 
-use Netgen\BlockManager\Block\BlockDefinition\BlockDefinitionHandler;
-use Netgen\BlockManager\Parameters\ParameterBuilderInterface;
-use Netgen\BlockManager\Parameters\ParameterType;
+use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandler;
+use Netgen\Layouts\Parameters\ParameterBuilderInterface;
+use Netgen\Layouts\Parameters\ParameterType;
 
 final class RichTextHandler extends BlockDefinitionHandler
 {
