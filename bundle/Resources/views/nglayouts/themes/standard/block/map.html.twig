@@ -1,0 +1,12 @@
+{% extends '@nglayouts/block/block.html.twig' %}
+
+{% block content %}
+    <div
+        class="nglayouts-map-embed"
+        data-latitude="{{ block.parameter('latitude').value }}"
+        data-longitude="{{ block.parameter('longitude').value }}"
+        data-zoom="{{ block.parameter('zoom').value }}"
+        data-map-type="{{ block.parameter('map_type').value }}"
+        {% if block.parameter('show_marker').value %}data-show-marker{% endif %}
+    ></div>
+{% endblock %}

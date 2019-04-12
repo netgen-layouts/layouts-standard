@@ -1,0 +1,7 @@
+{% extends '@nglayouts/block/block.html.twig' %}
+
+{% import '@NetgenLayouts/parts/macros.html.twig' as macros %}
+
+{% block content %}
+    {{ macros.inline_template(block.parameter('content').value, _context)|nl2br }}
+{% endblock %}

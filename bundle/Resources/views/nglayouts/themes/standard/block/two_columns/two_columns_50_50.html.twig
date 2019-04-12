@@ -1,0 +1,12 @@
+{% extends '@nglayouts/block/block.html.twig' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            {{ nglayouts_render_placeholder(block, 'left') }}
+        </div>
+        <div class="col-md-6">
+            {{ nglayouts_render_placeholder(block, 'right') }}
+        </div>
+    </div>
+{% endblock %}

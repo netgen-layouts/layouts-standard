@@ -1,0 +1,5 @@
+{% extends '@nglayouts/block/block.html.twig' %}
+
+{% block content %}
+    {{ block.parameter('content').value|raw }}
+{% endblock %}

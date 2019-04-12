@@ -1,0 +1,42 @@
+{% extends '@nglayouts/block/block.html.twig' %}
+
+{% set collection_identifier = 'default' %}
+{% set number_of_columns = block.parameter('number_of_columns').value|default(2) %}
+
+{% set template_name = '@nglayouts/block/list/grid/' ~ number_of_columns ~ '_columns.html.twig' %}
+{% if column_templates is defined and column_templates[number_of_columns] is defined %}
+    {% set template_name = column_templates[number_of_columns] %}
+{% endif %}
+
+{% set ajax_template_name = '@nglayouts/block/list/grid_ajax/' ~ number_of_columns ~ '_columns.html.twig' %}
+{% if ajax_column_templates is defined and ajax_column_templates[number_of_columns] is defined %}
+    {% set ajax_template_name = ajax_column_templates[number_of_columns] %}
+{% endif %}
+
+{% set collection_html %}
+    {% for result in collections[collection_identifier] %}
+        {% if block.parameter('paged_collections:enabled').value %}
+            {% include ajax_template_name %}
+        {% else %}
+            {% include template_name %}
+        {% endif %}
+    {% endfor %}
+{% endset %}
+
+{% block content %}
+    {% if collections[collection_identifier] is defined and collections[collection_identifier] is not empty %}
+        {% if block.parameter('paged_collections:enabled').value %}
+            {% embed '@NetgenLayouts/collection/paged_collection.html.twig' with {pager: pagers[collection_identifier]} %}
+                {% block wrap_css_class %}row{% endblock %}
+
+                {% block collection_page %}
+                    {{ collection_html }}
+                {% endblock %}
+            {% endembed %}
+        {% else %}
+            <div class="row">
+                {{ collection_html }}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends '@nglayouts/block/block.html.twig' %}
+
+{% import '@NetgenLayouts/parts/macros.html.twig' as macros %}
+
+{% set tag = block.parameter('tag').value|default('h1') %}
+{% set link = block.parameter('link') %}
+
+{% block content %}
+    {# Located inside the "content" block to include the context from the parent template #}
+    {% set title = macros.inline_template(block.parameter('title').value, _context) %}
+
+    <{{ tag }} class="title">
+        {% if block.parameter('use_link').value and not link.empty %}
+            {{ nglayouts_render_parameter(link, {content: title}) }}
+        {% else %}
+            {{ title }}
+        {% endif %}
+    </{{ tag }}>
+{% endblock %}
