@@ -37,7 +37,7 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
     public function prepend(ContainerBuilder $container): void
     {
         $container->setParameter(
-            'nglayouts_standard.asset.version',
+            'netgen_layouts.standard.asset_version',
             PrettyVersions::getVersion('netgen/layouts-standard')->getShortCommitHash()
         );
 
