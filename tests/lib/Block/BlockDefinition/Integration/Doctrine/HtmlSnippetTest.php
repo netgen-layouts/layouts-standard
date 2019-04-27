@@ -14,7 +14,7 @@ final class HtmlSnippetTest extends BaseHtmlSnippetTest
 {
     use TestCaseTrait;
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         $this->closeDatabase();
     }

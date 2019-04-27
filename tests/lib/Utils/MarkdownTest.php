@@ -15,7 +15,7 @@ final class MarkdownTest extends TestCase
      */
     private $markdown;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->markdown = new Markdown(new HtmlPurifier());
     }

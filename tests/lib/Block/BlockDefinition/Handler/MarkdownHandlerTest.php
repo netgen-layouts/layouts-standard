@@ -19,7 +19,7 @@ final class MarkdownHandlerTest extends TestCase
      */
     private $handler;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->handler = new MarkdownHandler(new Markdown(new HtmlPurifier()));
     }

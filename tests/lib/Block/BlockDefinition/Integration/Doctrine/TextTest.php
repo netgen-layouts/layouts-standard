@@ -14,7 +14,7 @@ final class TextTest extends BaseTextTest
 {
     use TestCaseTrait;
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         $this->closeDatabase();
     }

@@ -15,7 +15,7 @@ final class MapTest extends BaseMapTest
 {
     use TestCaseTrait;
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         $this->closeDatabase();
     }

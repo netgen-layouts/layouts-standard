@@ -15,7 +15,7 @@ final class ButtonTest extends BaseButtonTest
 {
     use TestCaseTrait;
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         $this->closeDatabase();
     }

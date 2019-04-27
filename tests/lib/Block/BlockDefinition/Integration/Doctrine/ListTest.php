@@ -15,7 +15,7 @@ final class ListTest extends BaseListTest
 {
     use TestCaseTrait;
 
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         $this->closeDatabase();
     }
