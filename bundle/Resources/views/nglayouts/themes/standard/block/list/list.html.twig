@@ -5,7 +5,7 @@
 {% set collection_identifier = 'default' %}
 
 {% set collection_html %}
-    {{ macros.collection(collections, collection_identifier, block.itemViewType, view_context) }}
+    {{ macros.collection(block, collections, collection_identifier, null, view_context) }}
 {% endset %}
 
 {% block content %}

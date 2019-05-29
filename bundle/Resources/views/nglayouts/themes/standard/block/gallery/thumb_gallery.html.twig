@@ -14,8 +14,9 @@
                 <div class="swiper-wrapper">
                     {% for result in collections.default %}
                         <div class="swiper-slide">
-                            {{ nglayouts_render_item(
-                                result.item,
+                            {{ nglayouts_render_result(
+                                result,
+                                null,
                                 block.itemViewType, {
                                     image_type: 'main',
                                     show_details: block.parameter('show_details').value,
@@ -36,8 +37,9 @@
                 <div class="swiper-wrapper">
                     {% for result in collections.default %}
                         <div class="swiper-slide">
-                            {{ nglayouts_render_item(
-                                result.item,
+                            {{ nglayouts_render_result(
+                                result,
+                                null,
                                 block.itemViewType, {
                                     image_type: 'thumb',
                                     show_details: block.parameter('show_details').value,
