@@ -1,6 +1,6 @@
 {
     "name": "@netgen/layouts-standard",
-    "description": "Netgen Layouts standard",
+    "description": "Netgen Layouts standard blocks and layouts",
     "version": "1.0.0",
     "repository": {
         "type": "git",
@@ -37,7 +37,7 @@
     "dependencies": {
         "jquery": "^3.4.1",
         "magnific-popup": "^1.1.0",
-        "swiper": "^4.3.3"
+        "swiper": "^4.5.0"
     },
     "scripts": {
         "dev": "webpack --mode=development",
