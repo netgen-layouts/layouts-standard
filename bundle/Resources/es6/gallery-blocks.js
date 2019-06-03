@@ -1,29 +1,29 @@
-window.addEventListener('load', () => {
-  $(document).ready(() => {
-    $('.nglayouts-as-flex').each(function () {
-      if (!$(this).find('> *').length) $(this).remove();
-    });
+/* global $, Swiper */
 
-    $('.ngl-vt-grid_gallery .js-lightbox-enabled').each(function () {
-      $(this).magnificPopup({
-        delegate: '.js-mfp-item', // child items selector, by clicking on it popup will open
-        type: 'image',
-        zoom: {
-          enabled: true,
-        },
-        gallery: {
-          enabled: true,
-        },
-      });
+window.addEventListener('load', () => {
+  $('.nglayouts-as-flex').each((i, el) => {
+    if (!$(el).find('> *').length) $(el).remove();
+  });
+
+  $('.ngl-vt-grid_gallery .js-lightbox-enabled').each((i, el) => {
+    $(el).magnificPopup({
+      delegate: '.js-mfp-item', // child items selector, by clicking on it popup will open
+      type: 'image',
+      zoom: {
+        enabled: true,
+      },
+      gallery: {
+        enabled: true,
+      },
     });
   });
 
   // Sushi swiper
-  Array.from(document.getElementsByClassName('sushi-swiper')).forEach((swiper, i) => {
+  [...document.getElementsByClassName('sushi-swiper')].forEach((swiper, i) => {
     const swiperId = `sushiSwiper-${i + 1}`;
     const data = swiper.dataset;
     swiper.setAttribute('id', swiperId);
-    const sushiSwiper = new Swiper(swiper, {
+    return new Swiper(swiper, {
       navigation: {
         nextEl: `#${swiperId} .swiper-button-next`,
         prevEl: `#${swiperId} .swiper-button-prev`,
@@ -52,11 +52,11 @@ window.addEventListener('load', () => {
   });
 
   // Default swiper
-  Array.from(document.getElementsByClassName('default-swiper')).forEach((swiper, i) => {
+  [...document.getElementsByClassName('default-swiper')].forEach((swiper, i) => {
     const swiperId = `defaultSwiper-${i + 1}`;
     const data = swiper.dataset;
     swiper.setAttribute('id', swiperId);
-    const defaultSwiper = new Swiper(swiper, {
+    return new Swiper(swiper, {
       navigation: {
         nextEl: `#${swiperId} .swiper-button-next`,
         prevEl: `#${swiperId} .swiper-button-prev`,
@@ -80,7 +80,7 @@ window.addEventListener('load', () => {
       },
       autoHeight: true,
       on: {
-        lazyImageReady: function () {
+        lazyImageReady: () => {
           this.updateAutoHeight();
         },
       },
@@ -88,7 +88,7 @@ window.addEventListener('load', () => {
   });
 
   // Thumb gallery
-  Array.from(document.getElementsByClassName('thumb-swiper')).forEach((swiper) => {
+  [...document.getElementsByClassName('thumb-swiper')].forEach((swiper) => {
     const top = swiper.querySelectorAll('.gallery-top')[0];
     const thumbs = swiper.querySelectorAll('.gallery-thumbs')[0];
     const data = top.dataset;
@@ -111,7 +111,7 @@ window.addEventListener('load', () => {
       loopedSlides: data.loop ? data.length : null,
       autoHeight: true,
       on: {
-        lazyImageReady: function () {
+        lazyImageReady: () => {
           this.updateAutoHeight();
         },
       },
