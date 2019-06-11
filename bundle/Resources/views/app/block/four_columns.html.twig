@@ -1,4 +1,4 @@
-{% extends '@NetgenLayouts/api/block/block.html.twig' %}
+{% extends '@NetgenLayouts/app/block/block.html.twig' %}
 
 {% block content %}
     <div class="row">
@@ -6,9 +6,12 @@
             <div data-placeholder="left" data-receiver></div>
         </div>
         <div class="col-md-3">
-            <div data-placeholder="center" data-receiver></div>
+            <div data-placeholder="center_left" data-receiver></div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
+            <div data-placeholder="center_right" data-receiver></div>
+        </div>
+        <div class="col-md-3">
             <div data-placeholder="right" data-receiver></div>
         </div>
     </div>

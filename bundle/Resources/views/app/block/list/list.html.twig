@@ -1,0 +1,10 @@
+{% extends '@NetgenLayouts/app/block/block.html.twig' %}
+
+{% import '@NetgenLayouts/app/parts/macros.html.twig' as macros %}
+
+{% block content %}
+    {% include '@NetgenLayouts/app/parts/collection.html.twig' with {
+        block: block,
+        collection: collections.default is defined ? collections.default : null,
+    } %}
+{% endblock %}
