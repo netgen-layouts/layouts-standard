@@ -43,7 +43,6 @@ final class MapHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 0,
-                'groups' => [self::GROUP_CONTENT],
                 'min' => -90,
                 'max' => 90,
                 'scale' => 6,
@@ -56,7 +55,6 @@ final class MapHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 0,
-                'groups' => [self::GROUP_CONTENT],
                 'min' => -180,
                 'max' => 180,
                 'scale' => 6,
@@ -69,7 +67,6 @@ final class MapHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 5,
-                'groups' => [self::GROUP_DESIGN],
                 'min' => $this->minZoom,
                 'max' => $this->maxZoom,
             ]
@@ -80,7 +77,6 @@ final class MapHandler extends BlockDefinitionHandler
             ParameterType\ChoiceType::class,
             [
                 'required' => true,
-                'groups' => [self::GROUP_DESIGN],
                 'options' => array_flip($this->mapTypes),
             ]
         );
@@ -90,7 +86,6 @@ final class MapHandler extends BlockDefinitionHandler
             ParameterType\BooleanType::class,
             [
                 'default_value' => true,
-                'groups' => [self::GROUP_DESIGN],
             ]
         );
     }
