@@ -30,9 +30,9 @@ final class TwigBlockHandlerTest extends TestCase
     }
 
     /**
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::getTwigBlockName
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::getTwigBlockNames
      */
-    public function testGetTwigBlockName(): void
+    public function testGetTwigBlockNames(): void
     {
         $block = Block::fromArray(
             [
@@ -48,6 +48,6 @@ final class TwigBlockHandlerTest extends TestCase
             ]
         );
 
-        self::assertSame('twig_block', $this->handler->getTwigBlockName($block));
+        self::assertSame(['twig_block'], $this->handler->getTwigBlockNames($block));
     }
 }

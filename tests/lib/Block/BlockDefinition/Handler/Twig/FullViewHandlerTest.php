@@ -17,7 +17,7 @@ final class FullViewHandlerTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->handler = new FullViewHandler('content');
+        $this->handler = new FullViewHandler(['content', 'body']);
     }
 
     /**
@@ -30,10 +30,10 @@ final class FullViewHandlerTest extends TestCase
 
     /**
      * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::__construct
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::getTwigBlockName
+     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler::getTwigBlockNames
      */
-    public function testGetTwigBlockName(): void
+    public function testGetTwigBlockNames(): void
     {
-        self::assertSame('content', $this->handler->getTwigBlockName(new Block()));
+        self::assertSame(['content', 'body'], $this->handler->getTwigBlockNames(new Block()));
     }
 }

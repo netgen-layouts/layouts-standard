@@ -16,13 +16,13 @@ use Netgen\Layouts\Block\BlockDefinition\TwigBlockDefinitionHandlerInterface;
 final class FullViewHandler extends BlockDefinitionHandler implements TwigBlockDefinitionHandlerInterface
 {
     /**
-     * @var string
+     * @var string[]
      */
-    private $twigBlockName;
+    private $twigBlockNames;
 
-    public function __construct(string $twigBlockName)
+    public function __construct(array $twigBlockNames)
     {
-        $this->twigBlockName = $twigBlockName;
+        $this->twigBlockNames = $twigBlockNames;
     }
 
     public function isContextual(Block $block): bool
@@ -30,8 +30,8 @@ final class FullViewHandler extends BlockDefinitionHandler implements TwigBlockD
         return true;
     }
 
-    public function getTwigBlockName(Block $block): string
+    public function getTwigBlockNames(Block $block): array
     {
-        return $this->twigBlockName;
+        return $this->twigBlockNames;
     }
 }

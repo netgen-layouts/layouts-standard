@@ -26,8 +26,8 @@ final class TwigBlockHandler extends BlockDefinitionHandler implements TwigBlock
         return true;
     }
 
-    public function getTwigBlockName(Block $block): string
+    public function getTwigBlockNames(Block $block): array
     {
-        return $block->getParameter('block_name')->getValue();
+        return [$block->getParameter('block_name')->getValue()];
     }
 }

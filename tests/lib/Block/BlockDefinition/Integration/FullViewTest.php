@@ -37,6 +37,6 @@ abstract class FullViewTest extends BlockTest
 
     protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
-        return new FullViewHandler('content');
+        return new FullViewHandler(['content']);
     }
 }

@@ -18,7 +18,7 @@ parameters:
         vimeo: block.external_video.service.vimeo
         dailymotion: block.external_video.service.dailymotion
 
-    netgen_layouts.standard.block.block_definition_handler.full_view.twig_block_name: content
+    netgen_layouts.standard.block.block_definition_handler.full_view.twig_block_names: ['content', 'body']
 
     netgen_layouts.standard.block.block_definition_handler.map.min_zoom: 0
     netgen_layouts.standard.block.block_definition_handler.map.max_zoom: 20
@@ -90,7 +90,7 @@ services:
     netgen_layouts.standard.block.block_definition_handler.full_view:
         class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
         arguments:
-            - "%netgen_layouts.standard.block.block_definition_handler.full_view.twig_block_name%"
+            - "%netgen_layouts.standard.block.block_definition_handler.full_view.twig_block_names%"
         tags:
             - { name: netgen_layouts.block_definition_handler, identifier: full_view }
 
