@@ -13,6 +13,11 @@ const webpackConfig = (config = {}) => {
       new MiniCssExtractPlugin({
         filename: `css/${styleName}.css`,
       }),
+      new CleanWebpackPlugin({
+        // We cleanup the superfluous js/grid.js since we don't build JavaScript modules for grid.css
+        cleanOnceBeforeBuildPatterns: [], // Disables cleanOnceBeforeBuildPatterns since it's specified on its own below
+        cleanAfterEveryBuildPatterns: ['js/grid.js'],
+      }),
     ];
     if (shouldClean) {
       plugins.push(new CleanWebpackPlugin({
