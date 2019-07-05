@@ -1,0 +1,86 @@
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints) == null, '', '-#{$name}');
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+    $min: breakpoint-min($name, $breakpoints);
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin make-col($size, $columns: $grid-columns) {
+    flex: 0 0 percentage($size / $columns);
+    max-width: percentage($size / $columns);
+}
+
+@mixin make-col-offset($size, $columns: $grid-columns) {
+    $num: $size / $columns;
+    margin-left: if($num == 0, 0, percentage($num));
+}
+
+@mixin make-grid-columns($columns: 12, $gutter: $grid-gutter, $breakpoints: $grid-breakpoints) {
+    %grid-column {
+        position: relative;
+        width: 100%;
+        padding-right: $gutter / 2;
+        padding-left: $gutter / 2;
+    }
+    @each $breakpoint in map-keys($breakpoints) {
+        $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+        @for $i from 1 through $columns {
+            .col#{$infix}-#{$i} {
+                @extend %grid-column;
+            }
+        }
+        .col#{$infix},
+        .col#{$infix}-auto {
+            @extend %grid-column;
+        }
+
+        @include media-breakpoint-up($breakpoint, $breakpoints) {
+            .col#{$infix} {
+                flex-basis: 0;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+            .col#{$infix}-auto {
+                flex: 0 0 auto;
+                width: auto;
+                max-width: 100%;
+            }
+
+            @for $i from 1 through $columns {
+                .col#{$infix}-#{$i} {
+                    @include make-col($i, $columns);
+                }
+            }
+
+            .order#{$infix}-first { order: -1; }
+
+            .order#{$infix}-last { order: $columns + 1; }
+
+            @for $i from 0 through $columns {
+                .order#{$infix}-#{$i} { order: $i; }
+            }
+
+            @for $i from 0 through ($columns - 1) {
+                @if not ($infix == '' and $i == 0) {
+                    .offset#{$infix}-#{$i} {
+                        @include make-col-offset($i, $columns);
+                    }
+                }
+            }
+        }
+    }
+}

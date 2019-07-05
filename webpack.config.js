@@ -176,5 +176,9 @@ const configFull = webpackConfig({
   appName: 'app-full',
   styleName: 'style-full',
 });
+const gridStyle = webpackConfig({
+  appName: 'grid',
+  styleName: 'grid',
+});
 
-module.exports = [config, configFull];
+module.exports = [config, configFull, gridStyle];
