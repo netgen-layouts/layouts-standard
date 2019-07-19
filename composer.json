@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "netgen/layouts-core": "~1.0.0",
+        "netgen/layouts-core": "~1.1.0",
         "erusev/parsedown": "^1.7"
     },
     "require-dev": {
@@ -49,7 +49,7 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "1.1.x-dev"
         }
     }
 }
