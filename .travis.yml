@@ -32,7 +32,7 @@ matrix:
       before_script: ~
       script: npm run prod
   allow_failures:
-    - env: php: 7.4snapshot
+    - php: 7.4snapshot
 
 branches:
   only:
