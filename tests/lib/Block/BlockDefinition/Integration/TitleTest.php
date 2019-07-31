@@ -54,7 +54,7 @@ abstract class TitleTest extends BlockTest
                     'use_link' => true,
                     'link' => [
                         'link_type' => LinkValue::LINK_TYPE_URL,
-                        'link' => 'http://www.netgenlabs.com',
+                        'link' => 'https://netgen.io',
                     ],
                 ],
                 [
@@ -62,7 +62,7 @@ abstract class TitleTest extends BlockTest
                     'link' => LinkValue::fromArray(
                         [
                             'linkType' => LinkValue::LINK_TYPE_URL,
-                            'link' => 'http://www.netgenlabs.com',
+                            'link' => 'https://netgen.io',
                         ]
                     ),
                 ],
