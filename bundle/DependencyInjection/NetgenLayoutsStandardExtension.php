@@ -31,7 +31,7 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
             )
         );
 
-        $loader->load('services/**/*.yml', 'glob');
+        $loader->load('services/**/*.yaml', 'glob');
     }
 
     public function prepend(ContainerBuilder $container): void
@@ -42,13 +42,13 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
         );
 
         $prependConfigs = [
-            'block_definitions.yml' => 'netgen_layouts',
-            'block_type_groups.yml' => 'netgen_layouts',
-            'block_types.yml' => 'netgen_layouts',
-            'layout_types.yml' => 'netgen_layouts',
-            'view/layout_view.yml' => 'netgen_layouts',
-            'view/block_view.yml' => 'netgen_layouts',
-            'framework/assets.yml' => 'framework',
+            'block_definitions.yaml' => 'netgen_layouts',
+            'block_type_groups.yaml' => 'netgen_layouts',
+            'block_types.yaml' => 'netgen_layouts',
+            'layout_types.yaml' => 'netgen_layouts',
+            'view/layout_view.yaml' => 'netgen_layouts',
+            'view/block_view.yaml' => 'netgen_layouts',
+            'framework/assets.yaml' => 'framework',
         ];
 
         foreach ($prependConfigs as $configFile => $prependConfig) {
