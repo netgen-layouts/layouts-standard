@@ -32,8 +32,6 @@ matrix:
       install: yarn install
       before_script: ~
       script: yarn run prod
-  allow_failures:
-    - php: 7.4snapshot
   fast_finish: true
 
 branches:
