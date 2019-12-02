@@ -24,10 +24,13 @@ final class GalleryHandler extends BlockDefinitionHandler
      * The list of gallery transitions. Keys should be identifiers, while values
      * should be human readable names of the transitions.
      *
-     * @var array
+     * @var array<string, string>
      */
     private $transitions;
 
+    /**
+     * @param array<string, string> $transitions
+     */
     public function __construct(
         int $minAutoplayTime,
         int $maxAutoplayTime,

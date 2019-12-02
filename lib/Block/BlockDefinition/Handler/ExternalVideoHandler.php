@@ -14,10 +14,13 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
      * The list of video services available. Keys should be identifiers, while values
      * should be human readable names of the services.
      *
-     * @var array
+     * @var array<string, string>
      */
     private $services;
 
+    /**
+     * @param array<string, string> $services
+     */
     public function __construct(array $services)
     {
         $this->services = $services;

@@ -14,17 +14,21 @@ final class ButtonHandler extends BlockDefinitionHandler
      * The list of styles for the button. Keys should be identifiers, while values
      * should be human readable names of the styles.
      *
-     * @var array
+     * @var array<string, string>
      */
     private $styles;
 
     /**
      * List of value types allowed to be used in the link parameter.
      *
-     * @var array
+     * @var string[]
      */
     private $valueTypes;
 
+    /**
+     * @param array<string, string> $styles
+     * @param string[] $valueTypes
+     */
     public function __construct(array $styles, array $valueTypes)
     {
         $this->styles = $styles;

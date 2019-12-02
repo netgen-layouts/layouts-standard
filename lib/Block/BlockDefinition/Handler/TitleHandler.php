@@ -14,17 +14,21 @@ final class TitleHandler extends BlockDefinitionHandler
      * The list of HTML tags available for the link. Keys should be identifiers, while values
      * should be human readable names of the HTML tags.
      *
-     * @var array
+     * @var array<string, string>
      */
     private $tags;
 
     /**
      * List of value types allowed to be used in the link parameter.
      *
-     * @var array
+     * @var string[]
      */
     private $linkValueTypes;
 
+    /**
+     * @param array<string, string> $tags
+     * @param string[] $linkValueTypes
+     */
     public function __construct(array $tags, array $linkValueTypes)
     {
         $this->tags = $tags;

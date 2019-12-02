@@ -24,10 +24,13 @@ final class MapHandler extends BlockDefinitionHandler
      * The list of map types available. Keys should be identifiers, while values
      * should be human readable names of the map types.
      *
-     * @var array
+     * @var array<string, string>
      */
     private $mapTypes;
 
+    /**
+     * @param array<string, string> $mapTypes
+     */
     public function __construct(int $minZoom, int $maxZoom, array $mapTypes)
     {
         $this->minZoom = $minZoom;
