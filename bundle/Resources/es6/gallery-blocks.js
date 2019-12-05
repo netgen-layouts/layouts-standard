@@ -80,7 +80,7 @@ window.addEventListener('load', () => {
       },
       autoHeight: true,
       on: {
-        lazyImageReady: () => {
+        lazyImageReady() {
           this.updateAutoHeight();
         },
       },
@@ -111,7 +111,7 @@ window.addEventListener('load', () => {
       loopedSlides: data.loop ? data.length : null,
       autoHeight: true,
       on: {
-        lazyImageReady: () => {
+        lazyImageReady() {
           this.updateAutoHeight();
         },
       },
