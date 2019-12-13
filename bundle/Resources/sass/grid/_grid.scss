@@ -4,6 +4,7 @@
     padding-left: $grid-gutter / 2;
     margin-right: auto;
     margin-left: auto;
+    box-sizing: border-box;
     @include media-breakpoint-up(sm) {
         max-width: 540px;
     }
@@ -23,6 +24,7 @@
     flex-wrap: wrap;
     margin-right: -$grid-gutter / 2;
     margin-left: -$grid-gutter / 2;
+    box-sizing: border-box;
 }
 
 @include make-grid-columns;
