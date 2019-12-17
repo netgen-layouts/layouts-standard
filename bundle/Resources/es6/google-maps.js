@@ -32,5 +32,5 @@ class GoogleMap {
 
 window.addEventListener('load', () => {
   if (typeof google === 'undefined' || typeof google.maps === 'undefined') return;
-  [...document.getElementsByClassName('nglayouts-map-embed')].forEach(el => new GoogleMap(el));
+  [...document.getElementsByClassName('nglayouts-map-embed')].forEach((el) => new GoogleMap(el));
 });
