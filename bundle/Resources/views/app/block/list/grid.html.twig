@@ -2,8 +2,6 @@
 
 {% import '@NetgenLayoutsAdmin/app/parts/macros.html.twig' as macros %}
 
-{% trans_default_domain 'nglayouts_app' %}
-
 {% block content %}
     {% set number_of_columns = block.parameter('number_of_columns').value|default(3) %}
 
