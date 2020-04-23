@@ -15,6 +15,7 @@ use Symfony\Component\DependencyInjection\Loader\GlobFileLoader;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\Yaml\Yaml;
+use function file_get_contents;
 
 final class NetgenLayoutsStandardExtension extends Extension implements PrependExtensionInterface
 {
