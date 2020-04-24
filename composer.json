@@ -40,10 +40,7 @@
         "psr-4": {
             "Netgen\\Layouts\\Standard\\Tests\\": "tests/lib/",
             "Netgen\\Layouts\\Tests\\": "vendor/netgen/layouts-core/tests/lib/"
-        },
-        "files": [
-            "vendor/symfony/var-dumper/Resources/functions/dump.php"
-        ]
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
