@@ -15,7 +15,7 @@
     },
     "require-dev": {
         "netgen/layouts-coding-standard": "^1.0",
-        "phpunit/phpunit": "^8.5 || ^9.0",
+        "phpunit/phpunit": "^8.5 || ^9.3",
         "symfony/phpunit-bridge": "^5.0",
         "symfony/var-dumper": "^3.4 || ^4.4 || ^5.0",
         "phpstan/phpstan": "^0.12",
