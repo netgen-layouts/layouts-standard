@@ -42,7 +42,7 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
     {
         $container->setParameter(
             'netgen_layouts.standard.asset_version',
-            PrettyVersions::getVersion('netgen/layouts-standard')->getShortCommitHash()
+            PrettyVersions::getVersion('netgen/layouts-standard')->getShortReference()
         );
 
         $prependConfigs = [
