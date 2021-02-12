@@ -11,10 +11,7 @@ use PHPUnit\Framework\TestCase;
 
 final class TwigBlockHandlerTest extends TestCase
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler
-     */
-    private $handler;
+    private TwigBlockHandler $handler;
 
     protected function setUp(): void
     {

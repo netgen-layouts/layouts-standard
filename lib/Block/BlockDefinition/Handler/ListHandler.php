@@ -18,7 +18,7 @@ final class ListHandler extends BlockDefinitionHandler implements PagedCollectio
      *
      * @var string[]
      */
-    private $columns;
+    private array $columns;
 
     /**
      * @param string[] $columns

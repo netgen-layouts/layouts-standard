@@ -9,10 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 final class ColumnHandlerTest extends TestCase
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler
-     */
-    private $handler;
+    private ColumnHandler $handler;
 
     protected function setUp(): void
     {

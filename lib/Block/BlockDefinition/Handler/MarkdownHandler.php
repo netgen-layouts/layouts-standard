@@ -13,10 +13,7 @@ use Netgen\Layouts\Standard\Utils\Markdown;
 
 final class MarkdownHandler extends BlockDefinitionHandler
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Utils\Markdown
-     */
-    private $markdownParser;
+    private Markdown $markdownParser;
 
     public function __construct(Markdown $markdownParser)
     {

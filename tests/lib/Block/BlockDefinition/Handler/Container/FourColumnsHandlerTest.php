@@ -9,10 +9,7 @@ use PHPUnit\Framework\TestCase;
 
 final class FourColumnsHandlerTest extends TestCase
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\FourColumnsHandler
-     */
-    private $handler;
+    private FourColumnsHandler $handler;
 
     protected function setUp(): void
     {

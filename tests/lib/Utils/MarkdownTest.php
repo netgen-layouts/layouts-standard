@@ -10,10 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 final class MarkdownTest extends TestCase
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Utils\Markdown
-     */
-    private $markdown;
+    private Markdown $markdown;
 
     protected function setUp(): void
     {

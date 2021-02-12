@@ -17,7 +17,7 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
      *
      * @var array<string, string>
      */
-    private $services;
+    private array $services;
 
     /**
      * @param array<string, string> $services

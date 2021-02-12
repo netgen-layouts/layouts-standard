@@ -9,15 +9,9 @@ use Parsedown;
 
 final class Markdown
 {
-    /**
-     * @var \Netgen\Layouts\Utils\HtmlPurifier
-     */
-    private $htmlPurifier;
+    private HtmlPurifier $htmlPurifier;
 
-    /**
-     * @var \Parsedown
-     */
-    private $parser;
+    private Parsedown $parser;
 
     public function __construct(HtmlPurifier $htmlPurifier)
     {

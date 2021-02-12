@@ -11,15 +11,9 @@ use function array_flip;
 
 final class GalleryHandler extends BlockDefinitionHandler
 {
-    /**
-     * @var int
-     */
-    private $minAutoplayTime;
+    private int $minAutoplayTime;
 
-    /**
-     * @var int
-     */
-    private $maxAutoplayTime;
+    private int $maxAutoplayTime;
 
     /**
      * The list of gallery transitions. Keys should be identifiers, while values
@@ -27,7 +21,7 @@ final class GalleryHandler extends BlockDefinitionHandler
      *
      * @var array<string, string>
      */
-    private $transitions;
+    private array $transitions;
 
     /**
      * @param array<string, string> $transitions

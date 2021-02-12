@@ -18,7 +18,7 @@ final class FullViewHandler extends BlockDefinitionHandler implements TwigBlockD
     /**
      * @var string[]
      */
-    private $twigBlockNames;
+    private array $twigBlockNames;
 
     /**
      * @param string[] $twigBlockNames

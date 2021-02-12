@@ -11,15 +11,9 @@ use function array_flip;
 
 final class MapHandler extends BlockDefinitionHandler
 {
-    /**
-     * @var int
-     */
-    private $minZoom;
+    private int $minZoom;
 
-    /**
-     * @var int
-     */
-    private $maxZoom;
+    private int $maxZoom;
 
     /**
      * The list of map types available. Keys should be identifiers, while values
@@ -27,7 +21,7 @@ final class MapHandler extends BlockDefinitionHandler
      *
      * @var array<string, string>
      */
-    private $mapTypes;
+    private array $mapTypes;
 
     /**
      * @param array<string, string> $mapTypes

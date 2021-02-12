@@ -14,10 +14,7 @@ use PHPUnit\Framework\TestCase;
 
 final class MarkdownHandlerTest extends TestCase
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler
-     */
-    private $handler;
+    private MarkdownHandler $handler;
 
     protected function setUp(): void
     {

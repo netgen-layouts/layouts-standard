@@ -10,10 +10,7 @@ use PHPUnit\Framework\TestCase;
 
 final class FullViewHandlerTest extends TestCase
 {
-    /**
-     * @var \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler
-     */
-    private $handler;
+    private FullViewHandler $handler;
 
     protected function setUp(): void
     {
