@@ -27,10 +27,8 @@ final class MarkdownHandler extends BlockDefinitionHandler
 
     public function getDynamicParameters(DynamicParameters $params, Block $block): void
     {
-        $params['html'] = function () use ($block): string {
-            return $this->markdownParser->parse(
-                $block->getParameter('content')->getValue()
-            );
-        };
+        $params['html'] = fn (): string => $this->markdownParser->parse(
+            $block->getParameter('content')->getValue()
+        );
     }
 }
