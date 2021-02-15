@@ -22,6 +22,9 @@ jobs:
           - php: '7.4'
             symfony: '~3.4.0'
             deps: 'low'
+        exclude:
+          - php: '8.0'
+            symfony: '~3.4.0'
 
     steps:
       - uses: actions/checkout@v2
