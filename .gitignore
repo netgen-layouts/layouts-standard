@@ -3,7 +3,7 @@ bundle/Resources/public/dev/
 coverage/
 node_modules/
 vendor/
-.php_cs.cache
+.php-cs-fixer.cache
 .phpunit.result.cache
 composer.lock
 composer.phar
