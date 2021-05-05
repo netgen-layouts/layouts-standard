@@ -39,10 +39,10 @@ final class TwigBlockHandlerTest extends TestCase
                     'block_name' => Parameter::fromArray(
                         [
                             'value' => 'twig_block',
-                        ]
+                        ],
                     ),
                 ],
-            ]
+            ],
         );
 
         self::assertSame(['twig_block'], $this->handler->getTwigBlockNames($block));

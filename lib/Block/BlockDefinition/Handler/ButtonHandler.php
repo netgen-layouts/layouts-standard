@@ -44,7 +44,7 @@ final class ButtonHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 'Text',
-            ]
+            ],
         );
 
         $builder->add(
@@ -53,7 +53,7 @@ final class ButtonHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'options' => array_flip($this->styles),
-            ]
+            ],
         );
 
         $builder->add(
@@ -62,7 +62,7 @@ final class ButtonHandler extends BlockDefinitionHandler
             [
                 'value_types' => $this->valueTypes,
                 'allow_invalid_internal' => true,
-            ]
+            ],
         );
     }
 }

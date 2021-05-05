@@ -60,7 +60,7 @@ abstract class ButtonTest extends BlockTest
                         [
                             'linkType' => LinkValue::LINK_TYPE_URL,
                             'link' => 'https://netgen.io',
-                        ]
+                        ],
                     ),
                 ],
             ],
@@ -76,7 +76,7 @@ abstract class ButtonTest extends BlockTest
                         [
                             'linkType' => LinkValue::LINK_TYPE_INTERNAL,
                             'link' => 'value://42',
-                        ]
+                        ],
                     ),
                 ],
             ],
@@ -127,7 +127,7 @@ abstract class ButtonTest extends BlockTest
                 'default_button' => 'Default button',
                 'highlighted_button' => 'Highlighted button',
             ],
-            ['value']
+            ['value'],
         );
     }
 }

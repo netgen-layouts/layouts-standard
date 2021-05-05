@@ -37,7 +37,7 @@ final class ListHandler extends BlockDefinitionHandler implements PagedCollectio
                 'required' => true,
                 'options' => array_flip($this->columns),
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
     }
 }

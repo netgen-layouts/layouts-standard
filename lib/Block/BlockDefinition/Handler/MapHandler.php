@@ -44,7 +44,7 @@ final class MapHandler extends BlockDefinitionHandler
                 'min' => -90,
                 'max' => 90,
                 'scale' => 6,
-            ]
+            ],
         );
 
         $builder->add(
@@ -56,7 +56,7 @@ final class MapHandler extends BlockDefinitionHandler
                 'min' => -180,
                 'max' => 180,
                 'scale' => 6,
-            ]
+            ],
         );
 
         $builder->add(
@@ -67,7 +67,7 @@ final class MapHandler extends BlockDefinitionHandler
                 'default_value' => 5,
                 'min' => $this->minZoom,
                 'max' => $this->maxZoom,
-            ]
+            ],
         );
 
         $builder->add(
@@ -76,7 +76,7 @@ final class MapHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'options' => array_flip($this->mapTypes),
-            ]
+            ],
         );
 
         $builder->add(
@@ -84,7 +84,7 @@ final class MapHandler extends BlockDefinitionHandler
             ParameterType\BooleanType::class,
             [
                 'default_value' => true,
-            ]
+            ],
         );
     }
 }

@@ -31,8 +31,8 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
                 [
                     new GlobFileLoader($container, $locator),
                     new YamlFileLoader($container, $locator),
-                ]
-            )
+                ],
+            ),
         );
 
         $loader->load('services/**/*.yaml', 'glob');
@@ -42,7 +42,7 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
     {
         $container->setParameter(
             'netgen_layouts.standard.asset_version',
-            PrettyVersions::getVersion('netgen/layouts-standard')->getShortReference()
+            PrettyVersions::getVersion('netgen/layouts-standard')->getShortReference(),
         );
 
         $prependConfigs = [

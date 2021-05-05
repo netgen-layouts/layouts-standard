@@ -35,7 +35,7 @@ final class ExternalVideoHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'options' => array_flip($this->services),
-            ]
+            ],
         );
 
         $builder->add('video_id', ParameterType\TextLineType::class);

@@ -18,7 +18,7 @@ final class TextHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 'Text',
-            ]
+            ],
         );
     }
 }

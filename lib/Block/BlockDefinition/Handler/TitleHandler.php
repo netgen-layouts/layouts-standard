@@ -44,7 +44,7 @@ final class TitleHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'options' => array_flip($this->tags),
-            ]
+            ],
         );
 
         $builder->add(
@@ -53,12 +53,12 @@ final class TitleHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 'Title',
-            ]
+            ],
         );
 
         $builder->add(
             'use_link',
-            ParameterType\Compound\BooleanType::class
+            ParameterType\Compound\BooleanType::class,
         );
 
         $builder->get('use_link')->add(
@@ -67,7 +67,7 @@ final class TitleHandler extends BlockDefinitionHandler
             [
                 'value_types' => $this->linkValueTypes,
                 'allow_invalid_internal' => true,
-            ]
+            ],
         );
     }
 }

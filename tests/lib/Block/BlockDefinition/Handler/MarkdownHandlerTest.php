@@ -35,10 +35,10 @@ final class MarkdownHandlerTest extends TestCase
                     'content' => Parameter::fromArray(
                         [
                             'value' => '# Title',
-                        ]
+                        ],
                     ),
                 ],
-            ]
+            ],
         );
 
         $dynamicParameters = new DynamicParameters();

@@ -63,7 +63,7 @@ abstract class ListTest extends BlockTest
             [
                 2 => '2 columns',
                 3 => '3 columns',
-            ]
+            ],
         );
     }
 }

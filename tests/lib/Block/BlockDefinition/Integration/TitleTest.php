@@ -63,7 +63,7 @@ abstract class TitleTest extends BlockTest
                         [
                             'linkType' => LinkValue::LINK_TYPE_URL,
                             'link' => 'https://netgen.io',
-                        ]
+                        ],
                     ),
                 ],
             ],
@@ -81,7 +81,7 @@ abstract class TitleTest extends BlockTest
                         [
                             'linkType' => LinkValue::LINK_TYPE_INTERNAL,
                             'link' => 'value://42',
-                        ]
+                        ],
                     ),
                 ],
             ],
@@ -152,7 +152,7 @@ abstract class TitleTest extends BlockTest
                 'h1' => 'Heading 1',
                 'h2' => 'Heading 2',
             ],
-            ['value']
+            ['value'],
         );
     }
 }

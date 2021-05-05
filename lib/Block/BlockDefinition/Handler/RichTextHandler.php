@@ -18,7 +18,7 @@ final class RichTextHandler extends BlockDefinitionHandler
             [
                 'required' => true,
                 'default_value' => 'Text',
-            ]
+            ],
         );
     }
 }

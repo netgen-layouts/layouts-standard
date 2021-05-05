@@ -43,7 +43,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\BooleanType::class,
             [
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->add(
@@ -51,7 +51,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\BooleanType::class,
             [
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->add(
@@ -59,7 +59,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\BooleanType::class,
             [
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->add(
@@ -69,7 +69,7 @@ final class GalleryHandler extends BlockDefinitionHandler
                 'required' => true,
                 'options' => array_flip($this->transitions),
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->add(
@@ -77,7 +77,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\Compound\BooleanType::class,
             [
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->get('autoplay')->add(
@@ -87,7 +87,7 @@ final class GalleryHandler extends BlockDefinitionHandler
                 'required' => true,
                 'min' => $this->minAutoplayTime,
                 'max' => $this->maxAutoplayTime,
-            ]
+            ],
         );
 
         $builder->add(
@@ -97,7 +97,7 @@ final class GalleryHandler extends BlockDefinitionHandler
                 'required' => true,
                 'min' => 1,
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->add(
@@ -106,7 +106,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             [
                 'min' => 1,
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->add(
@@ -114,12 +114,12 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\Compound\BooleanType::class,
             [
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
 
         $builder->get('show_details')->add(
             'show_details_on_hover',
-            ParameterType\BooleanType::class
+            ParameterType\BooleanType::class,
         );
 
         $builder->add(
@@ -127,7 +127,7 @@ final class GalleryHandler extends BlockDefinitionHandler
             ParameterType\BooleanType::class,
             [
                 'groups' => [self::GROUP_DESIGN],
-            ]
+            ],
         );
     }
 }

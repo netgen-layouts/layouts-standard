@@ -230,7 +230,7 @@ abstract class GalleryTest extends BlockTest
             [
                 'slide' => 'Slide',
                 'fade' => 'Fade',
-            ]
+            ],
         );
     }
 }
