@@ -8,3 +8,6 @@ parameters:
         # Disable errors about missing value types in PHPUnit data providers
 
         - '#Method .+Test::\w+DataProvider\(\) return type has no value type specified in iterable type array.#'
+
+        # Disable errors for various tests that verify arrays not having certain elements
+        - '#Call to static method PHPUnit\\Framework\\Assert::assertArrayHasKey\(\)#'
