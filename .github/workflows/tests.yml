@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: ['7.4', '8.0']
+        php: ['7.4', '8.1']
         symfony: ['~3.4.0', '~4.4.0', '~5.4.0']
         deps: ['normal']
         include:
@@ -23,7 +23,7 @@ jobs:
             symfony: '~3.4.0'
             deps: 'low'
         exclude:
-          - php: '8.0'
+          - php: '8.1'
             symfony: '~3.4.0'
 
     steps:
