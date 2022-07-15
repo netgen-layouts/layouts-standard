@@ -7,6 +7,7 @@ namespace Netgen\Layouts\Standard\Block\BlockDefinition\Handler;
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\Layouts\Parameters\ParameterBuilderInterface;
 use Netgen\Layouts\Parameters\ParameterType;
+
 use function array_flip;
 
 final class MapHandler extends BlockDefinitionHandler

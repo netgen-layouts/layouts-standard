@@ -8,6 +8,7 @@ use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandler;
 use Netgen\Layouts\Block\BlockDefinition\Handler\PagedCollectionsBlockInterface;
 use Netgen\Layouts\Parameters\ParameterBuilderInterface;
 use Netgen\Layouts\Parameters\ParameterType;
+
 use function array_flip;
 
 final class ListHandler extends BlockDefinitionHandler implements PagedCollectionsBlockInterface
