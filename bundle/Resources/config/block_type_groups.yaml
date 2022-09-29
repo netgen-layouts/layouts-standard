@@ -11,15 +11,18 @@ block_type_groups:
             - { identifier: map, priority: 300 }
             - { identifier: markdown, priority: 200 }
             - { identifier: html_snippet, priority: 100 }
+    components:
+        name: 'Components'
+        priority: 900
     listing:
         name: 'Listing'
-        priority: 900
+        priority: 800
         block_types:
             - { identifier: list, priority: 200 }
             - { identifier: grid, priority: 100 }
     gallery:
         name: 'Gallery'
-        priority: 800
+        priority: 700
         block_types:
             - { identifier: slider, priority: 400 }
             - { identifier: thumb_gallery, priority: 300 }
@@ -27,7 +30,7 @@ block_type_groups:
             - { identifier: sushi_bar, priority: 100 }
     containers:
         name: 'Containers'
-        priority: 700
+        priority: 600
         block_types:
             - { identifier: column, priority: 400 }
             - { identifier: two_columns, priority: 300 }
@@ -35,7 +38,7 @@ block_type_groups:
             - { identifier: four_columns, priority: 100 }
     placeholders:
         name: 'Placeholders'
-        priority: 600
+        priority: 500
         block_types:
             - { identifier: twig_block, priority: 200 }
             - { identifier: full_view, priority: 100 }
