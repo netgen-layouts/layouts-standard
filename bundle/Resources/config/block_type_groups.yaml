@@ -1,16 +1,21 @@
 block_type_groups:
     basic:
         name: 'Basic'
+        priority: 100
         block_types: [title, text, button, rich_text, external_video, map, markdown, html_snippet]
     listing:
         name: 'Listing'
+        priority: 90
         block_types: [list, grid]
     gallery:
         name: 'Gallery'
+        priority: 80
         block_types: [slider, thumb_gallery, grid_gallery, sushi_bar]
     containers:
         name: 'Containers'
+        priority: 70
         block_types: [column, two_columns, three_columns, four_columns]
     placeholders:
         name: 'Placeholders'
+        priority: 60
         block_types: [twig_block, full_view]
