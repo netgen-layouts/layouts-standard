@@ -3,7 +3,7 @@
 {% import '@NetgenLayouts/parts/macros.html.twig' as macros %}
 
 {% block content %}
-    {% if collections.default is defined %}
+    {% if collections.default is defined and collections.default is not empty %}
         <div class="sushi-swiper swiper-container"
             data-effect="slide"
             {% if block.parameter('infinite_loop').value %}data-loop="true"{% endif %}

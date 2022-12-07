@@ -3,7 +3,7 @@
 {% import '@NetgenLayouts/parts/macros.html.twig' as macros %}
 
 {% block content %}
-    {% if collections.default is defined %}
+    {% if collections.default is defined and collections.default is not empty %}
         {% set number_of_thumbnails = block.parameter('number_of_thumbnails').value %}
 
         <div class="row flex-row nglayouts-flex-row {% if block.parameter('enable_lightbox').value %}js-lightbox-enabled{% endif %}">
