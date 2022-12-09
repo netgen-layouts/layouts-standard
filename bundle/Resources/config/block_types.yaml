@@ -1,6 +1,7 @@
 block_types:
     grid:
         name: 'Grid'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-grid.svg'
         definition_identifier: list
         defaults:
             view_type: grid
@@ -14,24 +15,28 @@ block_types:
 
     slider:
         name: 'Slider'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-slider.svg'
         definition_identifier: gallery
         defaults:
             view_type: slider
 
     thumb_gallery:
         name: 'Thumb gallery'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-thumb_gallery.svg'
         definition_identifier: gallery
         defaults:
             view_type: thumb_gallery
 
     grid_gallery:
         name: 'Grid gallery'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-grid_gallery.svg'
         definition_identifier: gallery
         defaults:
             view_type: grid_gallery
 
     sushi_bar:
         name: 'Sushi bar'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-sushi_bar.svg'
         definition_identifier: gallery
         defaults:
             view_type: sushi_bar

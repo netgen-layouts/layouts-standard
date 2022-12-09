@@ -1,6 +1,7 @@
 block_definitions:
     title:
         name: 'Title'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-title.svg'
         translatable: true
         view_types:
             title:
@@ -8,6 +9,7 @@ block_definitions:
 
     text:
         name: 'Text'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-text.svg'
         translatable: true
         view_types:
             text:
@@ -15,6 +17,7 @@ block_definitions:
 
     button:
         name: 'Button / Link'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-button.svg'
         translatable: true
         view_types:
             button:
@@ -22,6 +25,7 @@ block_definitions:
 
     markdown:
         name: 'Markdown'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-markdown.svg'
         translatable: true
         view_types:
             markdown:
@@ -29,6 +33,7 @@ block_definitions:
 
     rich_text:
         name: 'Rich text'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-rich_text.svg'
         translatable: true
         view_types:
             rich_text:
@@ -36,36 +41,42 @@ block_definitions:
 
     html_snippet:
         name: 'HTML snippet'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-html_snippet.svg'
         view_types:
             html_snippet:
                 name: 'HTML snippet'
 
     full_view:
         name: 'Full view'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-full_view.svg'
         view_types:
             full_view:
                 name: 'Full view'
 
     twig_block:
         name: 'Twig block'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-twig_block.svg'
         view_types:
             twig_block:
                 name: 'Twig block'
 
     external_video:
         name: 'External video'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-external_video.svg'
         view_types:
             external_video:
                 name: 'External video'
 
     map:
         name: 'Map'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-map.svg'
         view_types:
             map:
                 name: 'Map'
 
     list:
         name: 'List'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-list.svg'
         collections: ~
         forms:
             full:
@@ -81,6 +92,7 @@ block_definitions:
 
     gallery:
         name: 'Gallery'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-gallery.svg'
         collections: ~
         forms:
             full:
@@ -126,6 +138,7 @@ block_definitions:
 
     column:
         name: 'Column'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-column.svg'
         translatable: true
         view_types:
             column:
@@ -133,6 +146,7 @@ block_definitions:
 
     two_columns:
         name: 'Two columns'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-two_columns.svg'
         translatable: true
         view_types:
             two_columns_50_50:
@@ -144,6 +158,7 @@ block_definitions:
 
     three_columns:
         name: 'Three columns'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-three_columns.svg'
         translatable: true
         view_types:
             three_columns_33_33_33:
@@ -157,6 +172,7 @@ block_definitions:
 
     four_columns:
         name: 'Four columns'
+        icon: '/bundles/netgenlayoutsstandard/images/blocks/icon-four_columns.svg'
         translatable: true
         view_types:
             four_columns:
