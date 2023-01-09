@@ -27,26 +27,26 @@ view:
                     layout\type: layout_6
         app:
             layout_1:
-                template: "@NetgenLayoutsStandard/app/layout/layout_1.html.twig"
+                template: "@nglayouts_admin/app/layout/layout_1.html.twig"
                 match:
                     layout\type: layout_1
             layout_2:
-                template: "@NetgenLayoutsStandard/app/layout/layout_2.html.twig"
+                template: "@nglayouts_admin/app/layout/layout_2.html.twig"
                 match:
                     layout\type: layout_2
             layout_3:
-                template: "@NetgenLayoutsStandard/app/layout/layout_3.html.twig"
+                template: "@nglayouts_admin/app/layout/layout_3.html.twig"
                 match:
                     layout\type: layout_3
             layout_4:
-                template: "@NetgenLayoutsStandard/app/layout/layout_4.html.twig"
+                template: "@nglayouts_admin/app/layout/layout_4.html.twig"
                 match:
                     layout\type: layout_4
             layout_5:
-                template: "@NetgenLayoutsStandard/app/layout/layout_5.html.twig"
+                template: "@nglayouts_admin/app/layout/layout_5.html.twig"
                 match:
                     layout\type: layout_5
             layout_6:
-                template: "@NetgenLayoutsStandard/app/layout/layout_6.html.twig"
+                template: "@nglayouts_admin/app/layout/layout_6.html.twig"
                 match:
                     layout\type: layout_6
