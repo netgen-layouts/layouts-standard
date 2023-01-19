@@ -35,8 +35,7 @@
         "webpack-cli": "^3.3.10"
     },
     "dependencies": {
-        "jquery": "^3.4.1",
-        "magnific-popup": "^1.1.0",
+        "photoswipe": "^5.3.4",
         "swiper": "^4.5.1"
     },
     "scripts": {

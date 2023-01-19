@@ -1,21 +1,15 @@
-/* global $, Swiper */
+import Swiper from 'swiper';
+import PhotoSwipe from 'photoswipe';
+import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm';
 
 window.addEventListener('load', () => {
-  $('.nglayouts-as-flex').each((i, el) => {
-    if (!$(el).find('> *').length) $(el).remove();
-  });
-
-  $('.ngl-vt-grid_gallery .js-lightbox-enabled').each((i, el) => {
-    $(el).magnificPopup({
-      delegate: '.js-mfp-item', // child items selector, by clicking on it popup will open
-      type: 'image',
-      zoom: {
-        enabled: true,
-      },
-      gallery: {
-        enabled: true,
-      },
+  document.querySelectorAll('.ngl-vt-grid_gallery .js-lightbox-enabled').forEach((element) => {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: element,
+      children: '.js-lightbox-item',
+      pswpModule: PhotoSwipe,
     });
+    lightbox.init();
   });
 
   // Sushi swiper
