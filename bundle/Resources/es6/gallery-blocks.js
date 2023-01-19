@@ -1,6 +1,4 @@
-import Swiper from 'swiper';
-import PhotoSwipe from 'photoswipe';
-import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm';
+/* global Swiper, PhotoSwipe, PhotoSwipeLightbox */
 
 window.addEventListener('load', () => {
   document.querySelectorAll('.ngl-vt-grid_gallery .js-lightbox-enabled').forEach((element) => {
