@@ -1,6 +1,7 @@
-import $ from 'jquery';
-import 'magnific-popup';
 import Swiper from 'swiper';
+import PhotoSwipe from 'photoswipe';
+import PhotoSwipeLightbox from 'photoswipe/dist/photoswipe-lightbox.esm';
 
-global.$ = global.jQuery = $; // eslint-disable-line no-multi-assign
 global.Swiper = Swiper;
+global.PhotoSwipe = PhotoSwipe;
+global.PhotoSwipeLightbox = PhotoSwipeLightbox;
