@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     padding: 0 15px;
-    margin-bottom: 20px;
     img {
         max-height: 100%;
     }
@@ -19,11 +18,104 @@
 }
 
 .swiper-container {
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0IDI2TDIgMTRMMTQgMiIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==");
+        background-repeat: no-repeat;
+        background-size: .75rem 1.5rem;
+        background-position: center;
+        background-color: $primary;
+        width: 2.25rem;
+        height: 2.25rem;
+        display: inline-block;
+        left: 0;
+        margin: 0;
+        transform: translateY(-50%);
+        .bg-color-primary &,
+        .bg-color-black & {
+            background-color: $white;
+        }
+        @include media-breakpoint-up(sm) {
+            width: 3rem;
+            height: 3rem;
+            background-size: 1rem 2rem;
+        }
+        /* @include media-breakpoint-down(sm) {
+            width: 2.25rem;
+            height: 2.25rem;
+            background-size: .75rem 1.5rem;
+        } */
+    }
+    .swiper-button-next {
+        transform: translateY(-50%) rotate(180deg);
+        left: auto;
+        right: 0;
+    }
+    .swiper-slide {
+        overflow: hidden;
+        * {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &.default-swiper {
+        .swiper-wrapper {
+            overflow: hidden;
+        }
+    }
     &.sushi-swiper {
         visibility: hidden;
         cursor: grab;
         &.swiper-container-horizontal {
             visibility: visible;
+        }
+    }
+    &.has-pagination {
+        padding-bottom: 2rem;
+        .swiper-pagination {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 .5rem;
+            .swiper-pagination-bullet {
+                width: .875rem;
+                height: .875rem;
+                background-color: transparent;
+                border: .125rem solid $black;
+                transition: background-color .125s ease, border-color .125s ease;
+                &.swiper-pagination-bullet-active {
+                    background-color: $black;
+                }
+                .bg-color-black & {
+                    border-color: $white;
+                    &.swiper-pagination-bullet-active {
+                        background-color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &.gallery-top {
+        + .gallery-thumbs {
+            margin-top: $gutter;
+        }
+    }
+}
+
+.ngl-gallery {
+    .row {
+        gap: $gap 0;
+        .nglayouts-as-flex {
+            overflow: hidden;
         }
     }
 }

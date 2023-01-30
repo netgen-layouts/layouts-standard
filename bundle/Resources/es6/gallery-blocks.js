@@ -1,7 +1,7 @@
 /* global Swiper, PhotoSwipe, PhotoSwipeLightbox */
 
 window.addEventListener('load', () => {
-  document.querySelectorAll('.ngl-vt-grid_gallery .js-lightbox-enabled').forEach((element) => {
+  document.querySelectorAll('.ngl-gallery .js-lightbox-enabled').forEach((element) => {
     const lightbox = new PhotoSwipeLightbox({
       gallery: element,
       children: '.js-lightbox-item',
@@ -72,6 +72,9 @@ window.addEventListener('load', () => {
       },
       autoHeight: true,
       on: {
+        init() {
+          this.update();
+        },
         lazyImageReady() {
           this.updateAutoHeight();
         },
