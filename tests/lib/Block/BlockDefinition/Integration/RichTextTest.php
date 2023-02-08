@@ -6,11 +6,11 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\RichTextHandler;
-use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class RichTextTest extends BlockTest
+abstract class RichTextTest extends BlockTestCase
 {
-    public function parametersDataProvider(): array
+    public static function parametersDataProvider(): array
     {
         return [
             [
@@ -36,7 +36,7 @@ abstract class RichTextTest extends BlockTest
         ];
     }
 
-    public function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): array
     {
         return [
             [

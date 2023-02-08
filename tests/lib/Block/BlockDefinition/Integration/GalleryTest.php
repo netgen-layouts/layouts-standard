@@ -6,16 +6,16 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\GalleryHandler;
-use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class GalleryTest extends BlockTest
+abstract class GalleryTest extends BlockTestCase
 {
     public function hasCollection(): bool
     {
         return true;
     }
 
-    public function parametersDataProvider(): array
+    public static function parametersDataProvider(): array
     {
         return [
             [
@@ -143,7 +143,7 @@ abstract class GalleryTest extends BlockTest
         ];
     }
 
-    public function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): array
     {
         return [
             [

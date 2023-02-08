@@ -6,11 +6,11 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
-use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class TwigBlockTest extends BlockTest
+abstract class TwigBlockTest extends BlockTestCase
 {
-    public function parametersDataProvider(): array
+    public static function parametersDataProvider(): array
     {
         return [
             [
@@ -52,7 +52,7 @@ abstract class TwigBlockTest extends BlockTest
         ];
     }
 
-    public function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): array
     {
         return [
             [

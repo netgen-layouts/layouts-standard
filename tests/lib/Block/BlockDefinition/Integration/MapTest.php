@@ -6,11 +6,11 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MapHandler;
-use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class MapTest extends BlockTest
+abstract class MapTest extends BlockTestCase
 {
-    public function parametersDataProvider(): array
+    public static function parametersDataProvider(): array
     {
         return [
             [
@@ -100,7 +100,7 @@ abstract class MapTest extends BlockTest
         ];
     }
 
-    public function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): array
     {
         return [
             [

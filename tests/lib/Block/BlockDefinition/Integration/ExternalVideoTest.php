@@ -6,11 +6,11 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler;
-use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTest;
+use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class ExternalVideoTest extends BlockTest
+abstract class ExternalVideoTest extends BlockTestCase
 {
-    public function parametersDataProvider(): array
+    public static function parametersDataProvider(): array
     {
         return [
             [
@@ -98,7 +98,7 @@ abstract class ExternalVideoTest extends BlockTest
         ];
     }
 
-    public function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): array
     {
         return [
             [
