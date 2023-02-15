@@ -5,31 +5,42 @@ declare(strict_types=1);
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
-use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ListHandler;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class ListTest extends BlockTestCase
+abstract class TwigBlockTestBase extends BlockTestCase
 {
-    public function hasCollection(): bool
-    {
-        return true;
-    }
-
     public static function parametersDataProvider(): array
     {
         return [
             [
                 [],
                 [
-                    'number_of_columns' => 2,
+                    'block_name' => null,
                 ],
             ],
             [
                 [
-                    'number_of_columns' => 3,
+                    'block_name' => null,
                 ],
                 [
-                    'number_of_columns' => 3,
+                    'block_name' => null,
+                ],
+            ],
+            [
+                [
+                    'block_name' => '',
+                ],
+                [
+                    'block_name' => '',
+                ],
+            ],
+            [
+                [
+                    'block_name' => 'block',
+                ],
+                [
+                    'block_name' => 'block',
                 ],
             ],
             [
@@ -46,12 +57,7 @@ abstract class ListTest extends BlockTestCase
         return [
             [
                 [
-                    'number_of_columns' => null,
-                ],
-            ],
-            [
-                [
-                    'number_of_columns' => '2',
+                    'block_name' => 42,
                 ],
             ],
         ];
@@ -59,11 +65,6 @@ abstract class ListTest extends BlockTestCase
 
     protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
-        return new ListHandler(
-            [
-                2 => '2 columns',
-                3 => '3 columns',
-            ],
-        );
+        return new TwigBlockHandler();
     }
 }

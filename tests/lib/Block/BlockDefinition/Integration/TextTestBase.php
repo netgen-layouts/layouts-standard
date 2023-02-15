@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
-use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\HtmlSnippetHandler;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\TextHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class HtmlSnippetTest extends BlockTestCase
+abstract class TextTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {
@@ -16,31 +16,15 @@ abstract class HtmlSnippetTest extends BlockTestCase
             [
                 [],
                 [
-                    'content' => null,
+                    'content' => 'Text',
                 ],
             ],
             [
                 [
-                    'content' => null,
+                    'content' => 'New Text',
                 ],
                 [
-                    'content' => null,
-                ],
-            ],
-            [
-                [
-                    'content' => '',
-                ],
-                [
-                    'content' => '',
-                ],
-            ],
-            [
-                [
-                    'content' => '<b>Text</b>',
-                ],
-                [
-                    'content' => '<b>Text</b>',
+                    'content' => 'New Text',
                 ],
             ],
             [
@@ -57,6 +41,16 @@ abstract class HtmlSnippetTest extends BlockTestCase
         return [
             [
                 [
+                    'content' => null,
+                ],
+            ],
+            [
+                [
+                    'content' => '',
+                ],
+            ],
+            [
+                [
                     'content' => 42,
                 ],
             ],
@@ -65,6 +59,6 @@ abstract class HtmlSnippetTest extends BlockTestCase
 
     protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
-        return new HtmlSnippetHandler();
+        return new TextHandler();
     }
 }

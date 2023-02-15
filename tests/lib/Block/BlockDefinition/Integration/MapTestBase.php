@@ -8,7 +8,7 @@ use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MapHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class MapTest extends BlockTestCase
+abstract class MapTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {

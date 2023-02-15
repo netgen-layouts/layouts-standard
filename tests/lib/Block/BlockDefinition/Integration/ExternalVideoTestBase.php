@@ -8,7 +8,7 @@ use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ExternalVideoHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class ExternalVideoTest extends BlockTestCase
+abstract class ExternalVideoTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {

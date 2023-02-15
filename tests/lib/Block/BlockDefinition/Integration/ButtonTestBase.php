@@ -9,7 +9,7 @@ use Netgen\Layouts\Parameters\Value\LinkValue;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ButtonHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class ButtonTest extends BlockTestCase
+abstract class ButtonTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {

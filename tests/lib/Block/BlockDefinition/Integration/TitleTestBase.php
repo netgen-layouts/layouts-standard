@@ -9,7 +9,7 @@ use Netgen\Layouts\Parameters\Value\LinkValue;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\TitleHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class TitleTest extends BlockTestCase
+abstract class TitleTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {

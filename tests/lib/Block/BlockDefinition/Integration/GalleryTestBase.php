@@ -8,7 +8,7 @@ use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\GalleryHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class GalleryTest extends BlockTestCase
+abstract class GalleryTestBase extends BlockTestCase
 {
     public function hasCollection(): bool
     {

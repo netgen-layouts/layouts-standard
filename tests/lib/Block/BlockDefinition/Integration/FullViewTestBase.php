@@ -8,7 +8,7 @@ use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\FullViewHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class FullViewTest extends BlockTestCase
+abstract class FullViewTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {

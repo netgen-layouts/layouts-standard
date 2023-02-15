@@ -5,44 +5,31 @@ declare(strict_types=1);
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
-use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
-use Netgen\Layouts\Standard\Utils\Markdown;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ListHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
-use Netgen\Layouts\Utils\HtmlPurifier;
 
-abstract class MarkdownTest extends BlockTestCase
+abstract class ListTestBase extends BlockTestCase
 {
+    public function hasCollection(): bool
+    {
+        return true;
+    }
+
     public static function parametersDataProvider(): array
     {
         return [
             [
                 [],
                 [
-                    'content' => null,
+                    'number_of_columns' => 2,
                 ],
             ],
             [
                 [
-                    'content' => null,
+                    'number_of_columns' => 3,
                 ],
                 [
-                    'content' => null,
-                ],
-            ],
-            [
-                [
-                    'content' => '',
-                ],
-                [
-                    'content' => '',
-                ],
-            ],
-            [
-                [
-                    'content' => '* Text',
-                ],
-                [
-                    'content' => '* Text',
+                    'number_of_columns' => 3,
                 ],
             ],
             [
@@ -59,7 +46,12 @@ abstract class MarkdownTest extends BlockTestCase
         return [
             [
                 [
-                    'content' => 42,
+                    'number_of_columns' => null,
+                ],
+            ],
+            [
+                [
+                    'number_of_columns' => '2',
                 ],
             ],
         ];
@@ -67,6 +59,11 @@ abstract class MarkdownTest extends BlockTestCase
 
     protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
-        return new MarkdownHandler(new Markdown(new HtmlPurifier()));
+        return new ListHandler(
+            [
+                2 => '2 columns',
+                3 => '3 columns',
+            ],
+        );
     }
 }

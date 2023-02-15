@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
-use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\TextHandler;
+use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\RichTextHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
-abstract class TextTest extends BlockTestCase
+abstract class RichTextTestBase extends BlockTestCase
 {
     public static function parametersDataProvider(): array
     {
@@ -21,10 +21,10 @@ abstract class TextTest extends BlockTestCase
             ],
             [
                 [
-                    'content' => 'New Text',
+                    'content' => '<b>Text</b>',
                 ],
                 [
-                    'content' => 'New Text',
+                    'content' => '<b>Text</b>',
                 ],
             ],
             [
@@ -59,6 +59,6 @@ abstract class TextTest extends BlockTestCase
 
     protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
-        return new TextHandler();
+        return new RichTextHandler();
     }
 }
