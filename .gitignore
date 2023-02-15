@@ -1,4 +1,5 @@
 .idea/
+.phpunit.cache/
 bundle/Resources/public/dev/
 coverage/
 node_modules/
