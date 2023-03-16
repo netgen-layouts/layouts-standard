@@ -45,7 +45,7 @@ final class MarkdownHandlerTest extends TestCase
 
         $this->handler->getDynamicParameters($dynamicParameters, $block);
 
-        self::assertArrayHasKey('html', $dynamicParameters);
+        self::assertTrue($dynamicParameters->offsetExists('html'));
         self::assertSame('<h1>Title</h1>', $dynamicParameters['html']);
     }
 }
