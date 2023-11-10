@@ -11,7 +11,7 @@ use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
 abstract class TitleTestBase extends BlockTestCase
 {
-    public static function parametersDataProvider(): array
+    public static function parametersDataProvider(): iterable
     {
         return [
             [
@@ -104,7 +104,7 @@ abstract class TitleTestBase extends BlockTestCase
         ];
     }
 
-    public static function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): iterable
     {
         return [
             [

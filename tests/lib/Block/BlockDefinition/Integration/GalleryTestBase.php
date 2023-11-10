@@ -15,7 +15,7 @@ abstract class GalleryTestBase extends BlockTestCase
         return true;
     }
 
-    public static function parametersDataProvider(): array
+    public static function parametersDataProvider(): iterable
     {
         return [
             [
@@ -143,7 +143,7 @@ abstract class GalleryTestBase extends BlockTestCase
         ];
     }
 
-    public static function invalidParametersDataProvider(): array
+    public static function invalidParametersDataProvider(): iterable
     {
         return [
             [
