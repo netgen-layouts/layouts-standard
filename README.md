@@ -10,7 +10,7 @@ on how to install the complete Netgen Layouts to your Symfony based app.
 As an alternative, you can use the following repositories with Netgen Layouts
 preinstalled to bootstrap your project:
 
-* [Integration with eZ Platform](https://github.com/netgen-layouts/layouts-ezplatform-site)
+* [Integration with Ibexa DXP](https://github.com/netgen-layouts/layouts-ibexa-site)
 * [Integration with Sylius](https://github.com/netgen-layouts/layouts-sylius-site)
 * [Integration with Contentful](https://github.com/netgen-layouts/layouts-contentful-site)
 * [Integration with Symfony](https://github.com/netgen-layouts/layouts-symfony-site)
