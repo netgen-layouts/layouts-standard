@@ -38,6 +38,9 @@
         "photoswipe": "^5.3.4",
         "swiper": "^4.5.1"
     },
+    "resolutions": {
+        "minimatch": "^9.0.0"
+    },
     "scripts": {
         "dev": "webpack --mode=development",
         "prod": "webpack --mode=production",
