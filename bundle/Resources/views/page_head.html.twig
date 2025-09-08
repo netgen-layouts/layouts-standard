@@ -1,4 +1,4 @@
 {% set full = full ?? false %}
 
-{% include '@NetgenLayoutsStandard/stylesheets.html.twig' with {full: full} %}
-{% include '@NetgenLayoutsStandard/javascripts.html.twig' with {full: full} %}
+{{ include('@NetgenLayoutsStandard/stylesheets.html.twig', {full: full}) }}
+{{ include('@NetgenLayoutsStandard/javascripts.html.twig', {full: full}) }}

@@ -16,9 +16,9 @@
 {% set collection_html %}
     {% for result in collections[collection_identifier] %}
         {% if block.parameter('paged_collections:enabled').value %}
-            {% include ajax_template_name %}
+            {{ include(ajax_template_name) }}
         {% else %}
-            {% include template_name %}
+            {{ include(template_name) }}
         {% endif %}
     {% endfor %}
 {% endset %}
