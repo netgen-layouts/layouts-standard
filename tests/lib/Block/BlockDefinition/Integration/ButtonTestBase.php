@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Integration;
 
 use Netgen\Layouts\Block\BlockDefinition\BlockDefinitionHandlerInterface;
+use Netgen\Layouts\Parameters\Value\LinkType;
 use Netgen\Layouts\Parameters\Value\LinkValue;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\ButtonHandler;
 use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
@@ -51,14 +52,14 @@ abstract class ButtonTestBase extends BlockTestCase
             [
                 [
                     'link' => [
-                        'link_type' => LinkValue::LINK_TYPE_URL,
+                        'link_type' => LinkType::Url->value,
                         'link' => 'https://netgen.io',
                     ],
                 ],
                 [
                     'link' => LinkValue::fromArray(
                         [
-                            'linkType' => LinkValue::LINK_TYPE_URL,
+                            'linkType' => LinkType::Url,
                             'link' => 'https://netgen.io',
                         ],
                     ),
@@ -67,14 +68,14 @@ abstract class ButtonTestBase extends BlockTestCase
             [
                 [
                     'link' => [
-                        'link_type' => LinkValue::LINK_TYPE_INTERNAL,
+                        'link_type' => LinkType::Internal->value,
                         'link' => 'value://42',
                     ],
                 ],
                 [
                     'link' => LinkValue::fromArray(
                         [
-                            'linkType' => LinkValue::LINK_TYPE_INTERNAL,
+                            'linkType' => LinkType::Internal,
                             'link' => 'value://42',
                         ],
                     ),

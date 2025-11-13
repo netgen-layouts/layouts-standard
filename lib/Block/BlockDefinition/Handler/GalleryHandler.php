@@ -12,30 +12,18 @@ use function array_flip;
 
 final class GalleryHandler extends BlockDefinitionHandler
 {
-    private int $minAutoplayTime;
-
-    private int $maxAutoplayTime;
-
-    /**
-     * The list of gallery transitions. Keys should be identifiers, while values
-     * should be human readable names of the transitions.
-     *
-     * @var array<string, string>
-     */
-    private array $transitions;
-
     /**
      * @param array<string, string> $transitions
      */
     public function __construct(
-        int $minAutoplayTime,
-        int $maxAutoplayTime,
-        array $transitions
-    ) {
-        $this->minAutoplayTime = $minAutoplayTime;
-        $this->maxAutoplayTime = $maxAutoplayTime;
-        $this->transitions = $transitions;
-    }
+        private int $minAutoplayTime,
+        private int $maxAutoplayTime,
+        /**
+         * The list of gallery transitions. Keys should be identifiers, while values
+         * should be human readable names of the transitions.
+         */
+        private array $transitions,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

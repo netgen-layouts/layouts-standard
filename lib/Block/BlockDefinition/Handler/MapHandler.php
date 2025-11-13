@@ -12,27 +12,18 @@ use function array_flip;
 
 final class MapHandler extends BlockDefinitionHandler
 {
-    private int $minZoom;
-
-    private int $maxZoom;
-
-    /**
-     * The list of map types available. Keys should be identifiers, while values
-     * should be human readable names of the map types.
-     *
-     * @var array<string, string>
-     */
-    private array $mapTypes;
-
     /**
      * @param array<string, string> $mapTypes
      */
-    public function __construct(int $minZoom, int $maxZoom, array $mapTypes)
-    {
-        $this->minZoom = $minZoom;
-        $this->maxZoom = $maxZoom;
-        $this->mapTypes = $mapTypes;
-    }
+    public function __construct(
+        private int $minZoom,
+        private int $maxZoom,
+        /**
+         * The list of map types available. Keys should be identifiers, while values
+         * should be human readable names of the map types.
+         */
+        private array $mapTypes,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

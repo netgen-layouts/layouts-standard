@@ -13,12 +13,9 @@ use Netgen\Layouts\Standard\Utils\Markdown;
 
 final class MarkdownHandler extends BlockDefinitionHandler
 {
-    private Markdown $markdownParser;
-
-    public function __construct(Markdown $markdownParser)
-    {
-        $this->markdownParser = $markdownParser;
-    }
+    public function __construct(
+        private Markdown $markdownParser,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

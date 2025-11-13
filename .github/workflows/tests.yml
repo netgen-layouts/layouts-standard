@@ -15,21 +15,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: ['7.4', '8.4']
-        symfony: ['~5.4.0', '~6.4.0']
+        php: ['8.4']
+        symfony: ['~7.3.0']
         deps: ['normal']
         include:
-          - php: '7.4'
-            symfony: '~3.4.0'
-
-          - php: '7.4'
-            symfony: '~3.4.0'
-            deps: 'low'
-        exclude:
           - php: '8.4'
-            symfony: '~3.4.0'
-          - php: '7.4'
-            symfony: '~6.4.0'
+            symfony: '~7.3.0'
+            deps: 'low'
 
     steps:
       - uses: actions/checkout@v3

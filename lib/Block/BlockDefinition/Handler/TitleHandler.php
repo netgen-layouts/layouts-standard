@@ -13,29 +13,20 @@ use function array_flip;
 final class TitleHandler extends BlockDefinitionHandler
 {
     /**
-     * The list of HTML tags available for the link. Keys should be identifiers, while values
-     * should be human readable names of the HTML tags.
-     *
-     * @var array<string, string>
-     */
-    private array $tags;
-
-    /**
-     * List of value types allowed to be used in the link parameter.
-     *
-     * @var string[]
-     */
-    private array $linkValueTypes;
-
-    /**
      * @param array<string, string> $tags
      * @param string[] $linkValueTypes
      */
-    public function __construct(array $tags, array $linkValueTypes)
-    {
-        $this->tags = $tags;
-        $this->linkValueTypes = $linkValueTypes;
-    }
+    public function __construct(
+        /**
+         * The list of HTML tags available for the link. Keys should be identifiers, while values
+         * should be human readable names of the HTML tags.
+         */
+        private array $tags,
+        /**
+         * List of value types allowed to be used in the link parameter.
+         */
+        private array $linkValueTypes,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

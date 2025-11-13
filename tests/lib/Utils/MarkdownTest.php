@@ -6,8 +6,10 @@ namespace Netgen\Layouts\Standard\Tests\Utils;
 
 use Netgen\Layouts\Standard\Utils\Markdown;
 use Netgen\Layouts\Utils\HtmlPurifier;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(Markdown::class)]
 final class MarkdownTest extends TestCase
 {
     private Markdown $markdown;
@@ -17,10 +19,6 @@ final class MarkdownTest extends TestCase
         $this->markdown = new Markdown(new HtmlPurifier());
     }
 
-    /**
-     * @covers \Netgen\Layouts\Standard\Utils\Markdown::__construct
-     * @covers \Netgen\Layouts\Standard\Utils\Markdown::parse
-     */
     public function testParse(): void
     {
         $html = $this->markdown->parse('# Title');

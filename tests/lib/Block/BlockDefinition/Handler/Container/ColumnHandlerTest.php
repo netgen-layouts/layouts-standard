@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler\Container;
 
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(ColumnHandler::class)]
 final class ColumnHandlerTest extends TestCase
 {
     private ColumnHandler $handler;
@@ -16,9 +18,6 @@ final class ColumnHandlerTest extends TestCase
         $this->handler = new ColumnHandler();
     }
 
-    /**
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Container\ColumnHandler::getPlaceholderIdentifiers
-     */
     public function testGetPlaceholderIdentifiers(): void
     {
         self::assertSame(['main'], $this->handler->getPlaceholderIdentifiers());

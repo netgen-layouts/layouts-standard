@@ -13,29 +13,20 @@ use function array_flip;
 final class ButtonHandler extends BlockDefinitionHandler
 {
     /**
-     * The list of styles for the button. Keys should be identifiers, while values
-     * should be human readable names of the styles.
-     *
-     * @var array<string, string>
-     */
-    private array $styles;
-
-    /**
-     * List of value types allowed to be used in the link parameter.
-     *
-     * @var string[]
-     */
-    private array $valueTypes;
-
-    /**
      * @param array<string, string> $styles
      * @param string[] $valueTypes
      */
-    public function __construct(array $styles, array $valueTypes)
-    {
-        $this->styles = $styles;
-        $this->valueTypes = $valueTypes;
-    }
+    public function __construct(
+        /**
+         * The list of styles for the button. Keys should be identifiers, while values
+         * should be human readable names of the styles.
+         */
+        private array $styles,
+        /**
+         * List of value types allowed to be used in the link parameter.
+         */
+        private array $valueTypes,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

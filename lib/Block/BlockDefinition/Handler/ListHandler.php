@@ -14,20 +14,15 @@ use function array_flip;
 final class ListHandler extends BlockDefinitionHandler implements PagedCollectionsBlockInterface
 {
     /**
-     * The list of columns available. Key should be number of columns, while values
-     * should be human readable names of the columns.
-     *
-     * @var string[]
-     */
-    private array $columns;
-
-    /**
      * @param string[] $columns
      */
-    public function __construct(array $columns)
-    {
-        $this->columns = $columns;
-    }
+    public function __construct(
+        /**
+         * The list of columns available. Key should be number of columns, while values
+         * should be human readable names of the columns.
+         */
+        private array $columns,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

@@ -10,7 +10,7 @@ use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
 abstract class GalleryTestBase extends BlockTestCase
 {
-    public function hasCollection(): bool
+    public function hasCollection(): true
     {
         return true;
     }

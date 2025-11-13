@@ -13,20 +13,15 @@ use function array_flip;
 final class ExternalVideoHandler extends BlockDefinitionHandler
 {
     /**
-     * The list of video services available. Keys should be identifiers, while values
-     * should be human readable names of the services.
-     *
-     * @var array<string, string>
-     */
-    private array $services;
-
-    /**
      * @param array<string, string> $services
      */
-    public function __construct(array $services)
-    {
-        $this->services = $services;
-    }
+    public function __construct(
+        /**
+         * The list of video services available. Keys should be identifiers, while values
+         * should be human readable names of the services.
+         */
+        private array $services,
+    ) {}
 
     public function buildParameters(ParameterBuilderInterface $builder): void
     {

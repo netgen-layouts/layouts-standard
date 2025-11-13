@@ -7,8 +7,10 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler\Twig;
 use Netgen\Layouts\API\Values\Block\Block;
 use Netgen\Layouts\Parameters\Parameter;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(TwigBlockHandler::class)]
 final class TwigBlockHandlerTest extends TestCase
 {
     private TwigBlockHandler $handler;
@@ -18,17 +20,6 @@ final class TwigBlockHandlerTest extends TestCase
         $this->handler = new TwigBlockHandler();
     }
 
-    /**
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::isContextual
-     */
-    public function testIsContextual(): void
-    {
-        self::assertTrue($this->handler->isContextual(new Block()));
-    }
-
-    /**
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler::getTwigBlockNames
-     */
     public function testGetTwigBlockNames(): void
     {
         $block = Block::fromArray(

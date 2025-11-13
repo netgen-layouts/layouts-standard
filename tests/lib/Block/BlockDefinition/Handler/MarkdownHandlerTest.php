@@ -10,8 +10,10 @@ use Netgen\Layouts\Parameters\Parameter;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use Netgen\Layouts\Standard\Utils\Markdown;
 use Netgen\Layouts\Utils\HtmlPurifier;
+use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
+#[CoversClass(MarkdownHandler::class)]
 final class MarkdownHandlerTest extends TestCase
 {
     private MarkdownHandler $handler;
@@ -21,10 +23,6 @@ final class MarkdownHandlerTest extends TestCase
         $this->handler = new MarkdownHandler(new Markdown(new HtmlPurifier()));
     }
 
-    /**
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler::__construct
-     * @covers \Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler::getDynamicParameters
-     */
     public function testGetDynamicParameters(): void
     {
         $block = Block::fromArray(
