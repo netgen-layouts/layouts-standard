@@ -16,7 +16,6 @@
     "require-dev": {
         "netgen/layouts-coding-standard": "^2.0",
         "phpunit/phpunit": "^12.4",
-        "symfony/phpunit-bridge": "^7.3",
         "symfony/var-dumper": "^7.3",
         "phpstan/phpstan": "^2.1",
         "phpstan/phpstan-strict-rules": "^2.0",
@@ -26,7 +25,6 @@
         "allow-plugins": false
     },
     "scripts": {
-        "pre-command-run": "@putenv SYMFONY_DEPRECATIONS_HELPER=max[self]=0&quiet[]=indirect&quiet[]=other",
         "test": "@php vendor/bin/phpunit --colors=always",
         "coverage": "@php -dzend_extension=xdebug.so -dxdebug.mode=coverage vendor/bin/phpunit --coverage-html=coverage --colors=always",
         "phpstan": "@php vendor/bin/phpstan analyse -c phpstan.neon --level=8 --ansi lib bundle",
