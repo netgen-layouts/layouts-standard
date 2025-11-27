@@ -7,6 +7,7 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler;
 use Netgen\Layouts\API\Values\Block\Block;
 use Netgen\Layouts\Block\DynamicParameters;
 use Netgen\Layouts\Parameters\Parameter;
+use Netgen\Layouts\Parameters\ParameterList;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler;
 use Netgen\Layouts\Standard\Utils\Markdown;
 use Netgen\Layouts\Utils\HtmlPurifier;
@@ -29,13 +30,15 @@ final class MarkdownHandlerTest extends TestCase
             [
                 'availableLocales' => ['en'],
                 'locale' => 'en',
-                'parameters' => [
-                    'content' => Parameter::fromArray(
-                        [
-                            'value' => '# Title',
-                        ],
-                    ),
-                ],
+                'parameters' => new ParameterList(
+                    [
+                        'content' => Parameter::fromArray(
+                            [
+                                'value' => '# Title',
+                            ],
+                        ),
+                    ],
+                ),
             ],
         );
 

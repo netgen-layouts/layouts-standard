@@ -6,6 +6,7 @@ namespace Netgen\Layouts\Standard\Tests\Block\BlockDefinition\Handler\Twig;
 
 use Netgen\Layouts\API\Values\Block\Block;
 use Netgen\Layouts\Parameters\Parameter;
+use Netgen\Layouts\Parameters\ParameterList;
 use Netgen\Layouts\Standard\Block\BlockDefinition\Handler\Twig\TwigBlockHandler;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
@@ -26,13 +27,15 @@ final class TwigBlockHandlerTest extends TestCase
             [
                 'availableLocales' => ['en'],
                 'locale' => 'en',
-                'parameters' => [
-                    'block_name' => Parameter::fromArray(
-                        [
-                            'value' => 'twig_block',
-                        ],
-                    ),
-                ],
+                'parameters' => new ParameterList(
+                    [
+                        'block_name' => Parameter::fromArray(
+                            [
+                                'value' => 'twig_block',
+                            ],
+                        ),
+                    ],
+                ),
             ],
         );
 
