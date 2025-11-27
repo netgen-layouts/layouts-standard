@@ -10,7 +10,7 @@
     {% set title = macros.inline_template(block.parameter('title').value, _context) %}
 
     <{{ tag }} class="title">
-        {% if block.parameter('use_link').value and not link.empty %}
+        {% if block.parameter('use_link').value and not link.isEmpty %}
             {{ nglayouts_render_parameter(link, {content: title}) }}
         {% else %}
             {{ title }}

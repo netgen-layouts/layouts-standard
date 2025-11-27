@@ -16,7 +16,7 @@
 {% endif %}
 
 {% block content %}
-    {% if not link.empty and not text.empty %}
+    {% if not link.isEmpty and not text.isEmpty %}
         {{ nglayouts_render_parameter(
             link, {
                 attr: {

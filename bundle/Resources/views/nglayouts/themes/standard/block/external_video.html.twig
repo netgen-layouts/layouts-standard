@@ -10,7 +10,7 @@
 {% set video_id = block.parameter('video_id') %}
 
 {% block content %}
-    {% if video_services[service.value] is defined and not video_id.empty %}
+    {% if video_services[service.value] is defined and not video_id.isEmpty %}
         <div class="video-{{ service.value }} embed-responsive embed-responsive-16by9">
             <iframe
                 src="{{ video_services[service.value]|replace({ '%video_id%': video_id.value }) }}"
