@@ -15,7 +15,7 @@ preinstalled to bootstrap your project:
 * [Integration with Contentful](https://github.com/netgen-layouts/layouts-contentful-site)
 * [Integration with Symfony](https://github.com/netgen-layouts/layouts-symfony-site)
 
-These are kept uptodate as new versions of 3rd party products are released.
+These are kept up to date as new versions of 3rd party products are released.
 
 ## For developers
 
@@ -34,7 +34,7 @@ $ composer test
 
 All code is statically analysed with PHPStan. Make sure that PHPStan is green
 for the entire codebase after your changes. Run the following two commands to
-run PHPStan for the library/bundle code and for tests code, respectivelly:
+run PHPStan for the library/bundle code and for tests code, respectively:
 
 ```
 $ composer phpstan
