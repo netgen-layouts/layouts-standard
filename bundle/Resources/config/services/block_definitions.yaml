@@ -65,8 +65,6 @@ services:
 
     netgen_layouts.standard.block.block_definition_handler.markdown:
         class: Netgen\Layouts\Standard\Block\BlockDefinition\Handler\MarkdownHandler
-        arguments:
-            - "@netgen_layouts.standard.utils.markdown"
         tags:
             - { name: netgen_layouts.block_definition_handler, identifier: markdown }
 

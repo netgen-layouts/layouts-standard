@@ -1,5 +1,5 @@
 {% extends '@nglayouts/block/block.html.twig' %}
 
 {% block content %}
-    {{ block.dynamicParameter('html')|raw }}
+    {{ block.parameter('content').value|markdown_to_html }}
 {% endblock %}
