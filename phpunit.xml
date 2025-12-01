@@ -9,6 +9,7 @@
     displayDetailsOnTestsThatTriggerDeprecations="true"
     failOnRisky="true"
     failOnWarning="true"
+    colors="true"
 >
     <testsuites>
         <testsuite name="Netgen\Layouts\Standard">
@@ -18,7 +19,7 @@
 
     <source ignoreSuppressionOfDeprecations="true" ignoreIndirectDeprecations="true">
         <include>
-            <directory suffix=".php">lib</directory>
+            <directory>lib</directory>
         </include>
     </source>
 </phpunit>
