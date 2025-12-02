@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": "^8.4",
         "netgen/layouts-core": "~2.0.0",
         "league/commonmark": "^2.7",
         "twig/extra-bundle": "^3.22",
