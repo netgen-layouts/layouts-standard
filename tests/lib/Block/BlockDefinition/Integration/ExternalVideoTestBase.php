@@ -10,7 +10,7 @@ use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
 abstract class ExternalVideoTestBase extends BlockTestCase
 {
-    public static function parametersDataProvider(): iterable
+    final public static function parametersDataProvider(): iterable
     {
         return [
             [
@@ -98,7 +98,7 @@ abstract class ExternalVideoTestBase extends BlockTestCase
         ];
     }
 
-    public static function invalidParametersDataProvider(): iterable
+    final public static function invalidParametersDataProvider(): iterable
     {
         return [
             [
@@ -124,7 +124,7 @@ abstract class ExternalVideoTestBase extends BlockTestCase
         ];
     }
 
-    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    final protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
         return new ExternalVideoHandler(['youtube' => 'YouTube', 'vimeo' => 'Vimeo']);
     }

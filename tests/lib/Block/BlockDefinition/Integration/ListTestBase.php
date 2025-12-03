@@ -10,12 +10,7 @@ use Netgen\Layouts\Tests\Block\BlockDefinition\Integration\BlockTestCase;
 
 abstract class ListTestBase extends BlockTestCase
 {
-    public function hasCollection(): true
-    {
-        return true;
-    }
-
-    public static function parametersDataProvider(): iterable
+    final public static function parametersDataProvider(): iterable
     {
         return [
             [
@@ -41,7 +36,7 @@ abstract class ListTestBase extends BlockTestCase
         ];
     }
 
-    public static function invalidParametersDataProvider(): iterable
+    final public static function invalidParametersDataProvider(): iterable
     {
         return [
             [
@@ -57,7 +52,12 @@ abstract class ListTestBase extends BlockTestCase
         ];
     }
 
-    protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
+    final protected function hasCollection(): true
+    {
+        return true;
+    }
+
+    final protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
         return new ListHandler(
             [
