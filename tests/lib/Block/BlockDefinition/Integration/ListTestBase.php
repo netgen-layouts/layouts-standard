@@ -52,11 +52,6 @@ abstract class ListTestBase extends BlockTestCase
         ];
     }
 
-    final protected function hasCollection(): true
-    {
-        return true;
-    }
-
     final protected function createBlockDefinitionHandler(): BlockDefinitionHandlerInterface
     {
         return new ListHandler(
