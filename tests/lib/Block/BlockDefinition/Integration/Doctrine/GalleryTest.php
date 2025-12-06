@@ -13,9 +13,4 @@ use PHPUnit\Framework\Attributes\CoversClass;
 final class GalleryTest extends GalleryTestBase
 {
     use TestCaseTrait;
-
-    protected function tearDown(): void
-    {
-        $this->closeDatabase();
-    }
 }
