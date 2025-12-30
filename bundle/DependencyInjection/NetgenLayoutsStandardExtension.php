@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Netgen\Bundle\LayoutsStandardBundle\DependencyInjection;
 
-use Jean85\PrettyVersions;
+use Composer\InstalledVersions;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Config\Loader\DelegatingLoader;
 use Symfony\Component\Config\Loader\LoaderResolver;
@@ -17,6 +17,7 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\Yaml\Yaml;
 
 use function file_get_contents;
+use function mb_substr;
 
 final class NetgenLayoutsStandardExtension extends Extension implements PrependExtensionInterface
 {
@@ -40,7 +41,7 @@ final class NetgenLayoutsStandardExtension extends Extension implements PrependE
     {
         $container->setParameter(
             'netgen_layouts.standard.asset_version',
-            PrettyVersions::getVersion('netgen/layouts-standard')->getShortReference(),
+            mb_substr(InstalledVersions::getReference('netgen/layouts-standard') ?? '', 0, 8),
         );
 
         $prependConfigs = [
