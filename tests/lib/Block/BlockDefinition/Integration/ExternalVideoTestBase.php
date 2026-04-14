@@ -28,8 +28,7 @@ abstract class ExternalVideoTestBase extends BlockTestCase
                 ],
             ],
             [
-                [
-                ],
+                [],
                 [
                     'video_id' => null,
                 ],
@@ -59,8 +58,7 @@ abstract class ExternalVideoTestBase extends BlockTestCase
                 ],
             ],
             [
-                [
-                ],
+                [],
                 [
                     'caption' => null,
                 ],
