@@ -12,13 +12,13 @@
     "require": {
         "php": "^8.4",
         "netgen/layouts-core": "~2.0.0",
-        "league/commonmark": "^2.7",
-        "twig/extra-bundle": "^3.23",
-        "twig/markdown-extra": "^3.23"
+        "league/commonmark": "^2.8",
+        "twig/extra-bundle": "^3.24",
+        "twig/markdown-extra": "^3.24"
     },
     "require-dev": {
         "netgen/layouts-coding-standard": "^3.0",
-        "phpunit/phpunit": "^13.0",
+        "phpunit/phpunit": "^13.1",
         "phpstan/phpstan": "^2.1",
         "phpstan/extension-installer": "^1.4",
         "phpstan/phpstan-strict-rules": "^2.0",
